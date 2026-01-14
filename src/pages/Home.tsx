@@ -3,6 +3,7 @@ import HeroSlider from '../components/HeroSlider';
 import FunFactorsArea from '../components/FunFactorsArea';
 import EducationLevels from '../components/EducationLevels';
 import EnrollmentCTA from '../components/EnrollmentCTA';
+import GamificationArea from '../components/GamificationArea';
 import AboutArea from '../components/AboutArea';
 import AboutAreaTwo from '../components/AboutAreaTwo';
 import TestimonialsArea from '../components/TestimonialsArea';
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
             <FunFactorsArea />
             <EducationLevels />
             <EnrollmentCTA />
+            <GamificationArea />
             <AboutArea />
             <AboutAreaTwo />
             <TestimonialsArea />

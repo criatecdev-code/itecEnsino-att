@@ -79,13 +79,13 @@ const HeroSlider: React.FC = () => {
                             className="relative w-full h-full flex items-center bg-cover bg-center transition-transform duration-[10s] ease-linear scale-100 hover:scale-105"
                             style={{ backgroundImage: `url(${slide.image})` }}
                         >
-                            {/* Improved Gradient Overlay */}
+                            {/* Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/50 to-transparent"></div>
 
                             {slide.showContent && (
                                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent">
                                     <div className="container-custom h-full flex items-center">
-                                        <div className="max-w-3xl text-white pt-20">
+                                        <div className={`max-w-3xl pt-20 ${slide.isRightAligned ? 'ml-auto text-right' : 'text-white'}`}>
                                             {slide.subtitle && (
                                                 <span className="block text-secondary font-bold tracking-widest text-lg md:text-xl uppercase mb-4 animate-[fade-in-up_0.8s_ease-out_forwards]">
                                                     {slide.subtitle}
@@ -95,17 +95,16 @@ const HeroSlider: React.FC = () => {
                                                 dangerouslySetInnerHTML={{ __html: slide.title }}
                                             >
                                             </h1>
-                                            {slide.showContent && (
-                                                <div className="animate-[fade-in-up_0.8s_ease-out_0.4s_forwards] opacity-0">
-                                                    <a
-                                                        href={slide.link}
-                                                        className="btn-primary text-lg !px-10 !py-4"
-                                                    >
-                                                        {slide.buttonText}
-                                                        <i className="fas fa-arrow-right ml-2"></i>
-                                                    </a>
-                                                </div>
-                                            )}
+
+                                            <div className="animate-[fade-in-up_0.8s_ease-out_0.4s_forwards] opacity-0">
+                                                <a
+                                                    href={slide.link}
+                                                    className="btn-primary text-lg !px-10 !py-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all"
+                                                >
+                                                    {slide.buttonText}
+                                                    <i className="fas fa-arrow-right ml-2"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
