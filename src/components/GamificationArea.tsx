@@ -36,7 +36,7 @@ const GamificationArea: React.FC = () => {
                                     <i className="fas fa-trophy"></i>
                                 </div>
                                 <h3 className="text-white font-bold text-lg mb-2">Conquistas e Recompensas</h3>
-                                <p className="text-gray-500 text-sm">Ganhe medalhas e prêmios reais ao superar desafios acadêmicos.</p>
+                                <p className="text-gray-300 text-sm">Ganhe medalhas e prêmios reais ao superar desafios acadêmicos.</p>
                             </div>
 
                             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
@@ -44,7 +44,7 @@ const GamificationArea: React.FC = () => {
                                     <i className="fas fa-chart-line"></i>
                                 </div>
                                 <h3 className="text-white font-bold text-lg mb-2">Níveis de Evolução</h3>
-                                <p className="text-gray-500 text-sm">Acompanhe seu progresso visualmente e suba de nível a cada semestre.</p>
+                                <p className="text-gray-300 text-sm">Acompanhe seu progresso visualmente e suba de nível a cada semestre.</p>
                             </div>
                         </div>
                     </div>

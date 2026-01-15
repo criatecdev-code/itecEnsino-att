@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const ContactArea: React.FC = () => {
-    const [focusedField, setFocusedField] = useState<string | null>(null);
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -13,132 +12,145 @@ const ContactArea: React.FC = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleFocus = (field: string) => setFocusedField(field);
-    const handleBlur = () => setFocusedField(null);
-
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         alert("Formulário enviado! (Simulação)");
         // Implement actual submission logic here
     };
 
-    const inputClasses = (name: string) => `
-        w-full px-5 py-4 rounded-xl border-2 outline-none transition-all duration-300 bg-gray-50
-        ${focusedField === name ? 'border-secondary ring-4 ring-secondary/10 bg-white' : 'border-gray-200 hover:border-gray-300'}
+    // Light theme input classes matching Enrollment page
+    const inputClasses = () => `
+        w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 
+        focus:border-secondary focus:ring-2 focus:ring-secondary/20 
+        outline-none transition-all font-medium text-gray-900 placeholder-gray-400
     `;
 
+    const labelClasses = "text-sm font-bold text-gray-700 uppercase tracking-wider mb-2 block";
+
     return (
-        <div className="section-padding bg-primary relative overflow-hidden">
-            {/* Abstract Shapes overlay */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2"></div>
-
+        <div className="py-24 bg-gray-50 relative overflow-hidden" id="contato">
             <div className="container-custom relative z-10">
-                <div className="flex flex-col lg:flex-row gap-16 items-center">
+                <div className="flex flex-col lg:flex-row gap-12 items-start">
 
-                    {/* Text Content */}
-                    <div className="w-full lg:w-1/2 text-white">
-                        <span className="inline-block px-4 py-1 bg-white/10 rounded-full border border-white/20 text-sm font-bold tracking-wider uppercase mb-6 backdrop-blur-md">
-                            Fale Conosco
-                        </span>
-                        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8">
-                            Vamos construir o seu <br />
-                            <span className="text-secondary">FUTURO?</span>
-                        </h2>
-                        <p className="text-xl text-blue-100 mb-10 max-w-lg leading-relaxed font-light">
-                            Entre em contato conosco, tire suas dúvidas e garanta condições especiais para sua matrícula.
-                        </p>
+                    {/* Left Content - Contact Info (kept on left, updated visuals) */}
+                    <div className="w-full lg:w-1/3 space-y-8">
+                        <div>
+                            <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-3 block">Fale Conosco</span>
+                            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
+                                Estamos aqui para <span className="text-primary">ajudar você</span>
+                            </h2>
+                            <p className="text-lg text-gray-500 leading-relaxed">
+                                Tem alguma dúvida sobre nossos cursos ou processo de matrícula? Entre em contato pelos canais abaixo.
+                            </p>
+                        </div>
 
-                        <div className="space-y-6">
-                            <a href="tel:2435120102" className="flex items-center gap-6 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-pointer border border-transparent hover:border-white/10">
-                                <div className="w-14 h-14 bg-secondary flex items-center justify-center rounded-xl text-white text-2xl shadow-lg group-hover:scale-110 transition-transform">
-                                    <i className="fas fa-phone-alt"></i>
+                        {/* Info Cards */}
+                        <div className="space-y-4">
+                            <a href="tel:2435120102" className="group flex items-center gap-4 p-6 rounded-3xl bg-white border border-gray-100 shadow-lg shadow-gray-100/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                    <i className="fas fa-phone-alt text-xl"></i>
                                 </div>
                                 <div>
-                                    <p className="text-sm text-blue-200 uppercase tracking-widest font-bold">Ligue agora</p>
-                                    <p className="text-2xl font-bold">(24) 3512-0102</p>
+                                    <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">Ligue para nós</p>
+                                    <p className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">(24) 3512-0102</p>
                                 </div>
                             </a>
 
-                            <a href="https://wa.me/5524974003287" target='_blank' className="flex items-center gap-6 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-pointer border border-transparent hover:border-white/10">
-                                <div className="w-14 h-14 bg-green-500 flex items-center justify-center rounded-xl text-white text-2xl shadow-lg group-hover:scale-110 transition-transform">
-                                    <i className="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/5524974003287" target='_blank' className="group flex items-center gap-4 p-6 rounded-3xl bg-white border border-gray-100 shadow-lg shadow-gray-100/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                <div className="w-14 h-14 rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
+                                    <i className="fab fa-whatsapp text-2xl"></i>
                                 </div>
                                 <div>
-                                    <p className="text-sm text-blue-200 uppercase tracking-widest font-bold">WhatsApp</p>
-                                    <p className="text-2xl font-bold">(24) 97400-3287</p>
+                                    <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">WhatsApp Oficial</p>
+                                    <p className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">(24) 97400-3287</p>
                                 </div>
                             </a>
+
+                            <div className="group flex items-center gap-4 p-6 rounded-3xl bg-white border border-gray-100 shadow-lg shadow-gray-100/50">
+                                <div className="w-14 h-14 rounded-full bg-purple-50 flex items-center justify-center text-purple-600">
+                                    <i className="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">Envie um E-mail</p>
+                                    <p className="text-lg font-bold text-gray-900">contato@itecensino.com.br</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Premium Form Card */}
-                    <div className="w-full lg:w-1/2">
-                        <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 relative overflow-hidden">
-                            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-secondary"></div>
-                            <h3 className="text-2xl font-bold text-gray-800 mb-6">Envie uma mensagem</h3>
+                    {/* Right Form - Styled to match Enrollment */}
+                    <div className="w-full lg:w-2/3">
+                        <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-xl shadow-gray-200/50 border border-gray-100 relative overflow-hidden">
+                            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-secondary to-primary"></div>
 
-                            <form id="contact-form" onSubmit={handleSubmit} className="space-y-5">
+                            <div className="mb-8">
+                                <h3 className="text-2xl font-bold text-gray-900">Envie uma mensagem</h3>
+                                <p className="text-gray-500 mt-2">Preencha o formulário abaixo e responderemos o mais breve possível.</p>
+                            </div>
+
+                            <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
                                 <div>
+                                    <label htmlFor="name" className={labelClasses}>Nome Completo</label>
                                     <input
                                         name="name"
-                                        placeholder="Seu nome completo"
-                                        className={inputClasses('name')}
+                                        id="name"
+                                        placeholder="Digite seu nome"
+                                        className={inputClasses()}
                                         onChange={handleChange}
-                                        onFocus={() => handleFocus('name')}
-                                        onBlur={handleBlur}
                                         required
                                     />
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
+                                        <label htmlFor="phone" className={labelClasses}>Telefone / WhatsApp</label>
                                         <input
                                             name="phone"
+                                            id="phone"
                                             type="tel"
-                                            placeholder="Seu telefone"
-                                            className={inputClasses('phone')}
+                                            placeholder="(00) 00000-0000"
+                                            className={inputClasses()}
                                             onChange={handleChange}
-                                            onFocus={() => handleFocus('phone')}
-                                            onBlur={handleBlur}
                                             required
                                         />
                                     </div>
                                     <div>
+                                        <label htmlFor="email" className={labelClasses}>E-mail</label>
                                         <input
                                             name="email"
+                                            id="email"
                                             type="email"
-                                            placeholder="Seu melhor e-mail"
-                                            className={inputClasses('email')}
+                                            placeholder="seu@email.com"
+                                            className={inputClasses()}
                                             onChange={handleChange}
-                                            onFocus={() => handleFocus('email')}
-                                            onBlur={handleBlur}
                                             required
                                         />
                                     </div>
                                 </div>
 
                                 <div>
+                                    <label htmlFor="message" className={labelClasses}>Como podemos ajudar?</label>
                                     <textarea
                                         name="message"
-                                        placeholder="Sobre o que você gostaria de falar?"
-                                        className={`${inputClasses('message')} h-36 resize-none`}
+                                        id="message"
+                                        placeholder="Escreva sua mensagem..."
+                                        className={`${inputClasses()} h-40 resize-none`}
                                         onChange={handleChange}
-                                        onFocus={() => handleFocus('message')}
-                                        onBlur={handleBlur}
                                         required
                                     ></textarea>
                                 </div>
 
                                 <button
-                                    className="w-full bg-primary hover:bg-secondary text-white font-bold py-5 rounded-xl shadow-xl shadow-blue-900/10 hover:shadow-green-900/20 transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-widest text-sm flex items-center justify-center gap-3"
+                                    className="w-full btn-secondary py-4 text-lg shadow-lg shadow-green-600/20 hover:shadow-green-600/40 transform hover:-translate-y-1 transition-all flex items-center justify-center gap-2"
                                     type="submit"
                                 >
-                                    Enviar Mensagem <i className="fas fa-paper-plane"></i>
+                                    <span>Enviar Mensagem</span>
+                                    <i className="fas fa-paper-plane group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
                                 </button>
                             </form>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

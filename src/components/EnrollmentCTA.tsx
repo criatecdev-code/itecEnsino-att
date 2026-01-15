@@ -4,13 +4,11 @@ const EnrollmentCTA: React.FC = () => {
     return (
         <section className="relative py-24 overflow-hidden">
             {/* Background with Overlay */}
-            <div className="absolute inset-0 z-0">
-                <img
-                    src="/img/home/banner_itec_26.png"
-                    alt="Background"
-                    className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/95 to-primary/90 mix-blend-multiply"></div>
+            {/* Custom Background */}
+            <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-950 via-[#051c3b] to-[#0a2e5c]">
+                {/* Abstract Shapes for Texture */}
+                <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/20 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2 opacity-60"></div>
+                <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-secondary/10 blur-[100px] rounded-full -translate-x-1/3 translate-y-1/3 opacity-40"></div>
             </div>
 
             <div className="container-custom relative z-10">
@@ -25,7 +23,7 @@ const EnrollmentCTA: React.FC = () => {
                             </span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight animate-fade-in-up delay-100">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight animate-fade-in-up delay-100 text-white">
                             O futuro que você sonha <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">começa aqui.</span>
                         </h2>
@@ -38,7 +36,7 @@ const EnrollmentCTA: React.FC = () => {
                             <a href="/matricula" className="btn-primary text-center px-10 py-4 text-lg shadow-xl shadow-primary/20 hover:shadow-primary/40 !rounded-xl transform hover:-translate-y-1 transition-all">
                                 Garantir minha Vaga
                             </a>
-                            <a href="https://wa.me/5524999999999" target="_blank" rel="noreferrer" className="px-10 py-4 rounded-xl border-2 border-white/20 hover:bg-white/10 text-white font-bold text-lg transition-all text-center flex items-center justify-center gap-2">
+                            <a href="https://wa.me/5524974003287" target="_blank" rel="noreferrer" className="px-10 py-4 rounded-xl border-2 border-white/20 hover:bg-white/10 text-white font-bold text-lg transition-all text-center flex items-center justify-center gap-2">
                                 <i className="fab fa-whatsapp"></i> Falar com Consultor
                             </a>
                         </div>

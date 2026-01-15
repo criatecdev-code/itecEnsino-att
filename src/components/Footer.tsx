@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-gray-900 text-gray-400 font-sans">
+        <footer className="bg-gray-900 text-gray-300 font-sans">
             {/* Newsletter / CTA Strip */}
             <div className="bg-white border-t border-gray-100 py-16 relative overflow-hidden">
                 <div className="container-custom relative z-10">
@@ -16,12 +17,12 @@ const Footer: React.FC = () => {
                             <p className="text-blue-100 text-lg">Matricule-se hoje e transforme o seu futuro profissional.</p>
                         </div>
                         <div className="z-10 flex flex-col sm:flex-row gap-4">
-                            <a href="/matricula" className="btn-secondary bg-secondary text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-white hover:text-secondary transition-colors">
+                            <Link to="/matricula" className="btn-secondary bg-secondary text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-white hover:text-secondary transition-colors inline-block text-center">
                                 Inscreva-se Agora
-                            </a>
-                            <a href="/contato" className="px-8 py-4 rounded-xl font-bold border-2 border-white/20 text-white hover:bg-white/10 transition-colors text-center">
+                            </Link>
+                            <Link to="/contato" className="px-8 py-4 rounded-xl font-bold border-2 border-white/20 text-white hover:bg-white/10 transition-colors text-center inline-block">
                                 Fale com Consultor
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -43,11 +44,18 @@ const Footer: React.FC = () => {
                                 Compromisso com a qualidade e o sucesso do aluno.
                             </p>
                             <div className="flex space-x-3">
-                                {['facebook-f', 'instagram', 'linkedin-in', 'youtube'].map((icon) => (
-                                    <a key={icon} href="#" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300">
-                                        <i className={`fab fa-${icon}`}></i>
-                                    </a>
-                                ))}
+                                <a href="https://www.facebook.com/itec.ensino" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="Facebook">
+                                    <i className="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/itecensino" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="Instagram">
+                                    <i className="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/itec-ensino" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="LinkedIn">
+                                    <i className="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@itecensino" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="YouTube">
+                                    <i className="fab fa-youtube"></i>
+                                </a>
                             </div>
                         </div>
 
@@ -55,13 +63,31 @@ const Footer: React.FC = () => {
                         <div>
                             <h4 className="text-white font-bold text-lg mb-6 border-l-4 border-primary pl-3">Institucional</h4>
                             <ul className="space-y-3">
-                                {['Home', 'Sobre Nós', 'Corpo Docente', 'Infraestrutura', 'Blog'].map((item) => (
-                                    <li key={item}>
-                                        <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
-                                            <i className="fas fa-angle-right text-xs opacity-50"></i> {item}
-                                        </a>
-                                    </li>
-                                ))}
+                                <li>
+                                    <Link to="/" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/sobrenos" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Sobre Nós
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/sobrenos" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Corpo Docente
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/sobrenos" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Infraestrutura
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/blog" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Blog
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
 
@@ -69,13 +95,31 @@ const Footer: React.FC = () => {
                         <div>
                             <h4 className="text-white font-bold text-lg mb-6 border-l-4 border-secondary pl-3">Cursos em Alta</h4>
                             <ul className="space-y-3">
-                                {['Técnico em Enfermagem', 'Técnico em Radiologia', 'Técnico em Logística', 'Especialização em Tomografia', 'Cuidador de Idosos'].map((item) => (
-                                    <li key={item}>
-                                        <a href="#" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
-                                            <i className="fas fa-angle-right text-xs opacity-50"></i> {item}
-                                        </a>
-                                    </li>
-                                ))}
+                                <li>
+                                    <Link to="/cursos/tecnico" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Enfermagem
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/cursos/tecnico" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Radiologia
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/cursos/tecnico" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Logística
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/cursos/profissionalizante" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Especialização
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/cursos/profissionalizante" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Cursos Livres
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
 
@@ -85,19 +129,21 @@ const Footer: React.FC = () => {
                             <ul className="space-y-4 text-sm">
                                 <li className="flex items-start gap-3">
                                     <i className="fas fa-map-marker-alt text-primary mt-1"></i>
-                                    <span>Rua Sessenta, nº60 - Vila Santa Cecília, Volta Redonda - RJ</span>
+                                    <a href="https://maps.google.com/?q=Rua+Sessenta,60,Vila+Santa+Cecília,Volta+Redonda-RJ" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                                        Rua Sessenta, nº60 - Vila Santa Cecília, Volta Redonda - RJ
+                                    </a>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <i className="fas fa-phone-alt text-primary"></i>
-                                    <span>(24) 3512-0102</span>
+                                    <a href="tel:2435120102" className="hover:text-primary transition-colors">(24) 3512-0102</a>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <i className="fab fa-whatsapp text-primary text-lg"></i>
-                                    <span>(24) 97400-3287</span>
+                                    <a href="https://wa.me/5524974003287" target="_blank" className="hover:text-primary transition-colors">(24) 97400-3287</a>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <i className="fas fa-envelope text-primary"></i>
-                                    <span>contato@itecensino.com.br</span>
+                                    <a href="mailto:contato@itecensino.com.br" className="hover:text-primary transition-colors">contato@itecensino.com.br</a>
                                 </li>
                             </ul>
                         </div>
@@ -110,12 +156,9 @@ const Footer: React.FC = () => {
                 <div className="container-custom flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
                     <p>&copy; 2026 ITEC Ensino. Todos os direitos reservados.</p>
                     <div className="flex gap-6">
-                        <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
-                        <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
+                        <Link to="/privacidade" className="hover:text-white transition-colors">Política de Privacidade</Link>
+                        <Link to="/termos" className="hover:text-white transition-colors">Termos de Uso</Link>
                     </div>
-                    <p className="flex items-center gap-1">
-                        Feito com <i className="fas fa-heart text-red-500"></i> pela <span className="font-bold text-gray-300">Taticaweb</span>
-                    </p>
                 </div>
             </div>
         </footer>

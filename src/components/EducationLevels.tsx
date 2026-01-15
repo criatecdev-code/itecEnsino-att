@@ -4,43 +4,7 @@ import EducationLevelSection from './EducationLevelSection';
 const EducationLevels: React.FC = () => {
     return (
         <div className="flex flex-col">
-            {/* Ensino Fundamental */}
-            <EducationLevelSection
-                subtitle="Do 1º ao 9º Ano"
-                title="Ensino Fundamental I e II"
-                description="Uma jornada de descobertas e crescimento. No ITEC, unimos inovação, valores humanos e excelência acadêmica para formar a base do futuro do seu filho."
-                image="/img/home/fundamental.png"
-                points={[
-                    "Material Didático Positivo",
-                    "Robótica Educacional",
-                    "Inglês Diário",
-                    "Educação Socioemocional"
-                ]}
-                link="/fundamental"
-                linkText="Conheça o Fundamental"
-                isReversed={false}
-                colorClass="text-primary"
-            />
-
-            {/* Ensino Médio - Using a slightly distinctive styling approach conceptually by reversing */}
-            <EducationLevelSection
-                subtitle="1ª a 3ª Série"
-                title="Ensino Médio"
-                description="Preparação total para o ENEM e para a vida. Nosso Ensino Médio conecta o aluno com a tecnologia, o empreendedorismo e as melhores universidades do país."
-                image="/img/home/medio.png"
-                points={[
-                    "Foco no ENEM",
-                    "Projeto de Vida",
-                    "Laboratórios Modernos",
-                    "Orientação Profissional"
-                ]}
-                link="/medio"
-                linkText="Conheça o Ensino Médio"
-                isReversed={true}
-                colorClass="text-secondary"
-            />
-
-            {/* Ensino Técnico */}
+            {/* Cursos Técnicos - Now FIRST */}
             <EducationLevelSection
                 subtitle="Qualificação Profissional"
                 title="Cursos Técnicos"
@@ -52,8 +16,46 @@ const EducationLevels: React.FC = () => {
                     "Estágios Garantidos",
                     "Docentes Atuantes no Mercado"
                 ]}
-                link="/cursos"
+                link="/cursos/tecnico"
                 linkText="Ver Todos os Cursos"
+                isReversed={false}
+                colorClass="text-primary"
+            />
+
+            {/* Ensino Regular (Fundamental + Médio) - Second */}
+            <EducationLevelSection
+                subtitle="Do Fundamental ao Médio"
+                title="Ensino Regular"
+                description="Uma jornada completa de desenvolvimento. Do Ensino Fundamental ao Médio, preparamos seu filho para a universidade e para a vida com valores e inovação."
+                image="/img/home/fundamental.png"
+                points={[
+                    "Material Didático Positivo",
+                    "Sistema Bilíngue (Inglês)",
+                    "Robótica e Tecnologia",
+                    "Projeto de Vida e Carreira"
+                ]}
+                link="/cursos/regular"
+                linkText="Conheça o Ensino Regular"
+                isReversed={true}
+                colorClass="text-secondary"
+            />
+
+            {/* Cursos Profissionalizantes (Replacing Ensino Médio) - Third */}
+            <EducationLevelSection
+                subtitle="Cursos Rápidos e Dinâmicos"
+                title="Profissionalizantes"
+                description="Qualificação rápida e focada para você se destacar. Cursos nas áreas de tecnologia, gestão, saúde e beleza com certificação imediata."
+                image="/img/home/administrativo.png" // Maintaining image for layout balance unless a better one exists, potentially /img/fotos/14.jpg (Web Dev) but let's stick to consistent style images if possible. Actually, medio.png might be specific to HS. Let's use a generic one or keep it. The user didn't provide a new image. I'll stick to the existing one but maybe I should swap to something more 'pro'. Let's use /img/home/banner_itec_26.png or just keep medio.png for now but label it properly. Or better, use one of the course images like '/img/fotos/5.jpg' (Apps) but the style is different (photo vs cutout?). The `fundamental.png` and `medio.png` seem to be cutouts/illustrations. Let's keep `medio.png` to avoid breaking layout style, but ideally we'd change it. 
+                // Wait, I can try to find a better image from the list. `cursos-interna.png` is used for Técnico. 
+                // Let's use `medio.png` for now to be safe on layout, as I don't have a specific asset request.
+                points={[
+                    "Certificação Rápida",
+                    "Foco na Prática",
+                    "Áreas em Alta Demanda",
+                    "Preços Acessíveis"
+                ]}
+                link="/cursos/profissionalizante"
+                linkText="Ver Cursos Rápidos"
                 isReversed={false}
                 colorClass="text-primary"
             />

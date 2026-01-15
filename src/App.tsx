@@ -1,12 +1,32 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop'; // Scroll restoration helper
+import React, { Suspense, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Courses from './pages/Courses';
-import Contact from './pages/Contact';
-import Enrollment from './pages/Enrollment';
+
+// Lazy load pages for performance
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const Courses = React.lazy(() => import('./pages/Courses'));
+const Contact = React.lazy(() => import('./pages/Contact'));
+const Enrollment = React.lazy(() => import('./pages/Enrollment'));
+
+// Scroll restoration helper
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
+
+const LoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-screen bg-gray-50">
+    <div className="flex flex-col items-center gap-4">
+      <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+      <p className="text-gray-500 text-sm font-medium animate-pulse">Carregando...</p>
+    </div>
+  </div>
+);
 
 function App() {
   return (
@@ -15,15 +35,17 @@ function App() {
       <div className="flex flex-col min-h-screen bg-white">
         <Header />
         <main className="flex-grow pt-20">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/sobrenos" element={<About />} />
-            <Route path="/cursos/:category" element={<Courses />} />
-            <Route path="/contato" element={<Contact />} />
-            <Route path="/matricula" element={<Enrollment />} />
-            {/* Fallback to Home for other links initially */}
-            <Route path="*" element={<Home />} />
-          </Routes>
+          <Suspense fallback={<LoadingFallback />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/sobrenos" element={<About />} />
+              <Route path="/cursos/:category" element={<Courses />} />
+              <Route path="/contato" element={<Contact />} />
+              <Route path="/matricula" element={<Enrollment />} />
+              {/* Fallback to Home for other links initially */}
+              <Route path="*" element={<Home />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>

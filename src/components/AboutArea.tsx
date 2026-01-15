@@ -11,7 +11,7 @@ const AboutArea: React.FC = () => {
                     {/* Image Column */}
                     <div className="w-full lg:w-1/2 relative group">
                         <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-gray-200 transform transition-transform duration-700 hover:scale-[1.02]">
-                            <img className="w-full h-auto object-cover" src="/img/home/img1.png" alt="Alunos ITEC" />
+                            <img className="w-full h-auto object-cover" src="/img/home/sobrenos.png" alt="Alunos ITEC" />
                             {/* Overlay gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>

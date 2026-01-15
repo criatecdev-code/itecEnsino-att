@@ -74,24 +74,23 @@ const HeroSlider: React.FC = () => {
         <div className="relative w-full h-screen overflow-hidden bg-gray-900">
             <Slider {...settings} className="h-full">
                 {slides.map((slide, index) => (
-                    <div key={index} className="outline-none h-screen">
+                    <div key={index} className="outline-none h-[85vh] md:h-screen overflow-hidden relative">
                         <div
                             className="relative w-full h-full flex items-center bg-cover bg-center transition-transform duration-[10s] ease-linear scale-100 hover:scale-105"
                             style={{ backgroundImage: `url(${slide.image})` }}
                         >
-                            {/* Gradient Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/50 to-transparent"></div>
+
 
                             {slide.showContent && (
-                                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent">
+                                <div className="absolute inset-0">
                                     <div className="container-custom h-full flex items-center">
-                                        <div className={`max-w-3xl pt-20 ${slide.isRightAligned ? 'ml-auto text-right' : 'text-white'}`}>
+                                        <div className={`w-full md:max-w-3xl pt-24 md:pt-20 px-6 md:px-0 text-white ${slide.isRightAligned ? 'md:ml-auto md:text-right' : ''}`}>
                                             {slide.subtitle && (
-                                                <span className="block text-secondary font-bold tracking-widest text-lg md:text-xl uppercase mb-4 animate-[fade-in-up_0.8s_ease-out_forwards]">
+                                                <span className="block text-secondary font-bold tracking-widest text-sm md:text-xl uppercase mb-3 md:mb-4 animate-[fade-in-up_0.8s_ease-out_forwards]">
                                                     {slide.subtitle}
                                                 </span>
                                             )}
-                                            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-[fade-in-up_0.8s_ease-out_0.2s_forwards] opacity-0 text-shadow-lg"
+                                            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-6 md:mb-8 animate-[fade-in-up_0.8s_ease-out_0.2s_forwards] opacity-0 text-shadow-lg"
                                                 dangerouslySetInnerHTML={{ __html: slide.title }}
                                             >
                                             </h1>
@@ -99,7 +98,7 @@ const HeroSlider: React.FC = () => {
                                             <div className="animate-[fade-in-up_0.8s_ease-out_0.4s_forwards] opacity-0">
                                                 <a
                                                     href={slide.link}
-                                                    className="btn-primary text-lg !px-10 !py-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all"
+                                                    className="btn-primary text-base md:text-lg !px-8 md:!px-10 !py-3 md:!py-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all inline-flex items-center"
                                                 >
                                                     {slide.buttonText}
                                                     <i className="fas fa-arrow-right ml-2"></i>

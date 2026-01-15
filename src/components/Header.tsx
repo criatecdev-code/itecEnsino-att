@@ -110,6 +110,8 @@ const Header: React.FC = () => {
                     <button
                         onClick={toggleMobileMenu}
                         className="lg:hidden text-gray-700 focus:outline-none p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                        aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+                        aria-expanded={isMobileMenuOpen}
                     >
                         <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
                     </button>
@@ -134,9 +136,9 @@ const Header: React.FC = () => {
                         </nav>
 
                         <div className="px-6 pt-2 flex justify-center space-x-6 text-gray-400">
-                            <a href="#"><i className="fab fa-facebook-f text-xl hover:text-primary"></i></a>
-                            <a href="#"><i className="fab fa-instagram text-xl hover:text-primary"></i></a>
-                            <a href="#"><i className="fab fa-whatsapp text-xl hover:text-primary"></i></a>
+                            <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f text-xl hover:text-primary"></i></a>
+                            <a href="#" aria-label="Instagram"><i className="fab fa-instagram text-xl hover:text-primary"></i></a>
+                            <a href="https://wa.me/5524974003287" target="_blank" aria-label="WhatsApp"><i className="fab fa-whatsapp text-xl hover:text-primary"></i></a>
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,19 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import ContactArea from '../components/ContactArea';
 
 const Contact: React.FC = () => {
     return (
-        <div className="bg-white">
+        <>
+            <Helmet>
+                <title>Fale Conosco | ITEC Ensino - Entre em Contato</title>
+                <meta name="description" content="Entre em contato com o ITEC Ensino. Tire suas dúvidas sobre matrículas, cursos e bolsas. Estamos prontos para atender você via WhatsApp, telefone ou e-mail." />
+            </Helmet>
+
+            {/* Reuse existing ContactArea which already contains the form and map */}
+            {/* Removed duplicate ContactArea */}
+
             {/* Header / Breadcrumb - Consistent with About & Courses Page */}
             <div className="relative py-20 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
@@ -22,7 +31,7 @@ const Contact: React.FC = () => {
             {/* Reuse existing ContactArea which already contains the form and map */}
             <ContactArea />
 
-        </div>
+        </>
     );
 };
 

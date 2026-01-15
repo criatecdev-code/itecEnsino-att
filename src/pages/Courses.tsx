@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { courses } from '../data/courses';
 
 const Courses: React.FC = () => {
-    const { category } = useParams<{ category?: string }>();
+    const { category } = useParams<{ category: string }>();
 
     const filteredCourses = useMemo(() => {
         if (!category) return courses;
@@ -35,14 +36,18 @@ const Courses: React.FC = () => {
 
     return (
         <div className="bg-gray-50 min-h-screen">
-            {/* Header / Breadcrumb - Consistent with About Page */}
+            <Helmet>
+                <title>{pageTitle} | ITEC Ensino</title>
+                <meta name="description" content={`Confira os cursos de ${pageTitle} oferecidos pelo ITEC Ensino. Qualidade, infraestrutura e professores qualificados.`} />
+            </Helmet>
+            {/* Header / Breadcrumb - Consistent with other pages */}
             <div className="relative py-20 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-secondary/40 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/60 to-secondary/60 mix-blend-overlay"></div>
                 <div className="container-custom relative z-10 text-center text-white">
-                    <h1 className="text-4xl md:text-5xl font-black mb-3 animate-fade-in-up">{pageTitle}</h1>
-                    <div className="flex justify-center items-center gap-2 text-xs uppercase tracking-widest text-gray-400 animate-fade-in-up delay-100">
-                        <Link to="/" className="hover:text-white transition-colors">Início</Link>
+                    <h1 className="text-4xl md:text-5xl font-black mb-3 animate-fade-in-up text-white">{pageTitle}</h1>
+                    <div className="flex justify-center items-center gap-2 text-xs uppercase tracking-widest text-gray-300 animate-fade-in-up delay-100">
+                        <a href="/" className="hover:text-white transition-colors">Início</a>
                         <span className="text-secondary">•</span>
                         <span className="text-white">Cursos</span>
                     </div>

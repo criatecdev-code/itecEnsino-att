@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Enrollment: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -23,19 +24,23 @@ const Enrollment: React.FC = () => {
         e.preventDefault();
         // Here you would handle the form submission, e.g., sending to an API or WhatsApp
         const message = `Olá, gostaria de me matricular!\n\nNome: ${formData.name}\nTelefone: ${formData.phone}\nE-mail: ${formData.email}\nTipo de Curso: ${formData.courseType}\nInteresse: ${formData.interest}\nTurno: ${formData.period}`;
-        const whatsappUrl = `https://wa.me/5524999999999?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/5524974003287?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
 
     return (
         <div className="bg-white">
+            <Helmet>
+                <title>Matrícula Online | ITEC Ensino - Garanta sua Vaga</title>
+                <meta name="description" content="Realize sua matrícula online no ITEC Ensino de forma rápida e segura. Garanta sua vaga nos melhores cursos técnicos e profissionalizantes da região." />
+            </Helmet>
             {/* Header / Breadcrumb - Consistent with other pages */}
             <div className="relative py-20 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-green-900/60 to-primary/60 mix-blend-overlay"></div>
                 <div className="container-custom relative z-10 text-center text-white">
-                    <h1 className="text-4xl md:text-5xl font-black mb-3 animate-fade-in-up">Matrícula Online</h1>
-                    <div className="flex justify-center items-center gap-2 text-xs uppercase tracking-widest text-gray-400 animate-fade-in-up delay-100">
+                    <h1 className="text-4xl md:text-5xl font-black mb-3 animate-fade-in-up text-white">Matrícula Online</h1>
+                    <div className="flex justify-center items-center gap-2 text-xs uppercase tracking-widest text-gray-300 animate-fade-in-up delay-100">
                         <Link to="/" className="hover:text-white transition-colors">Início</Link>
                         <span className="text-secondary">•</span>
                         <span className="text-white">Matricule-se</span>
@@ -214,7 +219,7 @@ const Enrollment: React.FC = () => {
                                     </p>
                                     <p className="flex items-center gap-3">
                                         <i className="fab fa-whatsapp text-primary"></i>
-                                        <span>(24) 99999-9999</span>
+                                        <span>(24) 97400-3287</span>
                                     </p>
                                     <p className="flex items-center gap-3">
                                         <i className="fas fa-envelope text-primary"></i>
