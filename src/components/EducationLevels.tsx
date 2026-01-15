@@ -9,7 +9,7 @@ const EducationLevels: React.FC = () => {
                 subtitle="Qualificação Profissional"
                 title="Cursos Técnicos"
                 description="A entrada mais rápida para o mercado de trabalho. Nossos cursos técnicos combinam teoria e muita prática para você sair pronto para os desafios da profissão."
-                image="/img/home/cursos-interna.png"
+                image="/img/home/enfermagem.png"
                 points={[
                     "Enfermagem e Radiologia",
                     "Laboratórios Equipados",
