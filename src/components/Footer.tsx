@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                         {/* Column 1: Brand */}
                         <div className="space-y-6">
                             <div className="bg-white p-3 rounded-xl inline-block w-48">
-                                <img src="/img/logo/logo_footer.png" alt="ITEC" className="w-full brightness-0" />
+                                <img src="/img/logo/logo.png" alt="ITEC" className="w-full" />
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed">
                                 Referência em ensino técnico e profissionalizante na região sul fluminense.

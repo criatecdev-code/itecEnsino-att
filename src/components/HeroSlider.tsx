@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const HeroSlider: React.FC = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,
-        speed: 1000, // Slower transition for premium feel
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -20,15 +33,8 @@ const HeroSlider: React.FC = () => {
 
     const slides = [
         {
-            image: '/img/home/banner1.png',
-            link: '/cursos',
-            title: 'Fundamental <br/>+ Médio',
-            subtitle: 'Educação completa para o futuro do seu filho com valores e qualidade.',
-            buttonText: 'Conheça a Escola',
-            showContent: true
-        },
-        {
             image: '/img/home/banner2.png',
+            mobileColor: 'bg-gradient-to-br from-green-900 to-gray-900',
             link: '/matricula',
             title: 'Técnico em <span class="text-secondary">ENFERMAGEM</span>',
             subtitle: 'Referência em formação na área da saúde. Mais de 5 mil alunos formados.',
@@ -36,7 +42,17 @@ const HeroSlider: React.FC = () => {
             showContent: true
         },
         {
+            image: '/img/home/banner1.png',
+            mobileColor: 'bg-gradient-to-br from-blue-900 to-gray-900',
+            link: '/cursos',
+            title: 'Fundamental <br/>+ Médio',
+            subtitle: 'Educação completa para o futuro do seu filho com valores e qualidade.',
+            buttonText: 'Conheça a Escola',
+            showContent: true
+        },
+        {
             image: '/img/home/banner5.png',
+            mobileColor: 'bg-gradient-to-br from-indigo-900 to-gray-900',
             link: '/matricula',
             title: 'MÉDIO + TÉCNICO',
             subtitle: 'Saia da escola já com uma profissão. O caminho mais rápido para o sucesso.',
@@ -45,6 +61,7 @@ const HeroSlider: React.FC = () => {
         },
         {
             image: '/img/home/banner_traumatologia.png',
+            mobileColor: 'bg-gradient-to-br from-cyan-900 to-gray-900',
             link: '/matricula',
             title: 'Técnico em <span class="text-secondary">RADIOLOGIA</span>',
             subtitle: 'O mercado precisa de especilistas. O ITEC forma os melhores.',
@@ -53,6 +70,7 @@ const HeroSlider: React.FC = () => {
         },
         {
             image: '/img/home/banner6_new.jpeg',
+            mobileColor: 'bg-gradient-to-br from-teal-900 to-gray-900',
             link: '/matricula',
             title: 'Técnico em <span class="text-secondary">ANÁLISES CLÍNICAS</span>',
             subtitle: 'Alta demanda em hospitais. Laboratórios de ponta esperando por você.',
@@ -62,6 +80,7 @@ const HeroSlider: React.FC = () => {
         },
         {
             image: '/img/home/banner_itec_26.png',
+            mobileColor: 'bg-gradient-to-br from-purple-900 to-gray-900',
             link: '/matricula',
             title: '',
             subtitle: '',
@@ -71,26 +90,30 @@ const HeroSlider: React.FC = () => {
     ];
 
     return (
-        <div className="relative w-full h-screen overflow-hidden bg-gray-900">
+        <div className="relative w-full h-[65vh] md:h-screen overflow-hidden bg-gray-900">
             <Slider {...settings} className="h-full">
                 {slides.map((slide, index) => (
-                    <div key={index} className="outline-none h-[85vh] md:h-screen overflow-hidden relative">
+                    <div key={index} className="outline-none h-[65vh] md:h-screen overflow-hidden relative">
                         <div
-                            className="relative w-full h-full flex items-center bg-cover bg-center transition-transform duration-[10s] ease-linear scale-100 hover:scale-105"
-                            style={{ backgroundImage: `url(${slide.image})` }}
+                            className={`relative w-full h-full flex items-center transition-transform duration-[10s] ease-linear
+                                ${!isMobile ? 'bg-cover bg-center scale-100 hover:scale-105' : `bg-cover ${slide.mobileColor}`}`}
+                            style={{
+                                backgroundImage: !isMobile ? `url(${slide.image})` : 'none'
+                            }}
                         >
-
+                            {/* Overlay - Lighter on mobile since we have solid dark bg */}
+                            <div className={`absolute inset-0 ${!isMobile ? 'bg-black/20' : 'bg-transparent'}`}></div>
 
                             {slide.showContent && (
-                                <div className="absolute inset-0">
+                                <div className="absolute inset-0 z-10">
                                     <div className="container-custom h-full flex items-center">
-                                        <div className={`w-full md:max-w-3xl pt-24 md:pt-20 px-6 md:px-0 text-white ${slide.isRightAligned ? 'md:ml-auto md:text-right' : ''}`}>
+                                        <div className={`w-full md:max-w-3xl pt-10 md:pt-20 px-6 md:px-0 text-white ${slide.isRightAligned ? 'md:ml-auto md:text-right' : ''}`}>
                                             {slide.subtitle && (
-                                                <span className="block text-secondary font-bold tracking-widest text-sm md:text-xl uppercase mb-3 md:mb-4 animate-[fade-in-up_0.8s_ease-out_forwards]">
+                                                <span className="block text-secondary font-bold tracking-widest text-xs md:text-xl uppercase mb-2 md:mb-4 animate-[fade-in-up_0.8s_ease-out_forwards]">
                                                     {slide.subtitle}
                                                 </span>
                                             )}
-                                            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-6 md:mb-8 animate-[fade-in-up_0.8s_ease-out_0.2s_forwards] opacity-0 text-shadow-lg"
+                                            <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-6 md:mb-8 animate-[fade-in-up_0.8s_ease-out_0.2s_forwards] opacity-0 text-shadow-lg break-words"
                                                 dangerouslySetInnerHTML={{ __html: slide.title }}
                                             >
                                             </h1>
@@ -98,7 +121,7 @@ const HeroSlider: React.FC = () => {
                                             <div className="animate-[fade-in-up_0.8s_ease-out_0.4s_forwards] opacity-0">
                                                 <a
                                                     href={slide.link}
-                                                    className="btn-primary text-base md:text-lg !px-8 md:!px-10 !py-3 md:!py-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all inline-flex items-center"
+                                                    className="btn-primary text-sm md:text-lg !px-6 md:!px-10 !py-3 md:!py-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all inline-flex items-center"
                                                 >
                                                     {slide.buttonText}
                                                     <i className="fas fa-arrow-right ml-2"></i>

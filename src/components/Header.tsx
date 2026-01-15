@@ -36,7 +36,7 @@ const Header: React.FC = () => {
                     <div className="flex-shrink-0">
                         <Link to="/" className="block">
                             <img
-                                className="h-10 md:h-12 transition-all duration-300 brightness-0"
+                                className="h-10 md:h-12 transition-all duration-300"
                                 src="/img/logo/logo.png"
                                 alt="ITEC Ensino"
                             />
@@ -89,7 +89,7 @@ const Header: React.FC = () => {
                                     <span className="block text-primary font-bold text-sm">Itec Digital</span>
                                     <span className="block text-xs text-gray-500 mt-0.5">Acesso ao sistema</span>
                                 </a>
-                                <a href="https://meuestagio.itecensino.com.br/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 hover:bg-gray-50 transition-colors">
+                                <a href="https://meuestagio.app.br/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Meu Estágio</span>
                                     <span className="block text-xs text-gray-500 mt-0.5">Portal de estágios</span>
                                 </a>
