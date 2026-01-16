@@ -90,24 +90,24 @@ const HeroSlider: React.FC = () => {
     ];
 
     return (
-        <div className="relative w-full h-[65vh] md:h-screen overflow-hidden bg-gray-900">
+        <div className="relative w-full h-[75vh] md:h-screen overflow-hidden bg-gray-900">
             <Slider {...settings} className="h-full">
                 {slides.map((slide, index) => (
-                    <div key={index} className="outline-none h-[65vh] md:h-screen overflow-hidden relative">
+                    <div key={index} className="outline-none h-[75vh] md:h-screen overflow-hidden relative">
                         <div
-                            className={`relative w-full h-full flex items-center transition-transform duration-[10s] ease-linear
-                                ${!isMobile ? 'bg-cover bg-center scale-100 hover:scale-105' : `bg-cover ${slide.mobileColor}`}`}
+                            className={`relative w-full h-full flex items-center transition-transform duration-[10s] ease-linear bg-cover
+                                ${!isMobile ? 'bg-center scale-100 hover:scale-105' : 'bg-top'}`}
                             style={{
-                                backgroundImage: !isMobile ? `url(${slide.image})` : 'none'
+                                backgroundImage: `url(${slide.image})`
                             }}
                         >
-                            {/* Overlay - Lighter on mobile since we have solid dark bg */}
-                            <div className={`absolute inset-0 ${!isMobile ? 'bg-black/20' : 'bg-transparent'}`}></div>
+                            {/* Overlay - Keeping it light as requested */}
+                            <div className="absolute inset-0 bg-black/20"></div>
 
                             {slide.showContent && (
                                 <div className="absolute inset-0 z-10">
                                     <div className="container-custom h-full flex items-center">
-                                        <div className={`w-full md:max-w-3xl pt-10 md:pt-20 px-6 md:px-0 text-white ${slide.isRightAligned ? 'md:ml-auto md:text-right' : ''}`}>
+                                        <div className={`w-full md:max-w-3xl pt-16 md:pt-20 px-6 md:px-0 text-white ${slide.isRightAligned ? 'md:ml-auto md:text-right' : ''}`}>
                                             {slide.subtitle && (
                                                 <span className="block text-secondary font-bold tracking-widest text-xs md:text-xl uppercase mb-2 md:mb-4 animate-[fade-in-up_0.8s_ease-out_forwards]">
                                                     {slide.subtitle}
