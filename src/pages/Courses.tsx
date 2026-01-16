@@ -20,8 +20,11 @@ const Courses: React.FC = () => {
             if (normalizedCategory === 'profissionalizante') {
                 return courseCat.includes('profissionalizante');
             }
-            if (normalizedCategory === 'fundamental') { // Includes Médio per implied requirement of "Basic Education" grouping
-                return courseCat.includes('fundamental') || courseCat.includes('médio') || courseCat.includes('medio');
+            if (normalizedCategory === 'fundamental') {
+                return courseCat.includes('fundamental');
+            }
+            if (normalizedCategory === 'medio' || normalizedCategory === 'médio') {
+                return courseCat.includes('médio') || courseCat.includes('medio');
             }
             return true;
         });
@@ -30,7 +33,8 @@ const Courses: React.FC = () => {
     const pageTitle = useMemo(() => {
         if (category === 'tecnico') return 'Cursos Técnicos';
         if (category === 'profissionalizante') return 'Cursos Profissionalizantes';
-        if (category === 'fundamental') return 'Ensino Fundamental e Médio';
+        if (category === 'fundamental') return 'Ensino Fundamental';
+        if (category === 'medio') return 'Ensino Médio';
         return 'Todos os Cursos';
     }, [category]);
 

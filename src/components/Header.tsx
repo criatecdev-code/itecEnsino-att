@@ -68,8 +68,12 @@ const Header: React.FC = () => {
                                     <span className="block text-xs text-gray-500 mt-0.5">Formação completa</span>
                                 </Link>
                                 <Link to="/cursos/fundamental" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                    <span className="block text-primary font-bold text-sm">Fundamental & Médio</span>
-                                    <span className="block text-xs text-gray-500 mt-0.5">Educação Básica</span>
+                                    <span className="block text-primary font-bold text-sm">Ensino Fundamental</span>
+                                    <span className="block text-xs text-gray-500 mt-0.5">1º ao 9º Ano</span>
+                                </Link>
+                                <Link to="/cursos/medio" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-primary font-bold text-sm">Ensino Médio</span>
+                                    <span className="block text-xs text-gray-500 mt-0.5">Formação Geral</span>
                                 </Link>
                                 <Link to="/cursos/profissionalizante" className="block px-6 py-4 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Profissionalizante</span>
