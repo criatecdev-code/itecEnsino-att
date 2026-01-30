@@ -25,7 +25,7 @@ const Maintenance: React.FC = () => {
 
                     {/* Subtitle/Message */}
                     <p className="text-lg text-gray-600 leading-relaxed" style={{ textWrap: 'pretty' }}>
-                        O portal da ITEC Ensino está passando por uma reformulação estratégica completa.
+                        O portal do ITEC Ensino está passando por uma reformulação estratégica completa.
                         Estamos implementando novas tecnologias para oferecer uma experiência educacional
                         ainda mais conectada, intuitiva e eficiente.
                     </p>
@@ -33,7 +33,7 @@ const Maintenance: React.FC = () => {
                     {/* Call to Action / Info */}
                     <div className="bg-white/50 backdrop-blur-sm border border-gray-100 rounded-2xl p-6 shadow-sm w-full">
                         <p className="text-gray-700 font-medium mb-4">
-                            Nossos sistemas continuam operando normalmente:
+                            O portal dos alunos continua operando normalmente:
                         </p>
                         <div className="flex flex-col gap-4 justify-center md:justify-start">
                             <a
