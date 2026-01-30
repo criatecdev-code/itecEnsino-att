@@ -5,10 +5,11 @@ const Footer: React.FC = () => {
     return (
         <footer className="bg-gray-900 text-gray-300 font-sans">
             {/* Newsletter / CTA Strip */}
+            {/* 
             <div className="bg-white border-t border-gray-100 py-16 relative overflow-hidden">
                 <div className="container-custom relative z-10">
                     <div className="bg-primary rounded-3xl p-10 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
-                        {/* Decor */}
+                        
                         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
@@ -26,9 +27,10 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                {/* Background pattern for strip */}
+                
                 <div className="absolute top-0 left-0 w-full h-1/2 bg-gray-50 -z-0"></div>
             </div>
+            */}
 
             {/* Main Footer Content */}
             <div className="bg-gray-900 pt-20 pb-12 border-t border-gray-800">

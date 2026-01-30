@@ -4,11 +4,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 // Lazy load pages for performance
-const Home = React.lazy(() => import('./pages/Home'));
-const About = React.lazy(() => import('./pages/About'));
-const Courses = React.lazy(() => import('./pages/Courses'));
-const Contact = React.lazy(() => import('./pages/Contact'));
-const Enrollment = React.lazy(() => import('./pages/Enrollment'));
+// const Home = React.lazy(() => import('./pages/Home'));
+const Maintenance = React.lazy(() => import('./pages/Maintenance'));
+// const About = React.lazy(() => import('./pages/About'));
+// const Courses = React.lazy(() => import('./pages/Courses'));
+// const Contact = React.lazy(() => import('./pages/Contact'));
+// const Enrollment = React.lazy(() => import('./pages/Enrollment'));
+// const DevPage = React.lazy(() => import('./pages/DevPage'));
 
 // Scroll restoration helper
 const ScrollToTop = () => {
@@ -37,13 +39,17 @@ function App() {
         <main className="flex-grow pt-20">
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
-              <Route path="/" element={<Home />} />
+              {/* Maintenance Mode - All routes redirect to Maintenance */}
+              <Route path="*" element={<Maintenance />} />
+
+              {/* 
+              <Route path="/" element={<Maintenance />} />
               <Route path="/sobrenos" element={<About />} />
               <Route path="/cursos/:category" element={<Courses />} />
               <Route path="/contato" element={<Contact />} />
               <Route path="/matricula" element={<Enrollment />} />
-              {/* Fallback to Home for other links initially */}
-              <Route path="*" element={<Home />} />
+              <Route path="/dev" element={<DevPage />} />
+              */}
             </Routes>
           </Suspense>
         </main>

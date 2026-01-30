@@ -37,7 +37,7 @@ const Header: React.FC = () => {
                         <Link to="/" className="block">
                             <img
                                 className="h-10 md:h-12 transition-all duration-300"
-                                src="/img/logo/logo.png"
+                                src={`${import.meta.env.BASE_URL}img/logo/logo.png`}
                                 alt="ITEC Ensino"
                             />
                         </Link>
@@ -88,10 +88,14 @@ const Header: React.FC = () => {
                                 Área do Aluno <i className="fas fa-chevron-down text-xs ml-1 transition-transform group-hover:rotate-180"></i>
                             </button>
 
-                            <div className="absolute top-full left-0 w-56 bg-white shadow-xl rounded-xl overflow-hidden transform opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
-                                <a href="https://www.itecqualificacao.com.br/admin/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                    <span className="block text-primary font-bold text-sm">Itec Digital</span>
-                                    <span className="block text-xs text-gray-500 mt-0.5">Acesso ao sistema</span>
+                            <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-xl overflow-hidden transform opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+                                <a href="https://www.itecqualificacao.com.br/campus/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-primary font-bold text-sm">Cursos Profissionalizantes</span>
+                                    <span className="block text-xs text-gray-500 mt-0.5">Portal do Aluno</span>
+                                </a>
+                                <a href="https://portal.selsensino.com.br/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-primary font-bold text-sm">Cursos Técnicos</span>
+                                    <span className="block text-xs text-gray-500 mt-0.5">Portal do Aluno</span>
                                 </a>
                                 <a href="https://meuestagio.app.br/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Meu Estágio</span>

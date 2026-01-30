@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Só para itecensino.com.br (e www)
+  RewriteCond %{HTTP_HOST} ^(www\.)?itecensino\.com\.br$ [NC]
+
+  # Se for arquivo/pasta real, serve normal
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Home e rotas do React -> /app/index.html
+  RewriteRule ^ app/index.html [L]
+</IfModule>
