@@ -5,4 +5,17 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => ({
   plugins: [react()],
   base: command === 'serve' ? '/' : '/app/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-router': ['react-router-dom', 'react-helmet-async'],
+          'vendor-slick': ['react-slick', 'slick-carousel'],
+        },
+      },
+    },
+    minify: 'esbuild',
+    chunkSizeWarningLimit: 1000,
+  },
 }))

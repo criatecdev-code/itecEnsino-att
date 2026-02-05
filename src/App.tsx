@@ -61,9 +61,9 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen bg-white">
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow pt-20">
+        <main className="flex-grow">
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
               {/* Maintenance Route - kept for manual access if needed, or fallback */}
