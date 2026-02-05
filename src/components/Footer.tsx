@@ -4,33 +4,33 @@ import { Link } from 'react-router-dom';
 const Footer: React.FC = () => {
     return (
         <footer className="bg-gray-900 text-gray-300 font-sans">
-            {/* Newsletter / CTA Strip */}
-            {/* 
             <div className="bg-white border-t border-gray-100 py-16 relative overflow-hidden">
                 <div className="container-custom relative z-10">
-                    <div className="bg-primary rounded-3xl p-10 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
-                        
+                    <div className="bg-primary rounded-[2.5rem] p-10 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
+
+                        {/* Decorative Background Elements */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
-                        <div className="text-center lg:text-left z-10">
-                            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2">Pronto para começar?</h2>
-                            <p className="text-blue-100 text-lg">Matricule-se hoje e transforme o seu futuro profissional.</p>
+                        <div className="text-center lg:text-left z-10 max-w-xl">
+                            <h2 className="text-3xl md:text-5xl font-black text-white mb-4 leading-tight">Comece sua jornada <span className="text-secondary">hoje mesmo!</span></h2>
+                            <p className="text-blue-100 text-lg md:text-xl font-medium opacity-90">
+                                Transforme sua carreira com o ensino técnico de maior tradição do Sul Fluminense.
+                            </p>
                         </div>
-                        <div className="z-10 flex flex-col sm:flex-row gap-4">
-                            <Link to="/matricula" className="btn-secondary bg-secondary text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-white hover:text-secondary transition-colors inline-block text-center">
-                                Inscreva-se Agora
+                        <div className="z-10 flex flex-col sm:flex-row gap-5">
+                            <Link to="/matricula" className="btn-secondary bg-secondary text-white px-10 py-5 rounded-2xl font-black shadow-xl shadow-secondary/30 hover:shadow-secondary/50 hover:-translate-y-1 transition-all inline-block text-center text-lg">
+                                <i className="fas fa-user-plus mr-2"></i> Inscrever-se Agora
                             </Link>
-                            <Link to="/contato" className="px-8 py-4 rounded-xl font-bold border-2 border-white/20 text-white hover:bg-white/10 transition-colors text-center inline-block">
-                                Fale com Consultor
+                            <Link to="/contato" className="px-10 py-5 rounded-2xl font-black border-2 border-white/30 text-white hover:bg-white hover:text-primary transition-all text-center inline-block text-lg backdrop-blur-sm">
+                                <i className="fas fa-comment-dots mr-2"></i> Tirar Dúvidas
                             </Link>
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="absolute top-0 left-0 w-full h-1/2 bg-gray-50 -z-0"></div>
             </div>
-            */}
 
             {/* Main Footer Content */}
             <div className="bg-gray-900 pt-20 pb-12 border-t border-gray-800">

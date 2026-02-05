@@ -710,14 +710,13 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
   {
     titulo: "Novo Ensino Médio - Itinerários",
     slug: "novo-ensino-medio-itinerarios",
-    sobre: "Protagonismo e escolha. No Novo Ensino Médio do ITEC, o aluno escolhe trilhas de aprofundamento (Itinerários Formativos) conectadas com seus interesses e carreira futura, integrando o currículo regular com a prática profissional.",
+    sobre: "Protagonismo e escolha. No Novo Ensino Médio do ITEC, o aluno escolhe trilhas de aprofundamento (Itinerários Formativos) conectadas com seus interesses e carreira futura, focando em competências para o mundo moderno.",
     area: "Tecnologia e Inovação • Saúde e Bem-estar • Empreendedorismo e Gestão • Humanidades e Sociedade",
     modulos: `
         Projetos Integradores
         ;Eletivas Diversificadas
         ;Certificações Intermediárias
         ;Mentoria de Carreira
-        ;Conexão com Cursos Técnicos
         `,
     cargahoraria: "Manhã / Tarde",
     tempo: "3 Anos",

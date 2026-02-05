@@ -89,6 +89,8 @@ const Enrollment: React.FC = () => {
                                                 value={formData.phone}
                                                 onChange={handleChange}
                                                 required
+                                                pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}"
+                                                title="Formato esperado: (24) 99999-9999"
                                                 className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all font-medium text-gray-900 placeholder-gray-400"
                                                 placeholder="(00) 00000-0000"
                                             />

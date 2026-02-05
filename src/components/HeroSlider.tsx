@@ -54,9 +54,9 @@ const HeroSlider: React.FC = () => {
             image: '/img/home/banner5.png',
             mobileColor: 'bg-gradient-to-br from-indigo-900 to-gray-900',
             link: '/matricula',
-            title: 'MÉDIO + TÉCNICO',
-            subtitle: 'Saia da escola já com uma profissão. O caminho mais rápido para o sucesso.',
-            buttonText: 'Quero Saber Mais',
+            title: 'ENSINO MÉDIO',
+            subtitle: 'Preparação sólida para o ENEM e vestibulares. O seu sucesso começa aqui.',
+            buttonText: 'Saiba Mais',
             showContent: true
         },
         {
@@ -84,7 +84,7 @@ const HeroSlider: React.FC = () => {
             link: '/matricula',
             title: '',
             subtitle: '',
-            buttonText: 'Ver Resultado',
+            buttonText: 'Saber Mais',
             showContent: false
         },
     ];

@@ -42,6 +42,19 @@ const CourseDetails: React.FC = () => {
             <Helmet>
                 <title>{course.titulo} | ITEC Ensino</title>
                 <meta name="description" content={`Saiba tudo sobre o curso de ${course.titulo}. ${course.sobre.substring(0, 150)}...`} />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Course",
+                        "name": course.titulo,
+                        "description": course.sobre,
+                        "provider": {
+                            "@type": "EducationalOrganization",
+                            "name": "ITEC Ensino",
+                            "sameAs": "https://www.itecensino.com.br"
+                        }
+                    })}
+                </script>
             </Helmet>
 
             {/* Hero / Header */}

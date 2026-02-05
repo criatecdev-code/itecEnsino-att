@@ -112,6 +112,8 @@ const ContactArea: React.FC = () => {
                                             className={inputClasses()}
                                             onChange={handleChange}
                                             required
+                                            pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}"
+                                            title="Formato esperado: (24) 99999-9999"
                                         />
                                     </div>
                                     <div>

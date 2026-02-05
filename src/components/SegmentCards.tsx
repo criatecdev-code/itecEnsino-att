@@ -8,7 +8,7 @@ const SegmentCards: React.FC = () => {
             subtitle: "Fundamental e Médio",
             icon: "fa-school",
             color: "text-secondary",
-            link: "/cursos/regular"
+            link: "/cursos/fundamental"
         },
         {
             title: "Cursos Técnicos",

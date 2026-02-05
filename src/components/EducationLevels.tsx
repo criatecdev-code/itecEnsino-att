@@ -34,7 +34,7 @@ const EducationLevels: React.FC = () => {
                     "Robótica e Tecnologia",
                     "Projeto de Vida e Carreira"
                 ]}
-                link="/cursos/regular"
+                link="/cursos/fundamental"
                 linkText="Conheça o Ensino Regular"
                 isReversed={true}
                 colorClass="text-secondary"

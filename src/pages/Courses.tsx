@@ -5,30 +5,33 @@ import { courses } from '../data/courses';
 
 const Courses: React.FC = () => {
     const { category } = useParams<{ category: string }>();
+    const [searchTerm, setSearchTerm] = React.useState('');
 
     const filteredCourses = useMemo(() => {
-        if (!category) return courses;
+        let result = courses;
 
-        const normalizedCategory = category.toLowerCase();
+        if (category) {
+            const normalizedCategory = category.toLowerCase();
+            result = result.filter(course => {
+                const courseCat = course.categoria.toLowerCase();
+                if (normalizedCategory === 'tecnico') return courseCat.includes('técnico') || courseCat.includes('tecnico');
+                if (normalizedCategory === 'profissionalizante') return courseCat.includes('profissionalizante');
+                if (normalizedCategory === 'fundamental') return courseCat.includes('fundamental');
+                if (normalizedCategory === 'medio' || normalizedCategory === 'médio') return courseCat.includes('médio') || courseCat.includes('medio');
+                return true;
+            });
+        }
 
-        return courses.filter(course => {
-            const courseCat = course.categoria.toLowerCase();
+        if (searchTerm) {
+            const term = searchTerm.toLowerCase();
+            result = result.filter(course =>
+                course.titulo.toLowerCase().includes(term) ||
+                course.sobre.toLowerCase().includes(term)
+            );
+        }
 
-            if (normalizedCategory === 'tecnico') {
-                return courseCat.includes('técnico') || courseCat.includes('tecnico');
-            }
-            if (normalizedCategory === 'profissionalizante') {
-                return courseCat.includes('profissionalizante');
-            }
-            if (normalizedCategory === 'fundamental') {
-                return courseCat.includes('fundamental');
-            }
-            if (normalizedCategory === 'medio' || normalizedCategory === 'médio') {
-                return courseCat.includes('médio') || courseCat.includes('medio');
-            }
-            return true;
-        });
-    }, [category]);
+        return result;
+    }, [category, searchTerm]);
 
     const pageTitle = useMemo(() => {
         if (category === 'tecnico') return 'Cursos Técnicos';
@@ -58,8 +61,38 @@ const Courses: React.FC = () => {
                 </div>
             </div>
 
-            <section className="py-16">
+            <section className="py-12">
                 <div className="container-custom">
+
+                    {/* Search and Filter Info */}
+                    <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+                        <div>
+                            <p className="text-gray-500 font-medium">
+                                Mostrando <span className="text-primary font-bold">{filteredCourses.length}</span> {filteredCourses.length === 1 ? 'curso' : 'cursos'}
+                                {searchTerm && <span> para "<span className="text-gray-900 font-bold">{searchTerm}</span>"</span>}
+                            </p>
+                        </div>
+
+                        <div className="relative w-full md:w-96 group">
+                            <i className="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors"></i>
+                            <input
+                                type="text"
+                                placeholder="Buscar curso por nome ou área..."
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                                className="w-full pl-12 pr-10 py-4 bg-white border border-gray-200 rounded-2xl shadow-sm focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all text-gray-900 placeholder:text-gray-400"
+                            />
+                            {searchTerm && (
+                                <button
+                                    onClick={() => setSearchTerm('')}
+                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                                >
+                                    <i className="fas fa-times-circle"></i>
+                                </button>
+                            )}
+                        </div>
+                    </div>
+
                     {filteredCourses.length > 0 ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {filteredCourses.map((course, index) => (

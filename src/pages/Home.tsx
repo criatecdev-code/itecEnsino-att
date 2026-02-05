@@ -3,13 +3,15 @@ import { Helmet } from 'react-helmet-async';
 import HeroSlider from '../components/HeroSlider';
 import FunFactorsArea from '../components/FunFactorsArea';
 import EducationLevels from '../components/EducationLevels';
-import EnrollmentCTA from '../components/EnrollmentCTA';
 import GamificationArea from '../components/GamificationArea';
 import AboutArea from '../components/AboutArea';
 import AboutAreaTwo from '../components/AboutAreaTwo';
-import TestimonialsArea from '../components/TestimonialsArea';
 import ContactArea from '../components/ContactArea';
 import SegmentCards from '../components/SegmentCards';
+
+const TestimonialsArea = React.lazy(() => import('../components/TestimonialsArea'));
+const FAQArea = React.lazy(() => import('../components/FAQArea'));
+const EnrollmentCTA = React.lazy(() => import('../components/EnrollmentCTA'));
 
 const Home: React.FC = () => {
     return (
@@ -27,7 +29,7 @@ const Home: React.FC = () => {
             <AboutAreaTwo />
             <FunFactorsArea />
             <TestimonialsArea />
-            {/* <BlogArea /> Optional, keep if used */}
+            <FAQArea />
             <ContactArea />
         </>
     );
