@@ -126,7 +126,7 @@ const About: React.FC = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {/* Card 1 */}
-                        <div className="bg-white p-10 rounded-[2rem] shadow-lg hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
+                        <div id="corpo-docente" className="bg-white p-10 rounded-[2rem] shadow-lg hover:shadow-2xl transition-all duration-300 group relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -mr-8 -mt-8 transition-all group-hover:bg-primary/10"></div>
                             <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-primary text-4xl mb-8 group-hover:scale-110 transition-transform duration-300">
                                 <i className="fas fa-chalkboard-teacher"></i>
@@ -138,7 +138,7 @@ const About: React.FC = () => {
                         </div>
 
                         {/* Card 2 */}
-                        <div className="bg-white p-10 rounded-[2rem] shadow-lg hover:shadow-2xl transition-all duration-300 group relative overflow-hidden border-2 border-secondary/10">
+                        <div id="infraestrutura" className="bg-white p-10 rounded-[2rem] shadow-lg hover:shadow-2xl transition-all duration-300 group relative overflow-hidden border-2 border-secondary/10">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-[100px] -mr-8 -mt-8 transition-all group-hover:bg-secondary/10"></div>
                             <div className="w-20 h-20 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary text-4xl mb-8 group-hover:scale-110 transition-transform duration-300">
                                 <i className="fas fa-laptop-code"></i>

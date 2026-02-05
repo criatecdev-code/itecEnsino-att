@@ -152,6 +152,34 @@ const ContactArea: React.FC = () => {
                     </div>
 
                 </div>
+
+                {/* Google Maps Embed */}
+                <div className="mt-20 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white shadow-gray-200/50 relative h-[450px] group">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.475459392!2d-44.1102!3d-22.5185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ea29f8f4a!2sRua%20Sessenta%2C%2060%20-%20Vila%20Santa%20Cecília%2C%20Volta%20Redonda%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Localização ITEC Volta Redonda"
+                        className="filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
+                    ></iframe>
+
+                    {/* Floating Info Badge on Map */}
+                    <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl hidden md:block border border-white/50 animate-fade-in-up">
+                        <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+                                <i className="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p className="font-bold text-gray-900 text-sm">Nossa Unidade Sede</p>
+                                <p className="text-xs text-gray-500">Vila Santa Cecília, Volta Redonda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -215,7 +215,7 @@ const Enrollment: React.FC = () => {
                                 <div className="space-y-4 text-gray-600">
                                     <p className="flex items-center gap-3">
                                         <i className="fas fa-phone text-primary"></i>
-                                        <span>(24) 3333-0000</span>
+                                        <span>(24) 3512-0102</span>
                                     </p>
                                     <p className="flex items-center gap-3">
                                         <i className="fab fa-whatsapp text-primary"></i>
@@ -223,7 +223,7 @@ const Enrollment: React.FC = () => {
                                     </p>
                                     <p className="flex items-center gap-3">
                                         <i className="fas fa-envelope text-primary"></i>
-                                        <span>contato@itecesino.com.br</span>
+                                        <span>contato@itecensino.com.br</span>
                                     </p>
                                 </div>
                             </div>

@@ -129,23 +129,18 @@ const Header: React.FC = () => {
                 <div className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${isMobileMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="bg-white border-t border-gray-100 shadow-xl pb-6">
                         <nav className="flex flex-col p-6 space-y-4">
-                            {['Início', 'Sobre Nós', 'Cursos', 'Área do Aluno', 'Contato'].map((item) => (
-                                <a
-                                    key={item}
-                                    href="#"
-                                    className="text-gray-700 font-medium text-lg border-b border-gray-50 pb-2 hover:text-primary hover:pl-2 transition-all"
-                                >
-                                    {item}
-                                </a>
-                            ))}
-                            <a href="/matricula" className="btn-primary text-center w-full mt-4">
+                            <Link to="/" onClick={toggleMobileMenu} className="text-gray-700 font-medium text-lg border-b border-gray-50 pb-2 hover:text-primary hover:pl-2 transition-all">Início</Link>
+                            <Link to="/sobrenos" onClick={toggleMobileMenu} className="text-gray-700 font-medium text-lg border-b border-gray-50 pb-2 hover:text-primary hover:pl-2 transition-all">Sobre Nós</Link>
+                            <Link to="/cursos/tecnico" onClick={toggleMobileMenu} className="text-gray-700 font-medium text-lg border-b border-gray-50 pb-2 hover:text-primary hover:pl-2 transition-all">Cursos</Link>
+                            <Link to="/contato" onClick={toggleMobileMenu} className="text-gray-700 font-medium text-lg border-b border-gray-50 pb-2 hover:text-primary hover:pl-2 transition-all">Contato</Link>
+                            <Link to="/matricula" onClick={toggleMobileMenu} className="btn-primary text-center w-full mt-4">
                                 Quero me Matricular
-                            </a>
+                            </Link>
                         </nav>
 
                         <div className="px-6 pt-2 flex justify-center space-x-6 text-gray-400">
-                            <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f text-xl hover:text-primary"></i></a>
-                            <a href="#" aria-label="Instagram"><i className="fab fa-instagram text-xl hover:text-primary"></i></a>
+                            <a href="https://www.facebook.com/itec.ensino" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="fab fa-facebook-f text-xl hover:text-primary"></i></a>
+                            <a href="https://www.instagram.com/itec.ensino/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fab fa-instagram text-xl hover:text-primary"></i></a>
                             <a href="https://wa.me/5524974003287" target="_blank" aria-label="WhatsApp"><i className="fab fa-whatsapp text-xl hover:text-primary"></i></a>
                         </div>
                     </div>

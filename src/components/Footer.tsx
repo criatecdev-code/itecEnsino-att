@@ -49,14 +49,8 @@ const Footer: React.FC = () => {
                                 <a href="https://www.facebook.com/itec.ensino" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="Facebook">
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="https://www.instagram.com/itecensino" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="Instagram">
+                                <a href="https://www.instagram.com/itec.ensino/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="Instagram">
                                     <i className="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/company/itec-ensino" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="LinkedIn">
-                                    <i className="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://www.youtube.com/@itecensino" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-all duration-300" aria-label="YouTube">
-                                    <i className="fab fa-youtube"></i>
                                 </a>
                             </div>
                         </div>
@@ -76,18 +70,13 @@ const Footer: React.FC = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/sobrenos" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
+                                    <Link to="/sobrenos#corpo-docente" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
                                         <i className="fas fa-angle-right text-xs opacity-50"></i> Corpo Docente
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/sobrenos" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
+                                    <Link to="/sobrenos#infraestrutura" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
                                         <i className="fas fa-angle-right text-xs opacity-50"></i> Infraestrutura
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/blog" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
-                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Blog
                                     </Link>
                                 </li>
                             </ul>
@@ -98,18 +87,18 @@ const Footer: React.FC = () => {
                             <h4 className="text-white font-bold text-lg mb-6 border-l-4 border-secondary pl-3">Cursos em Alta</h4>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link to="/cursos/tecnico" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
+                                    <Link to="/curso/tecnico-em-enfermagem" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
                                         <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Enfermagem
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/cursos/tecnico" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
+                                    <Link to="/curso/tecnico-em-radiologia" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
                                         <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Radiologia
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/cursos/tecnico" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
-                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Logística
+                                    <Link to="/curso/tecnico-em-analises-clinicas" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Análises Clínicas
                                     </Link>
                                 </li>
                                 <li>

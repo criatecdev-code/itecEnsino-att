@@ -28,6 +28,15 @@ const CourseDetails: React.FC = () => {
 
     const modulesList = course.modulos.split(';').map(m => m.trim()).filter(m => m.length > 0);
 
+    const getCategoryUrl = (category: string) => {
+        const cat = category.toLowerCase();
+        if (cat.includes('técnico') || cat.includes('tecnico')) return '/cursos/tecnico';
+        if (cat.includes('profissionalizante')) return '/cursos/profissionalizante';
+        if (cat.includes('fundamental')) return '/cursos/fundamental';
+        if (cat.includes('médio') || cat.includes('medio')) return '/cursos/medio';
+        return '/cursos/profissionalizante';
+    };
+
     return (
         <div className="bg-gray-50 min-h-screen">
             <Helmet>
@@ -39,7 +48,11 @@ const CourseDetails: React.FC = () => {
             <div className="relative py-20 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
                 {/* Background Image Overlay if available, else gradient */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 mix-blend-multiply"></div>
+                <div
+                    className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-multiply"
+                    style={{ backgroundImage: `url(${course.img})` }}
+                ></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/60 to-secondary/60 mix-blend-multiply"></div>
 
                 <div className="container-custom relative z-10 text-white">
                     <div className="flex flex-col md:flex-row items-end gap-6">
@@ -51,7 +64,7 @@ const CourseDetails: React.FC = () => {
                             <div className="flex items-center gap-2 text-sm text-gray-200">
                                 <Link to="/" className="hover:text-white transition-colors">Início</Link>
                                 <span>/</span>
-                                <Link to="/cursos/profissionalizante" className="hover:text-white transition-colors">Cursos</Link>
+                                <Link to={getCategoryUrl(course.categoria)} className="hover:text-white transition-colors">Cursos</Link>
                                 <span>/</span>
                                 <span className="text-white font-medium">{course.titulo}</span>
                             </div>
