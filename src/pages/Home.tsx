@@ -9,6 +9,7 @@ import AboutArea from '../components/AboutArea';
 import AboutAreaTwo from '../components/AboutAreaTwo';
 import TestimonialsArea from '../components/TestimonialsArea';
 import ContactArea from '../components/ContactArea';
+import SegmentCards from '../components/SegmentCards';
 
 const Home: React.FC = () => {
     return (
@@ -18,12 +19,13 @@ const Home: React.FC = () => {
                 <meta name="description" content="O ITEC Ensino oferece cursos técnicos (Enfermagem, Radiologia) e profissionalizantes com alta empregabilidade. Transforme seu futuro com qualidade e inovação." />
             </Helmet>
             <HeroSlider />
-            <FunFactorsArea />
+            <SegmentCards />
             <EducationLevels />
             <EnrollmentCTA />
             <GamificationArea />
             <AboutArea />
             <AboutAreaTwo />
+            <FunFactorsArea />
             <TestimonialsArea />
             {/* <BlogArea /> Optional, keep if used */}
             <ContactArea />

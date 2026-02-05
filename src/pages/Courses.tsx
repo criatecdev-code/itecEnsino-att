@@ -49,11 +49,11 @@ const Courses: React.FC = () => {
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/60 to-secondary/60 mix-blend-overlay"></div>
                 <div className="container-custom relative z-10 text-center text-white">
-                    <h1 className="text-4xl md:text-5xl font-black mb-3 animate-fade-in-up text-white">{pageTitle}</h1>
-                    <div className="flex justify-center items-center gap-2 text-xs uppercase tracking-widest text-gray-300 animate-fade-in-up delay-100">
+                    <h1 className="text-4xl md:text-5xl font-black mb-3 animate-fade-in-up text-white drop-shadow-sm">{pageTitle}</h1>
+                    <div className="flex justify-center items-center gap-2 text-xs uppercase tracking-widest text-white/70 animate-fade-in-up delay-100">
                         <a href="/" className="hover:text-white transition-colors">Início</a>
                         <span className="text-secondary">•</span>
-                        <span className="text-white">Cursos</span>
+                        <span className="text-white font-medium">Cursos</span>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ const Courses: React.FC = () => {
                                                 <span className="text-gray-900 font-bold">{course.cargahoraria || '-'}</span>
                                             </div>
                                             <Link
-                                                to="#"
+                                                to={`/curso/${course.slug}`}
                                                 className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300"
                                             >
                                                 <i className="fas fa-arrow-right"></i>
