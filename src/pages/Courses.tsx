@@ -54,7 +54,7 @@ const Courses: React.FC = () => {
                 <div className="container-custom relative z-10 text-center text-white">
                     <h1 className="text-4xl md:text-5xl font-black mb-3 animate-fade-in-up text-white drop-shadow-sm">{pageTitle}</h1>
                     <div className="flex justify-center items-center gap-2 text-xs uppercase tracking-widest text-white/70 animate-fade-in-up delay-100">
-                        <a href="/" className="hover:text-white transition-colors">Início</a>
+                        <Link to="/" className="hover:text-white transition-colors">Início</Link>
                         <span className="text-secondary">•</span>
                         <span className="text-white font-medium">Cursos</span>
                     </div>

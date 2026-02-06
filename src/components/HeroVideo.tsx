@@ -13,6 +13,8 @@ const HeroVideo: React.FC = () => {
                 playsInline
                 preload="auto"
                 style={{ objectFit: 'cover' }}
+                // @ts-ignore - fetchPriority is supported but might not be in the current types
+                fetchPriority="high"
             >
                 <source src={videoTeste} type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.

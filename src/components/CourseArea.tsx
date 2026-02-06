@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { courses } from '../data/courses';
 
 const CourseArea: React.FC = () => {
@@ -56,21 +57,21 @@ const CourseArea: React.FC = () => {
                                     {course.titulo}
                                 </h3>
 
-                                <a
-                                    href="/matricula"
+                                <Link
+                                    to={`/curso/${course.slug}`}
                                     className="w-full btn-primary text-center group-hover:bg-blue-800 flex items-center justify-center gap-2"
                                 >
                                     Ver Detalhes <i className="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     ))}
                 </div>
 
                 <div className="text-center mt-16">
-                    <a href="/cursos" className="inline-block border-2 border-primary text-primary font-bold py-3 px-10 rounded-full hover:bg-primary hover:text-white transition-all duration-300 uppercase tracking-widest text-sm">
+                    <Link to="/cursos" className="inline-block border-2 border-primary text-primary font-bold py-3 px-10 rounded-full hover:bg-primary hover:text-white transition-all duration-300 uppercase tracking-widest text-sm">
                         Ver Todos os Cursos
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

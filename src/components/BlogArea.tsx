@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { posts } from '../data/posts';
 
 const BlogArea: React.FC = () => {
@@ -12,14 +13,14 @@ const BlogArea: React.FC = () => {
                             Fique por dentro das <br /><span className="text-primary">Novidades</span>
                         </h3>
                     </div>
-                    <a href="/blog" className="hidden md:inline-flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors uppercase tracking-wider text-sm">
+                    <Link to="/blog" className="hidden md:inline-flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors uppercase tracking-wider text-sm">
                         Ver todas as notícias <i className="fas fa-arrow-right"></i>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {posts.map((post, index) => (
-                        <div key={index} className="group cursor-pointer">
+                        <Link to="/blog" key={index} className="group cursor-pointer">
                             <div className="relative overflow-hidden rounded-2xl shadow-lg mb-6 h-60">
                                 <img
                                     src={post.imagem}
@@ -37,18 +38,18 @@ const BlogArea: React.FC = () => {
                                     <i className="far fa-calendar-alt"></i> <span>20 Mar, 2026</span>
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-primary transition-colors leading-tight line-clamp-2">
-                                    <a href="#">{post.titulo}</a>
+                                    {post.titulo}
                                 </h3>
-                                <a href="#" className="text-secondary font-bold text-sm tracking-wide group-hover:underline decoration-2 underline-offset-4">
+                                <span className="text-secondary font-bold text-sm tracking-wide group-hover:underline decoration-2 underline-offset-4">
                                     Ler Mais
-                                </a>
+                                </span>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
                 <div className="text-center mt-12 md:hidden">
-                    <a href="/blog" className="btn-primary w-full">Ver todas as notícias</a>
+                    <Link to="/blog" className="btn-primary w-full inline-block">Ver todas as notícias</Link>
                 </div>
             </div>
         </div>

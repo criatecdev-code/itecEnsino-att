@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
     return (
@@ -86,10 +87,10 @@ const About: React.FC = () => {
                                 </p>
                             </div>
 
-                            <a href="/matricula" className="inline-flex items-center gap-3 bg-primary hover:bg-secondary text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-lg hover:shadow-primary/30 group">
+                            <Link to="/matricula" className="inline-flex items-center gap-3 bg-primary hover:bg-secondary text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-lg hover:shadow-primary/30 group">
                                 Venha fazer parte dessa história
                                 <i className="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="order-1 lg:order-2 relative group perspective-1000">

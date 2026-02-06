@@ -8,14 +8,19 @@ const ContactArea: React.FC = () => {
         message: ''
     });
 
+    const [status, setStatus] = useState<{ type: 'success' | 'error' | null, message: string }>({ type: null, message: '' });
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        alert("Formulário enviado! (Simulação)");
-        // Implement actual submission logic here
+        setStatus({ type: 'success', message: 'Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.' });
+        setFormData({ name: '', phone: '', email: '', message: '' });
+
+        // Reset status after 5 seconds
+        setTimeout(() => setStatus({ type: null, message: '' }), 5000);
     };
 
     // Light theme input classes matching Enrollment page
@@ -87,6 +92,13 @@ const ContactArea: React.FC = () => {
                                 <h3 className="text-2xl font-bold text-gray-900">Envie uma mensagem</h3>
                                 <p className="text-gray-500 mt-2">Preencha o formulário abaixo e responderemos o mais breve possível.</p>
                             </div>
+
+                            {status.type && (
+                                <div className={`mb-6 p-4 rounded-xl flex items-center gap-3 animate-fade-in-up ${status.type === 'success' ? 'bg-green-50 text-green-700 border border-green-100' : 'bg-red-50 text-red-700 border border-red-100'}`}>
+                                    <i className={`fas ${status.type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}`}></i>
+                                    <p className="font-bold text-sm">{status.message}</p>
+                                </div>
+                            )}
 
                             <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
                                 <div>
