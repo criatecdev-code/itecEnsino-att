@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import videoTeste from '../assets/videoTeste.mp4';
+import videoTeste from '../assets/videoTeste.webm';
 
 const HeroVideo: React.FC = () => {
     return (
@@ -16,7 +16,7 @@ const HeroVideo: React.FC = () => {
                 // @ts-ignore - fetchPriority is supported but might not be in the current types
                 fetchPriority="high"
             >
-                <source src={videoTeste} type="video/mp4" />
+                <source src={videoTeste} type="video/webm" />
                 Seu navegador não suporta o elemento de vídeo.
             </video>
 
