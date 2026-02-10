@@ -1,18 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const location = useLocation();
+    const headerRef = useRef<HTMLHeadElement>(null);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    const toggleDropdown = (name: string) => {
+        setOpenDropdown(openDropdown === name ? null : name);
+    };
+
+    // Close dropdowns when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+                setOpenDropdown(null);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    // Close dropdowns on route change
+    useEffect(() => {
+        setOpenDropdown(null);
+        setIsMobileMenuOpen(false);
+    }, [location.pathname]);
+
     return (
         <>
             {/* Main Navigation - Floating Header */}
-            <header className="fixed w-full z-50 top-6 px-4 md:px-10 pointer-events-none">
+            <header ref={headerRef} className="fixed w-full z-50 top-6 px-4 md:px-10 pointer-events-none">
                 <div className="container-custom max-w-7xl mx-auto flex justify-between items-center pointer-events-none">
 
                     {/* Logo - On the Left */}
@@ -37,12 +63,15 @@ const Header: React.FC = () => {
                         </Link>
 
                         {/* Dropdown for Cursos */}
-                        <div className="relative group">
-                            <button className={`px-5 py-2 rounded-full text-sm font-extrabold transition-all duration-300 flex items-center gap-1 ${location.pathname.includes('/cursos') ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}>
-                                Cursos <i className="fas fa-chevron-down text-[10px] ml-0.5 transition-transform group-hover:rotate-180"></i>
+                        <div className="relative">
+                            <button
+                                onClick={() => toggleDropdown('cursos')}
+                                className={`px-5 py-2 rounded-full text-sm font-extrabold transition-all duration-300 flex items-center gap-1 ${location.pathname.includes('/cursos') || openDropdown === 'cursos' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+                            >
+                                Cursos <i className={`fas fa-chevron-down text-[10px] ml-0.5 transition-transform ${openDropdown === 'cursos' ? 'rotate-180' : ''}`}></i>
                             </button>
 
-                            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-white shadow-2xl rounded-2xl overflow-hidden transform opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50 border border-gray-100">
+                            <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-white shadow-2xl rounded-2xl overflow-hidden transform transition-all duration-300 z-50 border border-gray-100 ${openDropdown === 'cursos' ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
                                 <Link to="/cursos/tecnico" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Técnico</span>
                                     <span className="block text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Formação completa</span>
@@ -71,12 +100,15 @@ const Header: React.FC = () => {
                     {/* Action Buttons - On the Right */}
                     <div className="flex items-center gap-4 pointer-events-auto">
                         {/* Dropdown for Área do Aluno */}
-                        <div className="relative group hidden sm:block">
-                            <button className="bg-secondary px-6 py-2.5 rounded-full text-sm font-extrabold text-white shadow-xl shadow-secondary/20 hover:shadow-secondary/40 hover:-translate-y-0.5 transition-all flex items-center gap-2">
-                                Área do Aluno <i className="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+                        <div className="relative hidden sm:block">
+                            <button
+                                onClick={() => toggleDropdown('aluno')}
+                                className={`bg-secondary px-6 py-2.5 rounded-full text-sm font-extrabold text-white shadow-xl shadow-secondary/20 hover:shadow-secondary/40 hover:-translate-y-0.5 transition-all flex items-center gap-2 ${openDropdown === 'aluno' ? 'brightness-110' : ''}`}
+                            >
+                                Área do Aluno <i className={`fas fa-chevron-down text-[10px] transition-transform ${openDropdown === 'aluno' ? 'rotate-180' : ''}`}></i>
                             </button>
 
-                            <div className="absolute top-full right-0 mt-4 w-72 bg-white shadow-2xl rounded-2xl overflow-hidden transform opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50 border border-gray-100">
+                            <div className={`absolute top-full right-0 mt-4 w-72 bg-white shadow-2xl rounded-2xl overflow-hidden transform transition-all duration-300 z-50 border border-gray-100 ${openDropdown === 'aluno' ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
                                 <a href="https://www.itecqualificacao.com.br/campus/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Cursos Profissionalizantes</span>
                                     <span className="block text-xs text-gray-500 mt-0.5">Acessar Portal do Aluno</span>

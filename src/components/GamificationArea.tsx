@@ -58,6 +58,7 @@ const GamificationArea: React.FC = () => {
                                     src="/img/home/img1.png"
                                     alt="Gamificação na Educação"
                                     className="w-full h-auto object-cover opacity-80 hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
 

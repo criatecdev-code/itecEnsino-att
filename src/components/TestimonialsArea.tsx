@@ -61,7 +61,7 @@ const TestimonialsArea: React.FC = () => {
                                     <div className="relative z-10">
                                         <div className="mb-8">
                                             <div className="w-28 h-28 rounded-full mx-auto p-1 bg-gradient-to-br from-primary to-secondary shadow-lg">
-                                                <img src={item.image} alt={item.author} className="w-full h-full rounded-full object-cover border-4 border-white" />
+                                                <img src={item.image} alt={item.author} className="w-full h-full rounded-full object-cover border-4 border-white" loading="lazy" />
                                             </div>
                                         </div>
 

@@ -26,6 +26,7 @@ const BlogArea: React.FC = () => {
                                     src={post.imagem}
                                     alt={post.titulo}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                    loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
                                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wide text-primary shadow-sm">

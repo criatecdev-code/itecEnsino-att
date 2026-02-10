@@ -81,58 +81,77 @@ const ScrollToTop = () => {
 const LoadingFallback = () => (
   <div className="flex items-center justify-center min-h-screen bg-white">
     <div className="flex flex-col items-center">
-      <div className="relative w-24 h-24 mb-6">
-        <div className="absolute inset-0 border-4 border-primary/10 rounded-full"></div>
-        <div className="absolute inset-0 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <i className="fas fa-graduation-cap text-primary text-3xl animate-pulse"></i>
-        </div>
+      <div className="relative mb-8">
+        <div className="absolute -inset-4 border-2 border-primary/5 rounded-full animate-[ping_3s_infinite]"></div>
+        <img
+          src={`${import.meta.env.BASE_URL}img/logo/logo.png`}
+          alt="ITEC Ensino"
+          className="h-16 md:h-20 w-auto animate-pulse"
+        />
       </div>
-      <h2 className="text-xl font-black text-gray-900 tracking-tight">ITEC ENSINO</h2>
-      <div className="flex gap-1 mt-2">
-        <div className="w-2 h-2 bg-primary rounded-full animate-bounce [animation-delay:-0.3s]"></div>
-        <div className="w-2 h-2 bg-secondary rounded-full animate-bounce [animation-delay:-0.15s]"></div>
-        <div className="w-2 h-2 bg-primary rounded-full animate-bounce"></div>
+      <div className="flex gap-1.5">
+        <div className="w-2.5 h-2.5 bg-primary rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+        <div className="w-2.5 h-2.5 bg-secondary rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+        <div className="w-2.5 h-2.5 bg-primary rounded-full animate-bounce"></div>
       </div>
     </div>
   </div>
 );
 
+import { HelmetProvider } from 'react-helmet-async';
+import { useState } from 'react';
+
 function App() {
+  const [initialLoading, setInitialLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setInitialLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (initialLoading) {
+    return <LoadingFallback />;
+  }
+
   return (
     <ErrorBoundary>
-      <Router>
-        <ScrollToTop />
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-grow">
-            <Suspense fallback={<LoadingFallback />}>
-              <Routes>
-                {/* Maintenance Route - kept for manual access if needed, or fallback */}
-                <Route path="/maintenance" element={<Maintenance />} />
+      <HelmetProvider>
+        <Router>
+          <ScrollToTop />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow">
+              <Suspense fallback={<LoadingFallback />}>
+                <Routes>
+                  {/* Maintenance Route - kept for manual access if needed, or fallback */}
+                  <Route path="/maintenance" element={<Maintenance />} />
 
-                {/* Standard Routes */}
-                <Route path="/" element={<Home />} />
-                <Route path="/sobrenos" element={<About />} />
-                <Route path="/cursos" element={<Courses />} />
-                <Route path="/cursos/:category" element={<Courses />} />
-                <Route path="/curso/:slug" element={<CourseDetails />} />
-                <Route path="/contato" element={<Contact />} />
-                <Route path="/matricula" element={<Enrollment />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/privacidade" element={<Privacy />} />
-                <Route path="/termos" element={<Terms />} />
-                <Route path="/dev" element={<DevPage />} />
+                  {/* Standard Routes */}
+                  <Route path="/" element={<Home />} />
+                  <Route path="/sobrenos" element={<About />} />
+                  <Route path="/cursos" element={<Courses />} />
+                  <Route path="/cursos/:category" element={<Courses />} />
+                  <Route path="/curso/:slug" element={<CourseDetails />} />
+                  <Route path="/contato" element={<Contact />} />
+                  <Route path="/matricula" element={<Enrollment />} />
+                  <Route path="/blog" element={<Blog />} />
+                  <Route path="/privacidade" element={<Privacy />} />
+                  <Route path="/termos" element={<Terms />} />
+                  <Route path="/dev" element={<DevPage />} />
 
-                {/* Redirect unknown routes to Home or 404/Maintenance */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </main>
-          <Footer />
-          <WhatsAppButton />
-        </div>
-      </Router>
+                  {/* Redirect unknown routes to Home or 404/Maintenance */}
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </Suspense>
+            </main>
+            <Footer />
+            <WhatsAppButton />
+          </div>
+        </Router>
+      </HelmetProvider>
     </ErrorBoundary>
   );
 }
