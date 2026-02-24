@@ -4,6 +4,7 @@ interface EducationLevelSectionProps {
     title: string;
     subtitle: string;
     description: string;
+    features?: string[];
     image: string;
     link: string;
     linkText: string;
@@ -16,6 +17,7 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
     title,
     subtitle,
     description,
+    features,
     image,
     link,
     linkText,
@@ -24,7 +26,7 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
     bgClass = 'bg-white'
 }) => {
     return (
-        <section className={`py-24 lg:py-32 ${bgClass} overflow-hidden relative group`}>
+        <section className={`pt-12 pb-24 lg:pt-16 lg:pb-32 ${bgClass} overflow-hidden relative group`}>
             {/* Background Decoration */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-[url('/img/pattern/map.png')] bg-no-repeat bg-right-top opacity-5 pointer-events-none"></div>
 
@@ -54,10 +56,21 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
                         <h2 className="text-3xl md:text-4xl lg:text-6xl font-black text-gray-900 mb-8 leading-[1] tracking-tight">
                             {title}
                         </h2>
-                        <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-12 max-w-xl font-medium opacity-90">
+                        <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 max-w-xl font-medium opacity-90">
                             {description}
                         </p>
 
+                        {/* Features List */}
+                        {features && features.length > 0 && (
+                            <div className="space-y-4 mb-12">
+                                {features.map((feature, index) => (
+                                    <div key={index} className="flex items-start gap-3">
+                                        <div className={`mt-1.5 w-2 h-2 rounded-full ${colorClass === 'text-secondary' ? 'bg-secondary' : 'bg-primary'} flex-shrink-0`}></div>
+                                        <span className="text-gray-700 font-bold text-lg leading-tight">{feature}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
 
                         <a
                             href={link}

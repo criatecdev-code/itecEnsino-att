@@ -17,7 +17,7 @@ const EducationLevels: React.FC = () => {
                 bgClass="bg-white"
             />
 
-            {/* Cursos Técnicos - Now SECOND */}
+            {/* Cursos Técnicos */}
             <EducationLevelSection
                 subtitle="Qualificação profissional"
                 title="Cursos técnicos"
@@ -30,7 +30,7 @@ const EducationLevels: React.FC = () => {
                 bgClass="bg-gray-50"
             />
 
-            {/* Cursos Profissionalizantes - Third */}
+            {/* Cursos Profissionalizantes */}
             <EducationLevelSection
                 subtitle="Cursos rápidos e dinâmicos"
                 title="Profissionalizantes"
