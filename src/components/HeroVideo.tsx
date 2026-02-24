@@ -3,7 +3,7 @@ import videoTeste from '../assets/videoTeste.webm';
 
 const HeroVideo: React.FC = () => {
     return (
-        <div className="relative w-full h-[85vh] md:h-screen overflow-hidden bg-gray-900 flex items-center justify-center">
+        <div className="relative w-full h-[85vh] md:h-screen overflow-hidden bg-white flex items-center justify-center">
             {/* Video Background */}
             <video
                 className="absolute w-full h-full object-cover min-w-full min-h-full"
@@ -28,12 +28,12 @@ const HeroVideo: React.FC = () => {
                 <div className="container-custom text-center px-4 max-w-4xl pt-28 md:pt-52">
                     <div className="space-y-6 md:space-y-8 animate-fade-in-up">
                         {/* High-Impact Headline */}
-                        <h1 className="text-3xl md:text-7xl font-black text-white leading-tight filter drop-shadow-2xl">
-                            Sua carreira de <span className="text-secondary">sucesso</span> começa no ITEC
+                        <h1 className="text-3xl md:text-6xl lg:text-7xl font-black text-white leading-tight filter drop-shadow-2xl">
+                            Transformando <span className="text-secondary">educação</span> em futuro
                         </h1>
 
                         {/* Persuasive Subtitle */}
-                        <p className="text-lg md:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed filter drop-shadow-lg">
+                        <p className="text-lg md:text-2xl text-white/90 font-medium max-w-4xl mx-auto leading-relaxed filter drop-shadow-lg">
                             Do ensino fundamental ao técnico: formação de excelência focada no mercado de trabalho e no seu futuro.
                         </p>
 
