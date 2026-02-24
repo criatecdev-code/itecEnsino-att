@@ -27,7 +27,7 @@ const AboutArea: React.FC = () => {
                                     <i className="fas fa-check-circle"></i>
                                 </div>
                                 <div>
-                                    <p className="font-bold text-gray-900 text-lg leading-tight">Certificado Válido</p>
+                                    <p className="font-bold text-gray-900 text-lg leading-tight">Certificado válido</p>
                                 </div>
                             </div>
                         </div>
@@ -35,9 +35,9 @@ const AboutArea: React.FC = () => {
 
                     {/* Content Column */}
                     <div className="w-full lg:w-1/2">
-                        <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-4 block flex items-center gap-2">
+                        <span className="text-secondary font-bold tracking-[0.2em] text-sm mb-4 block flex items-center gap-2">
                             <span className="w-12 h-[2px] bg-secondary"></span>
-                            Sobre Nós
+                            Sobre nós
                         </span>
                         <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] mb-8 tracking-tight">
                             A sua melhor escolha <br />
@@ -52,17 +52,17 @@ const AboutArea: React.FC = () => {
                                 trabalhamos a <span className="text-secondary font-bold">educação empreendedora</span>, possibilitando mais protagonismo e visão de futuro.
                             </p>
                             <p>
-                                No Ensino Técnico, somos comprometidos com a prática, preparando você para o
+                                No ensino técnico, somos comprometidos com a prática, preparando você para o
                                 mercado de trabalho com confiança e excelência.
                             </p>
                         </div>
 
                         <div className="pt-10 flex flex-wrap gap-4">
                             <a className="btn-primary" href="/sobrenos">
-                                Conheça Nossa História
+                                Conheça nossa história
                             </a>
                             <a className="btn-secondary !bg-white !text-secondary border-2 border-secondary hover:!bg-secondary hover:!text-white shadow-none hover:shadow-lg" href="/contato">
-                                Fale Conosco
+                                Fale conosco
                             </a>
                         </div>
                     </div>

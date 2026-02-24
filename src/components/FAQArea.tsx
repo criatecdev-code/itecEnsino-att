@@ -34,10 +34,10 @@ const FAQArea: React.FC = () => {
 
                     {/* Left Column: Title and info */}
                     <div className="w-full lg:w-1/3">
-                        <span className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-3 block">Dúvidas Frequentes</span>
+                        <span className="text-primary font-bold tracking-[0.2em] text-sm mb-3 block">Dúvidas frequentes</span>
                         <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
                             Perguntas <br />
-                            <span className="text-secondary">Comuns</span>
+                            <span className="text-secondary">comuns</span>
                         </h2>
                         <p className="text-gray-500 text-lg mb-8 leading-relaxed">
                             Ainda tem alguma dúvida? Separamos as perguntas mais frequentes para te ajudar. Se precisar de mais detalhes, fale conosco pelo WhatsApp!
@@ -48,7 +48,7 @@ const FAQArea: React.FC = () => {
                             rel="noopener noreferrer"
                             className="btn-primary inline-flex items-center gap-2"
                         >
-                            Falar com um Consultor
+                            Falar com um consultor
                             <i className="fab fa-whatsapp"></i>
                         </a>
                     </div>

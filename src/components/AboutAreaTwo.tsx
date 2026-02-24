@@ -16,15 +16,15 @@ const AboutAreaTwo: React.FC = () => {
 
                     {/* Content Column */}
                     <div className="w-full lg:w-1/2 space-y-8">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-secondary font-bold text-sm uppercase tracking-widest backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-secondary font-bold text-sm tracking-widest backdrop-blur-md">
                             <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                            Carreira & Sucesso
+                            Carreira & sucesso
                         </div>
 
                         <h3 className="text-5xl md:text-6xl font-black leading-tight text-white">
                             Dê o próximo passo <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-green-400">
-                                RUMO AO SUCESSO!
+                                Rumo ao sucesso!
                             </span>
                         </h3>
 
@@ -34,11 +34,11 @@ const AboutAreaTwo: React.FC = () => {
 
                         <div className="pt-4 flex flex-col sm:flex-row gap-4">
                             <Link to="/matricula" className="group btn-secondary px-8 py-4 text-lg shadow-xl shadow-green-900/20 flex items-center justify-center gap-3">
-                                <span>Quero me Matricular</span>
+                                <span>Quero me matricular</span>
                                 <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                             </Link>
                             <Link to="/cursos/tecnico" className="px-8 py-4 rounded-xl border border-white/20 hover:bg-white/5 hover:border-secondary/50 transition-all font-bold tracking-wide flex items-center justify-center gap-3">
-                                <i className="fas fa-search"></i> Ver Cursos
+                                <i className="fas fa-search"></i> Ver cursos
                             </Link>
                         </div>
                     </div>
@@ -49,22 +49,22 @@ const AboutAreaTwo: React.FC = () => {
 
                             <div className="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-secondary/50 transition-colors group">
                                 <div className="text-4xl font-black text-white mb-2 group-hover:text-secondary transition-colors">+5.000</div>
-                                <div className="text-sm text-gray-400 uppercase tracking-wider font-bold">Alunos Formados</div>
+                                <div className="text-sm text-gray-400 tracking-wider font-bold">Alunos formados</div>
                             </div>
 
                             <div className="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-secondary/50 transition-colors group mt-0 sm:mt-12">
-                                <div className="text-4xl font-black text-white mb-2 group-hover:text-secondary transition-colors">15 Anos</div>
-                                <div className="text-sm text-gray-400 uppercase tracking-wider font-bold">De Tradição</div>
+                                <div className="text-4xl font-black text-white mb-2 group-hover:text-secondary transition-colors">15 anos</div>
+                                <div className="text-sm text-gray-400 tracking-wider font-bold">De tradição</div>
                             </div>
 
                             <div className="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-secondary/50 transition-colors group">
                                 <div className="text-4xl font-black text-white mb-2 group-hover:text-secondary transition-colors">100%</div>
-                                <div className="text-sm text-gray-400 uppercase tracking-wider font-bold">Professores Qualificados</div>
+                                <div className="text-sm text-gray-400 tracking-wider font-bold">Professores qualificados</div>
                             </div>
 
                             <div className="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-secondary/50 transition-colors group mt-0 sm:mt-12">
                                 <div className="text-4xl font-black text-white mb-2 group-hover:text-secondary transition-colors">Top 1</div>
-                                <div className="text-sm text-gray-400 uppercase tracking-wider font-bold">Na Região</div>
+                                <div className="text-sm text-gray-400 tracking-wider font-bold">Na região</div>
                             </div>
 
                         </div>

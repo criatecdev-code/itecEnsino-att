@@ -2,9 +2,9 @@ import React from 'react';
 
 const FunFactorsArea: React.FC = () => {
     const stats = [
-        { label: "Anos de Excelência", value: "15+", icon: "fa-certificate", color: "text-amber-500" },
-        { label: "Alunos Formados", value: "5k+", icon: "fa-user-graduate", color: "text-primary" },
-        { label: "Opções de Ensino", value: "50+", icon: "fa-book", color: "text-secondary" },
+        { label: "Anos de excelência", value: "15+", icon: "fa-certificate", color: "text-amber-500" },
+        { label: "Alunos formados", value: "5k+", icon: "fa-user-graduate", color: "text-primary" },
+        { label: "Opções de ensino", value: "50+", icon: "fa-book", color: "text-secondary" },
     ];
 
     return (
@@ -20,7 +20,7 @@ const FunFactorsArea: React.FC = () => {
                                 <h3 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                                     {stat.value}
                                 </h3>
-                                <p className="text-gray-500 font-medium text-lg uppercase tracking-wide">
+                                <p className="text-gray-500 font-medium text-lg tracking-wide">
                                     {stat.label}
                                 </p>
                             </div>

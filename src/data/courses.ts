@@ -14,7 +14,7 @@ export interface Course {
 
 export const courses: Course[] = [
   {
-    titulo: "Assistente Administrativo",
+    titulo: "Assistente administrativo",
     slug: "assistente-administrativo",
     sobre: "Atuação nos processos administrativos de empresas urbanas e rurais, executando atividades de apoio nas áreas de recursos humanos, finanças, produção, logística e vendas. Observando procedimentos operacionais e a legislação.",
     area: "Gestão de processos administrativos, controle de qualidade, informações, equipes e comunicações internas e externas. Exercer atividades de liderança, promovendo o desenvolvimento das equipes e facilitando o alcance dos objetivos. Prestar assessoria e consultoria estratégica, participando ativamente das decisões que impactam a rotina da empresa. Manter um atendimento de excelência para clientes e fornecedores. Além disso, será responsável pela organização e manutenção de arquivos e redação de documentos precisos e eficientes.",
@@ -29,11 +29,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "48h",
     tempo: "6 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/1.jpg"
   },
   {
-    titulo: "Assistente De Contabilidade",
+    titulo: "Assistente de contabilidade",
     slug: "assistente-de-contabilidade",
     sobre: "Preparar o aluno para organizar documentos e efetuar sua classificação contábil, gerar lançamentos contábeis, auxiliar na apuração dos impostos, conciliar contas e preenchimento de guias de recolhimento e de solicitações junto a órgãos do governo, emitir notas de venda e de transferência, entre outras; realizar o arquivo de documentos.",
     area: "Organizar documentos e efetuar sua classificação contábil, gerar lançamentos contábeis, auxiliar na apuração de impostos, conciliar contas e preenchimento de guias de recolhimento e solicitações junto a órgãos do governo, emitir notas de venda e de transferência, entre outras. Trabalhar em pequenas ou médias empresas ou escritórios de contabilidade, sempre sob supervisão de um contador.",
@@ -45,11 +45,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "69h",
     tempo: "8 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/2.jpg"
   },
   {
-    titulo: "Atendente De Farmácia",
+    titulo: "Atendente de farmácia",
     slug: "atendente-de-farmacia",
     sobre: "Preparar o aluno para atuar em hospitais ou em farmácias, no comércio, no controle e dispersão de medicamentos e correlatos. Interpreta receitas médicas, esclarece pacientes no que se refere ao uso correto dos medicamentos. Trabalha sob supervisão do profissional farmacêutico.",
     area: "Atuar na área farmacêutica, na comercialização, dispersão de medicamentos e correlatos, bem como na gestão de estoque farmacêutico.",
@@ -60,7 +60,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "41h",
     tempo: "5 meses e 1 semana",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/3.jpg"
   },
   {
@@ -78,7 +78,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "52h",
     tempo: "6 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/4.jpg"
   },
   {
@@ -94,7 +94,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "52h",
     tempo: "6 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/5.jpg"
   },
   {
@@ -111,11 +111,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "76h",
     tempo: "9 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/6.jpg"
   },
   {
-    titulo: "Design Para Mídias Sociais",
+    titulo: "Design para mídias sociais",
     slug: "design-para-midias-sociais",
     sobre: "Capacitação dos alunos para desenvolverem habilidades criativas e técnicas para criação de conteúdo visual atrativo e impactante, específico para as diferentes plataformas de mídias sociais. Visamos preparar profissionais para criar posts, imagens, vídeos e elementos gráficos que sejam relevantes, envolventes e que impulsionam o engajamento e o alcance nas redes sociais, atendendo às necessidades de marcas, empresas e influenciadores digitais.",
     area: "Atuar em agências de marketing, empresas, com influenciadores, empreendedores e no setor público, criando conteúdo visual criativo para impulsionar a presença nas redes sociais e fortalecer a identidade de marcas e projetos. Sua atuação abrange a produção de imagens, vídeos e elementos visuais para diversas plataformas e públicos-alvo.",
@@ -128,11 +128,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "80h",
     tempo: "10 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/7.jpg"
   },
   {
-    titulo: "Design Gráfico",
+    titulo: "Design gráfico",
     slug: "design-grafico",
     sobre: "Preparação do aluno para edição de textos, imagens e figuras, gerar layouts e arte final para livros, revistas, folders e jornais para o mercado gráfico em geral, utilizando programas de computação, de acordo com as normas e procedimentos técnicos de qualidade e segurança.",
     area: "Operar softwares de computação gráfica, permitindo a edição, criação e preparação para impressão de arquivos vetoriais. Atua em vários ramos de atividade, tais como: artes gráficas, indústria têxtil, fabricação madeireira, empresas de telecomunicações, entre outras.",
@@ -146,7 +146,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "92h",
     tempo: "11 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/8.jpg"
   },
   {
@@ -163,7 +163,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "64h",
     tempo: "8 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/9.jpg"
   },
   {
@@ -179,7 +179,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "68h",
     tempo: "8 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/10.jpg"
   },
   {
@@ -193,7 +193,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "40h",
     tempo: "5 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/11.jpg"
   },
   {
@@ -216,7 +216,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "172h",
     tempo: "21 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/12.jpg"
   },
   {
@@ -231,11 +231,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "60h",
     tempo: "7 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/13.jpg"
   },
   {
-    titulo: "Desenvolvimento Web",
+    titulo: "Desenvolvimento web",
     slug: "desenvolvimento-web",
     sobre: "Capacitação dos alunos para adquirirem habilidades técnicas para projetar, criar e implementar sites e aplicações web de forma eficiente e profissional. O curso visa preparar profissionais para atuarem no desenvolvimento de soluções web que atendam às necessidades e demandas do mercado digital atual.",
     area: "Atuação em agências de criação, empresas de tecnologia e startups, desenvolvendo e mantendo sites e aplicações web, em setores de comércio eletrônico, mídia digital e empreendendo projetos próprios na área de desenvolvimento web.",
@@ -248,11 +248,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "52h",
     tempo: "6 meses e 2 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/14.jpg"
   },
   {
-    titulo: "Informática Completa",
+    titulo: "Informática completa",
     slug: "informatica-completa",
     sobre: "Capacitação dos alunos para adquirirem conhecimentos teóricos e práticos sobre o uso e aplicação de tecnologias da informação.",
     area: "Atuação em diversas áreas, como: suporte técnico em empresas de tecnologia, atendimento ao cliente em setores de informática, auxiliando na resolução de problemas e manutenção de equipamentos, e também em cargos administrativos e de escritório, utilizando softwares de escritório e sistemas de gestão.",
@@ -271,7 +271,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "86h",
     tempo: "10 meses e 3 semanas",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/15.jpg"
   },
   {
@@ -293,11 +293,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "42h",
     tempo: "5 meses e 1 semana",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/16.jpg"
   },
   {
-    titulo: "Gestão e Marketing Digital",
+    titulo: "Gestão e marketing digital",
     slug: "gestao-e-marketing-digital",
     sobre: "Capacitação dos alunos para adquirirem habilidades estratégicas e técnicas para planejar, implementar e gerir campanhas de marketing digital de forma eficiente.",
     area: "Atuação em diversas áreas, como: gerência de marketing digital em empresas, agências de publicidade e marketing, consultorias para otimizar estratégias digitais de negócios, e empreendedorismo para impulsionar o crescimento de marcas e projetos online.",
@@ -309,11 +309,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "50h",
     tempo: "6 meses e 1 semana",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/17.jpg"
   },
   {
-    titulo: "Excel Profissional",
+    titulo: "Excel profissional",
     slug: "excel-profissional",
     sobre: "Capacitação dos alunos para adquirirem habilidades avançadas e especializadas no uso do Microsoft Excel para fins profissionais. Visando preparar profissionais para lidarem com desafios complexos em suas áreas de atuação, usando o Excel como uma poderosa ferramenta de análise e tomada de decisões.",
     area: "A expertise em Excel é valorizada em diferentes setores profissionais, como em setores administrativos e financeiros de empresas, departamentos de recursos humanos para análise de dados e relatórios, em consultorias para auxiliar clientes com análises complexas de dados, e também em áreas de pesquisa e desenvolvimento para coletar e analisar informações relevantes.",
@@ -324,7 +324,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "24h",
     tempo: "3 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/18.jpg"
   },
   {
@@ -346,7 +346,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "82h",
     tempo: "10 meses e 1 semana",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/19.jpg"
   },
   {
@@ -362,7 +362,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "40h",
     tempo: "5 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/20.jpg"
   },
   {
@@ -377,11 +377,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "48h",
     tempo: "6 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/24.jpg"
   },
   {
-    titulo: "Redes e Infraestrutura",
+    titulo: "Redes e infraestrutura",
     slug: "redes-e-infraestrutura",
     sobre: "Voltado para profissionais que desejam aprimorar seus conhecimentos e habilidades em projetos de infraestrutura de redes, bem como a implantação, configuração e administração de redes de computadores.",
     area: `Administração de redes - Análise de redes - Análise de segurança de redes
@@ -397,11 +397,11 @@ export const courses: Course[] = [
         `,
     cargahoraria: "49h",
     tempo: "6 meses e 1 semana",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/21.jpg"
   },
   {
-    titulo: "Finanças Essencial",
+    titulo: "Finanças essencial",
     slug: "financas-essencial",
     sobre: "Finanças Essencial é voltado para estudantes e profissionais que desejam aprender os conceitos fundamentais de finanças, desde a gestão de orçamento pessoal até a análise financeira de empresas.",
     area: "Planejamento financeiro - Controle financeiro - Monitoramento de recursos financeiros - Análise de custos e riscos - Gestão de fluxo de caixa - Alocação de recursos - Investimentos - Profissões na área financeira - Analista financeiro - Analista de risco - Analista de fundos de investimento - Analista de crédito - Analista de mercado de capitais - Economista financeiro - Consultor financeiro - Trader",
@@ -412,7 +412,7 @@ export const courses: Course[] = [
         `,
     cargahoraria: "34h",
     tempo: "4 meses e 1 semana",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/22.jpg"
   },
   {
@@ -425,11 +425,11 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     cargahoraria: "22h",
     tempo: "2 meses e 1 semana",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/23.jpg"
   },
   {
-    titulo: "Atendimento pré hospitalar",
+    titulo: "Atendimento pré-hospitalar",
     slug: "atendimento-pre-hospitalar",
     sobre: "O objetivo da capacitação em APH: Atendimento Pré-Hospitalar é capacitar os profissionais da área da saúde que desejam atuar como “Socorristas no SAMU“, Bombeiros civis e militares, Condutores de veículos de emergência, Comissários de voo, Voluntários da Defesa Civil, Técnicos em Segurança do Trabalho, Bombeiros Voluntários, Brigadistas, Socorristas de Resgate Rodoviário.",
     area: "A atuação no mercado de trabalho inclui os setores de saúde e prestação de serviço. São eles, hospitais, centros de saúde, órgãos do governo, SAMU, ambulâncias de transporte e outros.",
@@ -457,11 +457,11 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     cargahoraria: "60h",
     tempo: "5 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/25.jpg"
   },
   {
-    titulo: "Auxiliar de Laboratório em Análises Clínicas",
+    titulo: "Auxiliar de laboratório em análises clínicas",
     slug: "auxiliar-de-laboratorio-em-analises-clinicas",
     sobre: "O curso de Auxiliar de Laboratório em Análises Clínicas qualifica o aluno para desempenhar as atribuições das rotinas de trabalho em laboratórios de análises clínicas.",
     area: "A atuação no mercado de trabalho inclui auxiliar na organização do ambiente de trabalho, recepção de pacientes, orientações sobre exames e entrega dos resultado, auxiliar em coletas de amostras e no preparo de bancadas laboratoriais e desenvolver práticas e auxiliar o laboratório nas suas rotinas",
@@ -484,14 +484,14 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     cargahoraria: "72h",
     tempo: "6 meses",
-    categoria: "Cursos Profissionalizantes",
+    categoria: "Cursos profissionalizantes",
     img: "/img/fotos/26.jpg"
   },
   {
-    titulo: "Ensino Fundamental",
+    titulo: "Ensino fundamental",
     slug: "ensino-fundamental",
-    sobre: "Uma base sólida para o futuro. No Itec, o Ensino Fundamental une a excelência acadêmica com o desenvolvimento de competências socioemocionais e tecnológicas.",
-    area: "Fundamental I (1º ao 5º ano) e Fundamental II (6º ao 9º ano).",
+    sobre: "Uma base sólida para o futuro. No ITEC, o ensino fundamental une a excelência acadêmica com o desenvolvimento de competências socioemocionais e tecnológicas.",
+    area: "Fundamental I (1º ao 5º ano) e fundamental II (6º ao 9º ano).",
     modulos: `
         Metodologia Ativa
         ;Projetos de Vida
@@ -500,14 +500,14 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     cargahoraria: "Integral/Parcial",
     tempo: "Anual",
-    categoria: "Fundamental",
+    categoria: "Ensino fundamental",
     img: "/img/home/fundamental.png"
   },
   {
-    titulo: "Ensino Médio",
+    titulo: "Ensino médio",
     slug: "ensino-medio",
     sobre: "Preparação completa para o ENEM e vestibulares, aliada à formação profissional e ao desenvolvimento de habilidades para a vida.",
-    area: "1ª, 2ª e 3ª séries do Ensino Médio.",
+    area: "1ª, 2ª e 3ª séries do ensino médio.",
     modulos: `
         Foco no ENEM e Vestibulares
         ;Itinerários Formativos
@@ -516,11 +516,11 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     cargahoraria: "Matutino",
     tempo: "Anual",
-    categoria: "Médio",
+    categoria: "Ensino médio",
     img: "/img/home/medio.png"
   },
   {
-    titulo: "Técnico em Enfermagem",
+    titulo: "Técnico em enfermagem",
     slug: "tecnico-em-enfermagem",
     sobre: "Transforme sua vocação em profissão e faça a diferença na vida das pessoas! \n\t\tO Curso Técnico em Enfermagem do ITEC foi criado para quem deseja cuidar com técnica, empatia e propósito. \n\t\tNossa formação une teoria e prática em laboratórios modernos, com professores experientes e metodologia voltada \n\t\tpara o desenvolvimento de competências reais do mercado da saúde. \n\t\tEm apenas 24 meses, você estará preparado(a) para atuar com segurança em hospitais, clínicas e unidades de atenção básica.",
     area: "O mercado da saúde está em plena expansão, e o técnico em enfermagem é hoje um dos profissionais mais procurados no Brasil. \n\tCom a formação do ITEC, você conquista oportunidades em hospitais, clínicas, laboratórios, home care e programas de saúde pública. \n\tAlém da estabilidade e das boas remunerações, você terá a satisfação de exercer uma profissão que salva e transforma vidas todos os dias.",
@@ -569,7 +569,7 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     cargahoraria: "1200h",
     tempo: "24 meses",
-    categoria: "Cursos Técnicos",
+    categoria: "Cursos técnicos",
     turnos: `
         MANHÃ – Segunda e Quarta das 7:30h às 11:30h
         ;TARDE – Segunda e Quarta das 13:20h às 17:20h
@@ -580,7 +580,7 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
     img: "/img/fotos/27.jpg"
   },
   {
-    titulo: "Técnico em Análises Clínicas",
+    titulo: "Técnico em análises clínicas",
     slug: "tecnico-em-analises-clinicas",
     sobre: "Transforme curiosidade científica em uma carreira promissora! \n\tO Curso Técnico em Análises Clínicas do ITEC prepara você para atuar com excelência nos bastidores da saúde, realizando exames laboratoriais que auxiliam no diagnóstico e na prevenção de doenças. \n\tCom uma formação moderna e prática, você aprenderá técnicas de coleta, análises bioquímicas, microbiológicas e hematológicas, utilizando equipamentos de última geração e metodologia orientada para o mercado. \n\tEm apenas 18 meses, você estará pronto(a) para atuar em laboratórios, hospitais e clínicas em todo o país.",
     area: "O mercado para o técnico em análises clínicas está em constante crescimento, impulsionado pela expansão dos serviços de saúde e pela importância do diagnóstico laboratorial. \n\tCom o diploma do ITEC, você poderá atuar em laboratórios, hospitais, clínicas, bancos de sangue e centros de pesquisa, sendo um elo fundamental entre a ciência e o cuidado com o paciente. \n\tUma carreira estável, tecnológica e com alta demanda espera por você.",
@@ -627,7 +627,7 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     cargahoraria: "1200h",
     tempo: "18 meses",
-    categoria: "Cursos Técnicos",
+    categoria: "Cursos técnicos",
     turnos: `
         NOITE – Segunda, Quarta e Quinta das 18:20h às 21:55h
         `,
@@ -635,7 +635,7 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
     img: "/img/fotos/28.jpg"
   },
   {
-    titulo: "Técnico em Radiologia",
+    titulo: "Técnico em radiologia",
     slug: "tecnico-em-radiologia",
     sobre: "Descubra o poder da tecnologia aplicada à saúde! \n\tO Curso Técnico em Radiologia do ITEC forma profissionais prontos para operar equipamentos de alta precisão e contribuir diretamente para o diagnóstico médico. \n\tCom aulas práticas em laboratórios equipados e professores experientes, você aprende desde os fundamentos da radiologia até o uso de tecnologias avançadas de imagem, como tomografia e ressonância magnética. \n\tEm 24 meses, você estará preparado(a) para atuar em clínicas, hospitais e centros de diagnóstico em todo o país.",
     area: "O profissional técnico em radiologia é essencial em qualquer instituição de saúde moderna. \n\tCom a formação do ITEC, você estará pronto(a) para atuar em hospitais, clínicas, laboratórios e centros de diagnóstico por imagem, \n\tem um dos setores que mais cresce no país. Além das excelentes oportunidades e valorização profissional, \n\ta radiologia oferece um campo de atuação tecnológica e humana, ideal para quem busca estabilidade e propósito.",
@@ -684,7 +684,7 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     cargahoraria: "1200h",
     tempo: "24 meses",
-    categoria: "Cursos Técnicos",
+    categoria: "Cursos técnicos",
     obs: "Matriz Curricular 2026 (pode sofrer alterações até fev/2026)",
     img: "/img/fotos/29.jpg"
   },

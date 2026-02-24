@@ -19,21 +19,21 @@ const TestimonialsArea: React.FC = () => {
     const testimonials = [
         {
             image: '/img/home/sara.png',
-            desc: "Meu interesse pela área da saúde vai além da arte do cuidar. O Itec, por si só, já carrega um grande nome, um verdadeiro 'coração de mãe'. O técnico é a base, e apenas um trampolim para maiores sonhos.",
+            desc: "Meu interesse pela área da saúde vai além da arte do cuidar. O ITEC, por si só, já carrega um grande nome, um verdadeiro 'coração de mãe'. O técnico é a base, e apenas um trampolim para maiores sonhos.",
             author: "Sara",
-            role: "Aluna de Enfermagem"
+            role: "Aluna de enfermagem"
         },
         {
             image: '/img/home/bruno.png',
             desc: "Escola super flexível para os alunos. Onde te escutam e te ajudam... desde a secretaria até a sala de aula. Eu amo o curso que faço, estou cada dia mais apaixonado na profissão.",
             author: "Bruno Arruda",
-            role: "Aluno Técnico"
+            role: "Aluno técnico"
         },
         {
             image: '/img/home/geisiane.png',
             desc: "Passei por um momento onde precisei de séria cirurgia, e tive um grande acolhimento. Nesta Instituição conheci professores que sempre nos ensinam a sermos excelentes profissionais.",
             author: "Geisiane Belmiro",
-            role: "Aluna Formada"
+            role: "Aluna formada"
         }
     ];
 
@@ -41,9 +41,9 @@ const TestimonialsArea: React.FC = () => {
         <div className="section-padding bg-gradient-to-b from-white to-blue-50 relative">
             <div className="container-custom">
                 <div className="text-center mb-16">
-                    <span className="text-primary font-bold tracking-widest uppercase text-sm mb-3 block">Depoimentos</span>
+                    <span className="text-primary font-bold tracking-widest text-sm mb-3 block">Depoimentos</span>
                     <h3 className="text-4xl md:text-5xl font-extrabold text-gray-800">
-                        O que dizem <span className="text-secondary">Nossos Alunos</span>
+                        O que dizem <span className="text-secondary">nossos alunos</span>
                     </h3>
                 </div>
 
@@ -71,7 +71,7 @@ const TestimonialsArea: React.FC = () => {
 
                                         <div>
                                             <h4 className="text-2xl font-bold text-primary">{item.author}</h4>
-                                            <p className="text-sm font-semibold text-secondary uppercase tracking-wide mt-1">{item.role}</p>
+                                            <p className="text-sm font-semibold text-secondary tracking-wide mt-1">{item.role}</p>
                                             <div className="flex justify-center mt-4 text-yellow-400 text-lg space-x-1">
                                                 <i className="fas fa-star shadow-sm"></i>
                                                 <i className="fas fa-star shadow-sm"></i>

@@ -5,21 +5,21 @@ const SegmentCards: React.FC = () => {
     const segments = [
         {
             title: "Ensino Regular",
-            subtitle: "Fundamental e Médio",
+            subtitle: "Fundamental e médio",
             icon: "fa-graduation-cap",
             color: "text-secondary",
             link: "/cursos/fundamental"
         },
         {
             title: "Cursos Técnicos",
-            subtitle: "Formação Profissional",
+            subtitle: "Formação profissional",
             icon: "fa-microscope",
             color: "text-primary",
             link: "/cursos/tecnico"
         },
         {
             title: "Cursos Profissionalizantes",
-            subtitle: "Qualificação Rápida",
+            subtitle: "Qualificação rápida",
             icon: "fa-briefcase",
             color: "text-amber-500",
             link: "/cursos/profissionalizante"
@@ -40,7 +40,7 @@ const SegmentCards: React.FC = () => {
                                 <h3 className="text-xl md:text-2xl font-extrabold text-gray-900 mb-1 group-hover:text-primary transition-colors leading-tight">
                                     {segment.title}
                                 </h3>
-                                <p className="text-gray-500 font-medium text-xs md:text-sm uppercase tracking-wide">
+                                <p className="text-gray-500 font-medium text-xs md:text-sm tracking-wide">
                                     {segment.subtitle}
                                 </p>
                             </div>

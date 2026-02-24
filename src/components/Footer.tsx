@@ -20,10 +20,10 @@ const Footer: React.FC = () => {
                         </div>
                         <div className="z-10 flex flex-col sm:flex-row gap-5">
                             <Link to="/matricula" className="btn-secondary bg-secondary text-white px-10 py-5 rounded-2xl font-black shadow-xl shadow-secondary/30 hover:shadow-secondary/50 hover:-translate-y-1 transition-all inline-block text-center text-lg">
-                                <i className="fas fa-user-plus mr-2"></i> Inscrever-se Agora
+                                <i className="fas fa-user-plus mr-2"></i> Inscrever-se agora
                             </Link>
                             <Link to="/contato" className="px-10 py-5 rounded-2xl font-black border-2 border-white/30 text-white hover:bg-white hover:text-primary transition-all text-center inline-block text-lg backdrop-blur-sm">
-                                <i className="fas fa-comment-dots mr-2"></i> Tirar Dúvidas
+                                <i className="fas fa-comment-dots mr-2"></i> Tirar dúvidas
                             </Link>
                         </div>
                     </div>
@@ -66,12 +66,12 @@ const Footer: React.FC = () => {
                                 </li>
                                 <li>
                                     <Link to="/sobrenos" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
-                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Sobre Nós
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Sobre nós
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/sobrenos#corpo-docente" className="flex items-center gap-2 hover:text-primary transition-colors text-sm">
-                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Corpo Docente
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Corpo docente
                                     </Link>
                                 </li>
                                 <li>
@@ -84,21 +84,21 @@ const Footer: React.FC = () => {
 
                         {/* Column 3: Courses */}
                         <div>
-                            <h4 className="text-white font-bold text-lg mb-6 border-l-4 border-secondary pl-3">Cursos em Alta</h4>
+                            <h4 className="text-white font-bold text-lg mb-6 border-l-4 border-secondary pl-3">Cursos em alta</h4>
                             <ul className="space-y-3">
                                 <li>
                                     <Link to="/curso/tecnico-em-enfermagem" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
-                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Enfermagem
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em enfermagem
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/curso/tecnico-em-radiologia" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
-                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Radiologia
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em radiologia
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/curso/tecnico-em-analises-clinicas" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
-                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em Análises Clínicas
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Técnico em análises clínicas
                                     </Link>
                                 </li>
                                 <li>
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
                                 </li>
                                 <li>
                                     <Link to="/cursos/profissionalizante" className="flex items-center gap-2 hover:text-secondary transition-colors text-sm">
-                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Cursos Livres
+                                        <i className="fas fa-angle-right text-xs opacity-50"></i> Cursos livres
                                     </Link>
                                 </li>
                             </ul>
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
 
                         {/* Column 4: Contact */}
                         <div>
-                            <h4 className="text-white font-bold text-lg mb-6 border-l-4 border-primary pl-3">Fale Conosco</h4>
+                            <h4 className="text-white font-bold text-lg mb-6 border-l-4 border-primary pl-3">Fale conosco</h4>
                             <ul className="space-y-4 text-sm">
                                 <li className="flex items-start gap-3">
                                     <i className="fas fa-map-marker-alt text-primary mt-1"></i>

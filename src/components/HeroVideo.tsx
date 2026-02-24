@@ -34,7 +34,7 @@ const HeroVideo: React.FC = () => {
 
                         {/* Persuasive Subtitle */}
                         <p className="text-lg md:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed filter drop-shadow-lg">
-                            Do Ensino Fundamental ao Técnico: Formação de excelência focada no mercado de trabalho e no seu futuro.
+                            Do ensino fundamental ao técnico: formação de excelência focada no mercado de trabalho e no seu futuro.
                         </p>
 
                         {/* Conversion Buttons (CTAs) */}
@@ -44,7 +44,7 @@ const HeroVideo: React.FC = () => {
                                 className="group relative w-full sm:w-auto overflow-hidden bg-secondary px-10 py-5 rounded-2xl text-white font-black text-lg shadow-2xl shadow-secondary/30 hover:shadow-secondary/50 hover:-translate-y-1 transition-all active:scale-95"
                             >
                                 <span className="relative z-10 flex items-center justify-center gap-2">
-                                    Quero me Matricular <i className="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                                    Quero me matricular <i className="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
                                 </span>
                                 <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                             </Link>
@@ -54,11 +54,11 @@ const HeroVideo: React.FC = () => {
                         <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 opacity-80 sm:opacity-70">
                             <div className="flex items-center gap-2 text-white">
                                 <i className="fas fa-check-circle text-secondary"></i>
-                                <span className="text-xs md:text-sm font-bold uppercase tracking-wider">Cursos Reconhecidos</span>
+                                <span className="text-xs md:text-sm font-bold tracking-wider">Cursos reconhecidos</span>
                             </div>
                             <div className="flex items-center gap-2 text-white sm:border-l sm:border-white/20 sm:pl-8">
                                 <i className="fas fa-star text-yellow-400"></i>
-                                <span className="text-xs md:text-sm font-bold uppercase tracking-wider">Líder em Educação</span>
+                                <span className="text-xs md:text-sm font-bold tracking-wider">Líder em educação</span>
                             </div>
                         </div>
                     </div>

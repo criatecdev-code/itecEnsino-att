@@ -13,15 +13,15 @@ const GamificationArea: React.FC = () => {
                     {/* Text Content */}
                     <div className="w-full lg:w-1/2">
                         <div className="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm animate-fade-in-up">
-                            <span className="text-secondary font-bold text-sm tracking-widest uppercase flex items-center gap-2">
+                            <span className="text-secondary font-bold text-sm tracking-widest flex items-center gap-2">
                                 <i className="fas fa-gamepad"></i>
-                                Metodologia Exclusiva
+                                Metodologia exclusiva
                             </span>
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6 animate-fade-in-up delay-100">
                             Aprender nunca foi tão <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-green-400">Divertido e Desafiador</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-green-400">Divertido e desafiador</span>
                         </h2>
 
                         <p className="text-gray-400 text-lg mb-8 leading-relaxed animate-fade-in-up delay-200">
@@ -35,7 +35,7 @@ const GamificationArea: React.FC = () => {
                                 <div className="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center text-secondary text-2xl mb-4 group-hover:scale-110 transition-transform">
                                     <i className="fas fa-trophy"></i>
                                 </div>
-                                <h3 className="text-white font-bold text-lg mb-2">Conquistas e Recompensas</h3>
+                                <h3 className="text-white font-bold text-lg mb-2">Conquistas e recompensas</h3>
                                 <p className="text-gray-300 text-sm">Ganhe medalhas e prêmios reais ao superar desafios acadêmicos.</p>
                             </div>
 
@@ -43,7 +43,7 @@ const GamificationArea: React.FC = () => {
                                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary text-2xl mb-4 group-hover:scale-110 transition-transform">
                                     <i className="fas fa-chart-line"></i>
                                 </div>
-                                <h3 className="text-white font-bold text-lg mb-2">Níveis de Evolução</h3>
+                                <h3 className="text-white font-bold text-lg mb-2">Níveis de evolução</h3>
                                 <p className="text-gray-300 text-sm">Acompanhe seu progresso visualmente e suba de nível a cada semestre.</p>
                             </div>
                         </div>
@@ -65,15 +65,15 @@ const GamificationArea: React.FC = () => {
                                 {/* Floating UI Elements simulating game interface */}
                                 <div className="absolute top-6 right-6 bg-black/60 backdrop-blur-md rounded-full px-4 py-2 border border-white/20 flex items-center gap-3">
                                     <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                                    <span className="text-white font-mono text-sm">LEVEL 12</span>
+                                    <span className="text-white font-mono text-sm">Level 12</span>
                                 </div>
 
                                 <div className="absolute bottom-8 left-8 right-8">
                                     <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4">
                                         <div className="flex justify-between items-end mb-2">
                                             <div>
-                                                <span className="text-gray-400 text-xs uppercase tracking-wider">Próximo Nível</span>
-                                                <div className="text-white font-bold">Mestre da Robótica</div>
+                                                <span className="text-gray-400 text-xs tracking-wider">Próximo nível</span>
+                                                <div className="text-white font-bold">Mestre da robótica</div>
                                             </div>
                                             <span className="text-secondary font-bold">85%</span>
                                         </div>

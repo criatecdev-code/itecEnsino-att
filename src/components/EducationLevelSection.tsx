@@ -47,7 +47,7 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
 
                     {/* Content Column */}
                     <div className="w-full lg:w-1/2">
-                        <span className={`${colorClass} font-bold tracking-[0.2em] uppercase text-sm mb-4 block flex items-center gap-2`}>
+                        <span className={`${colorClass} font-bold tracking-[0.2em] text-sm mb-4 block flex items-center gap-2`}>
                             <span className={`w-12 h-[2px] ${colorClass === 'text-primary' ? 'bg-primary' : 'bg-secondary'}`}></span>
                             {subtitle}
                         </span>

@@ -4,28 +4,28 @@ const DifferentialsArea: React.FC = () => {
     const differentials = [
         {
             icon: "fa-graduation-cap",
-            title: "Metodologia Inovadora",
+            title: "Metodologia inovadora",
             description: "Aulas dinâmicas que unem teoria e prática, preparando você para os desafios reais do mercado.",
             color: "text-primary",
             bg: "bg-blue-50"
         },
         {
             icon: "fa-microscope",
-            title: "Infraestrutura de Ponta",
+            title: "Infraestrutura de ponta",
             description: "Laboratórios modernos e equipados com tecnologia atual para uma formação completa.",
             color: "text-secondary",
             bg: "bg-green-50"
         },
         {
             icon: "fa-chalkboard-teacher",
-            title: "Professores Qualificados",
+            title: "Professores qualificados",
             description: "Equipe docente formada por especialistas atuantes no mercado e comprometidos com seu sucesso.",
             color: "text-purple-600",
             bg: "bg-purple-50"
         },
         {
             icon: "fa-briefcase",
-            title: "Alta Empregabilidade",
+            title: "Alta empregabilidade",
             description: "Parcerias com empresas e foco no desenvolvimento de competências exigidas pelo setor produtivo.",
             color: "text-amber-600",
             bg: "bg-amber-50"
@@ -42,12 +42,12 @@ const DifferentialsArea: React.FC = () => {
 
             <div className="container-custom relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-3 block animate-fade-in-up">Por que escolher o ITEC?</span>
+                    <span className="text-secondary font-bold tracking-[0.2em] text-sm mb-3 block animate-fade-in-up">Por que escolher o ITEC?</span>
                     <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6 animate-fade-in-up delay-100">
                         Diferenciais que <span className="text-primary relative inline-block">
-                            Transformam
+                            transformam
                             <svg className="absolute w-full h-3 -bottom-1 left-0 text-secondary/30" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00025 6.99997C25.7501 2.99995 83.2501 0.750004 200 1.99997" stroke="currentColor" strokeWidth="3"></path></svg>
-                        </span> seu Futuro
+                        </span> seu futuro
                     </h2>
                     <p className="text-gray-500 text-lg animate-fade-in-up delay-200">
                         Mais do que uma escola técnica, somos um centro de excelência focado em impulsionar sua carreira.

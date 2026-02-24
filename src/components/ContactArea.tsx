@@ -30,7 +30,7 @@ const ContactArea: React.FC = () => {
         outline-none transition-all font-medium text-gray-900 placeholder-gray-400
     `;
 
-    const labelClasses = "text-sm font-bold text-gray-700 uppercase tracking-wider mb-2 block";
+    const labelClasses = "text-sm font-bold text-gray-700 tracking-wider mb-2 block";
 
     return (
         <div className="py-24 bg-gray-50 relative overflow-hidden" id="contato">
@@ -40,7 +40,7 @@ const ContactArea: React.FC = () => {
                     {/* Left Content - Contact Info (kept on left, updated visuals) */}
                     <div className="w-full lg:w-1/3 space-y-8">
                         <div>
-                            <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-3 block">Fale Conosco</span>
+                            <span className="text-secondary font-bold tracking-[0.2em] text-sm mb-3 block">Fale conosco</span>
                             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
                                 Estamos aqui para <span className="text-primary">ajudar você</span>
                             </h2>
@@ -56,7 +56,7 @@ const ContactArea: React.FC = () => {
                                     <i className="fas fa-phone-alt text-xl"></i>
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">Ligue para nós</p>
+                                    <p className="text-xs text-gray-400 font-bold tracking-wider">Ligue para nós</p>
                                     <p className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">(24) 3512-0102</p>
                                 </div>
                             </a>
@@ -66,7 +66,7 @@ const ContactArea: React.FC = () => {
                                     <i className="fab fa-whatsapp text-2xl"></i>
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">WhatsApp Oficial</p>
+                                    <p className="text-xs text-gray-400 font-bold tracking-wider">WhatsApp oficial</p>
                                     <p className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">(24) 97400-3287</p>
                                 </div>
                             </a>
@@ -76,7 +76,7 @@ const ContactArea: React.FC = () => {
                                     <i className="fas fa-envelope text-xl"></i>
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">Envie um E-mail</p>
+                                    <p className="text-xs text-gray-400 font-bold tracking-wider">Envie um e-mail</p>
                                     <p className="text-lg font-bold text-gray-900">contato@itecensino.com.br</p>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@ const ContactArea: React.FC = () => {
                                     className="w-full btn-secondary py-4 text-lg shadow-lg shadow-green-600/20 hover:shadow-green-600/40 transform hover:-translate-y-1 transition-all flex items-center justify-center gap-2"
                                     type="submit"
                                 >
-                                    <span>Enviar Mensagem</span>
+                                    <span>Enviar mensagem</span>
                                     <i className="fas fa-paper-plane group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
                                 </button>
                             </form>
@@ -188,7 +188,7 @@ const ContactArea: React.FC = () => {
                                 <i className="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-900 text-sm">Nossa Unidade Sede</p>
+                                <p className="font-bold text-gray-900 text-sm">Nossa unidade sede</p>
                                 <p className="text-xs text-gray-500">Vila Santa Cecília, Volta Redonda</p>
                             </div>
                         </div>

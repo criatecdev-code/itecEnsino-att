@@ -8,12 +8,12 @@ const BlogArea: React.FC = () => {
             <div className="container-custom">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 px-4 border-l-4 border-secondary pl-6">
                     <div>
-                        <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Nosso Blog</span>
+                        <span className="text-secondary font-bold tracking-widest text-sm mb-2 block">Nosso blog</span>
                         <h3 className="text-3xl md:text-5xl font-extrabold text-gray-800">
-                            Fique por dentro das <br /><span className="text-primary">Novidades</span>
+                            Fique por dentro das <br /><span className="text-primary">novidades</span>
                         </h3>
                     </div>
-                    <Link to="/blog" className="hidden md:inline-flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors uppercase tracking-wider text-sm">
+                    <Link to="/blog" className="hidden md:inline-flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors tracking-wider text-sm">
                         Ver todas as notícias <i className="fas fa-arrow-right"></i>
                     </Link>
                 </div>
@@ -29,7 +29,7 @@ const BlogArea: React.FC = () => {
                                     loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
-                                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wide text-primary shadow-sm">
+                                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg text-xs font-bold tracking-wide text-primary shadow-sm">
                                     Notícia
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ const BlogArea: React.FC = () => {
                                     {post.titulo}
                                 </h3>
                                 <span className="text-secondary font-bold text-sm tracking-wide group-hover:underline decoration-2 underline-offset-4">
-                                    Ler Mais
+                                    Ler mais
                                 </span>
                             </div>
                         </Link>

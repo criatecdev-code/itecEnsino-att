@@ -6,20 +6,20 @@ export interface Post {
 
 export const posts: Post[] = [
   {
-    titulo: "Matrículas Abertas no Itec: do Ensino Fundamental ao Técnico",
-    conteudo: `<!-- Post de blog: Itec amplia oferta e passa a oferecer Ensino Fundamental e Médio -->
+    titulo: "Matrículas abertas no ITEC: do ensino fundamental ao técnico",
+    conteudo: `<!-- Post de blog: ITEC amplia oferta e passa a oferecer ensino fundamental e médio -->
             <article class="post itec-ampliacao">
             
             
             <section class="intro">
-                <p>O <strong>Itec</strong>, tradicional em cursos profissionalizantes em Volta Redonda, dá um novo passo na sua história. Agora, além dos cursos técnicos e profissionalizantes, a escola passa a oferecer também <strong>Ensino Fundamental I e II</strong> e <strong>Ensino Médio</strong>, ampliando sua missão de preparar alunos para os desafios do presente e do futuro.</p>
+                <p>O <strong>ITEC</strong>, tradicional em cursos profissionalizantes em Volta Redonda, dá um novo passo na sua história. Agora, além dos cursos técnicos e profissionalizantes, a escola passa a oferecer também <strong>ensino fundamental I e II</strong> e <strong>ensino médio</strong>, ampliando sua missão de preparar alunos para os desafios do presente e do futuro.</p>
             </section>
             
             <hr />
             
             <section id="fundamental-i" class="section feature">
-                <h2>Ensino Fundamental I</h2>
-                <p>Com um olhar especial para a infância, o Itec proporciona um aprendizado lúdico e significativo, que vai além da sala de aula. Entre os diferenciais estão:</p>
+                <h2>Ensino fundamental I</h2>
+                <p>Com um olhar especial para a infância, o ITEC proporciona um aprendizado lúdico e significativo, que vai além da sala de aula. Entre os diferenciais estão:</p>
             
                 <ul class="bullets">
                 <li><strong>Projeto de Vida Infantil:</strong> desenvolvimento de pilares como família, empreendedorismo, educação financeira e habilidades socioemocionais.</li>
@@ -29,8 +29,8 @@ export const posts: Post[] = [
             </section>
             
             <section id="fundamental-ii" class="section feature">
-                <h2>Ensino Fundamental II</h2>
-                <p>Voltado para o desenvolvimento de adolescentes, o Fundamental II no Itec valoriza a prática, os desafios e a autonomia. Diferenciais:</p>
+                <h2>Ensino fundamental II</h2>
+                <p>Voltado para o desenvolvimento de adolescentes, o ensino fundamental II no ITEC valoriza a prática, os desafios e a autonomia. Diferenciais:</p>
             
                 <ul class="bullets">
                 <li><strong>Robótica Avançada</strong></li>
@@ -42,8 +42,8 @@ export const posts: Post[] = [
             </section>
             
             <section id="ensino-medio" class="section feature">
-                <h2>Ensino Médio</h2>
-                <p>O Ensino Médio do Itec une a preparação para vestibulares e ENEM com o desenvolvimento de competências profissionais. Diferenciais:</p>
+                <h2>Ensino médio</h2>
+                <p>O ensino médio do ITEC une a preparação para vestibulares e ENEM com o desenvolvimento de competências profissionais. Diferenciais:</p>
             
                 <ul class="bullets">
                 <li><strong>Simulados ENEM desde o 1º ano</strong></li>
@@ -97,7 +97,7 @@ export const posts: Post[] = [
     imagem: "/img/blog/thumb1.png"
   },
   {
-    titulo: "Itec realiza Seminário de Conscientização sobre Amamentação em Volta Redonda e atrai 600 pessoas",
+    titulo: "Itec realiza seminário de conscientização sobre amamentação em Volta Redonda e atrai 600 pessoas",
     conteudo: `<!-- Post de blog: II Seminário de Conscientização sobre Amamentação -->
         <article class="post seminario-amamentacao">
       

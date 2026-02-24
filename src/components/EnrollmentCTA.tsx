@@ -17,9 +17,9 @@ const EnrollmentCTA: React.FC = () => {
                     {/* Content Column */}
                     <div className="w-full lg:w-1/2 text-white">
                         <div className="inline-block bg-secondary/20 border border-secondary/30 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm animate-fade-in-up">
-                            <span className="text-secondary font-bold text-sm tracking-widest uppercase flex items-center gap-2">
+                            <span className="text-secondary font-bold text-sm tracking-widest flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                                Matrículas Abertas 2026
+                                Matrículas abertas 2026
                             </span>
                         </div>
 
@@ -34,17 +34,17 @@ const EnrollmentCTA: React.FC = () => {
 
                         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
                             <a href="/matricula" className="btn-primary text-center px-10 py-4 text-lg shadow-xl shadow-primary/20 hover:shadow-primary/40 !rounded-xl transform hover:-translate-y-1 transition-all">
-                                Garantir minha Vaga
+                                Garantir minha vaga
                             </a>
                             <a href="https://wa.me/5524974003287" target="_blank" rel="noreferrer" className="px-10 py-4 rounded-xl border-2 border-white/20 hover:bg-white/10 text-white font-bold text-lg transition-all text-center flex items-center justify-center gap-2">
-                                <i className="fab fa-whatsapp"></i> Falar com Consultor
+                                <i className="fab fa-whatsapp"></i> Falar com consultor
                             </a>
                         </div>
 
                         <div className="mt-12 flex items-center gap-8 text-sm font-medium text-gray-400 animate-fade-in-up delay-400">
                             <div className="flex items-center gap-2">
                                 <i className="fas fa-check-circle text-secondary text-lg"></i>
-                                <span>Material Incluso</span>
+                                <span>Material incluso</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <i className="fas fa-check-circle text-secondary text-lg"></i>
@@ -52,7 +52,7 @@ const EnrollmentCTA: React.FC = () => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <i className="fas fa-check-circle text-secondary text-lg"></i>
-                                <span>Certificado Reconhecido</span>
+                                <span>Certificado reconhecido</span>
                             </div>
                         </div>
                     </div>
@@ -78,21 +78,21 @@ const EnrollmentCTA: React.FC = () => {
                                     <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">01</span>
                                         <div>
-                                            <h4 className="font-bold text-sm">Metodologia Prática</h4>
+                                            <h4 className="font-bold text-sm">Metodologia prática</h4>
                                             <p className="text-xs text-gray-400">Aprenda fazendo em laboratórios reais</p>
                                         </div>
                                     </div>
                                     <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">02</span>
                                         <div>
-                                            <h4 className="font-bold text-sm">Alta Empregabilidade</h4>
+                                            <h4 className="font-bold text-sm">Alta empregabilidade</h4>
                                             <p className="text-xs text-gray-400">Parcerias com grandes empresas</p>
                                         </div>
                                     </div>
                                     <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">03</span>
                                         <div>
-                                            <h4 className="font-bold text-sm">Professores Experts</h4>
+                                            <h4 className="font-bold text-sm">Professores experts</h4>
                                             <p className="text-xs text-gray-400">Profissionais atuantes no mercado</p>
                                         </div>
                                     </div>
