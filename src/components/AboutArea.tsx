@@ -28,7 +28,6 @@ const AboutArea: React.FC = () => {
                                 </div>
                                 <div>
                                     <p className="font-bold text-gray-900 text-lg leading-tight">Certificado Válido</p>
-                                    <p className="text-sm text-gray-500 font-medium">Reconhecido pelo MEC</p>
                                 </div>
                             </div>
                         </div>
@@ -49,12 +48,12 @@ const AboutArea: React.FC = () => {
                         </h3>
                         <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                             <p>
-                                Além de te preparar para o mercado com o <strong className="text-gray-900">melhor custo benefício</strong>, no Ensino Regular (Fundamental + Médio)
+                                Além de te preparar para o mercado com o <strong className="text-gray-900">melhor custo benefício</strong>,
                                 trabalhamos a <span className="text-secondary font-bold">educação empreendedora</span>, possibilitando mais protagonismo e visão de futuro.
                             </p>
                             <p>
-                                No Ensino Técnico, somos comprometidos com a prática. Inserimos nossos alunos em campos
-                                de estágio reais para garantir a entrada no mercado de trabalho com confiança e excelência.
+                                No Ensino Técnico, somos comprometidos com a prática, preparando você para o
+                                mercado de trabalho com confiança e excelência.
                             </p>
                         </div>
 

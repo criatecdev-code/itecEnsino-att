@@ -5,11 +5,11 @@ interface EducationLevelSectionProps {
     subtitle: string;
     description: string;
     image: string;
-    points: string[];
     link: string;
     linkText: string;
     isReversed?: boolean;
     colorClass?: string; // e.g., 'text-primary' or 'text-secondary'
+    bgClass?: string;    // e.g., 'bg-white' or 'bg-gray-50'
 }
 
 const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
@@ -17,14 +17,17 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
     subtitle,
     description,
     image,
-    points,
     link,
     linkText,
     isReversed = false,
-    colorClass = 'text-primary'
+    colorClass = 'text-primary',
+    bgClass = 'bg-white'
 }) => {
     return (
-        <div className="py-20 lg:py-24 bg-white overflow-hidden relative group">
+        <section className={`py-24 lg:py-32 ${bgClass} overflow-hidden relative group`}>
+            {/* Background Decoration */}
+            <div className="absolute top-0 right-0 w-1/3 h-full bg-[url('/img/pattern/map.png')] bg-no-repeat bg-right-top opacity-5 pointer-events-none"></div>
+
             <div className="container-custom">
                 <div className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-24`}>
 
@@ -48,23 +51,13 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
                             <span className={`w-12 h-[2px] ${colorClass === 'text-primary' ? 'bg-primary' : 'bg-secondary'}`}></span>
                             {subtitle}
                         </span>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-[1.1] tracking-tight">
+                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 mb-8 leading-[1] tracking-tight">
                             {title}
                         </h2>
-                        <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg">
+                        <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-12 max-w-xl font-medium opacity-90">
                             {description}
                         </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-10">
-                            {points.map((point, index) => (
-                                <div key={index} className="flex items-start gap-3">
-                                    <div className={`mt-1 flex-shrink-0 w-6 h-6 rounded-full ${colorClass === 'text-primary' ? 'bg-blue-100 text-primary' : 'bg-green-100 text-secondary'} flex items-center justify-center text-xs`}>
-                                        <i className="fas fa-check"></i>
-                                    </div>
-                                    <span className="text-gray-700 font-semibold">{point}</span>
-                                </div>
-                            ))}
-                        </div>
 
                         <a
                             href={link}
@@ -75,7 +68,7 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

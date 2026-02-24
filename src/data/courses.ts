@@ -488,6 +488,38 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
     img: "/img/fotos/26.jpg"
   },
   {
+    titulo: "Ensino Fundamental",
+    slug: "ensino-fundamental",
+    sobre: "Uma base sólida para o futuro. No Itec, o Ensino Fundamental une a excelência acadêmica com o desenvolvimento de competências socioemocionais e tecnológicas.",
+    area: "Fundamental I (1º ao 5º ano) e Fundamental II (6º ao 9º ano).",
+    modulos: `
+        Metodologia Ativa
+        ;Projetos de Vida
+        ;Inglês Intensivo
+        ;Laboratório de Robótica
+        `,
+    cargahoraria: "Integral/Parcial",
+    tempo: "Anual",
+    categoria: "Fundamental",
+    img: "/img/home/fundamental.png"
+  },
+  {
+    titulo: "Ensino Médio",
+    slug: "ensino-medio",
+    sobre: "Preparação completa para o ENEM e vestibulares, aliada à formação profissional e ao desenvolvimento de habilidades para a vida.",
+    area: "1ª, 2ª e 3ª séries do Ensino Médio.",
+    modulos: `
+        Foco no ENEM e Vestibulares
+        ;Itinerários Formativos
+        ;Orientação Profissional
+        ;Projetos de Empreendedorismo
+        `,
+    cargahoraria: "Matutino",
+    tempo: "Anual",
+    categoria: "Médio",
+    img: "/img/home/medio.png"
+  },
+  {
     titulo: "Técnico em Enfermagem",
     slug: "tecnico-em-enfermagem",
     sobre: "Transforme sua vocação em profissão e faça a diferença na vida das pessoas! \n\t\tO Curso Técnico em Enfermagem do ITEC foi criado para quem deseja cuidar com técnica, empatia e propósito. \n\t\tNossa formação une teoria e prática em laboratórios modernos, com professores experientes e metodologia voltada \n\t\tpara o desenvolvimento de competências reais do mercado da saúde. \n\t\tEm apenas 24 meses, você estará preparado(a) para atuar com segurança em hospitais, clínicas e unidades de atenção básica.",
@@ -656,105 +688,4 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
     obs: "Matriz Curricular 2026 (pode sofrer alterações até fev/2026)",
     img: "/img/fotos/29.jpg"
   },
-  {
-    titulo: "Ensino Fundamental I (1º ao 5º Ano)",
-    slug: "ensino-fundamental-1",
-    sobre: "Uma base sólida para o futuro! Nos Anos Iniciais, o foco é a alfabetização plena, o desenvolvimento do raciocínio lógico e a socialização. Com o 'Contraturno ITEKids', oferecemos atividades extracurriculares como judô, balé, música e robótica, transformando a escola em um espaço de descoberta e alegria.",
-    area: "Alfabetização e Letramento • Matemática Lúdica • Ciências e Descoberta • Artes e Movimento • Inglês Iniciante • Robótica Kids",
-    modulos: `
-        Aulas lúdicas e interativas
-        ;Material didático atualizado
-        ;Projetos multidisciplinares
-        ;Acompanhamento individualizado
-        ;Eventos culturais e datas comemorativas
-        `,
-    cargahoraria: "Manhã / Tarde",
-    tempo: "Anual",
-    categoria: "Ensino Fundamental",
-    img: "/img/home/fundamental.png"
-  },
-  {
-    titulo: "Ensino Fundamental II (6º ao 9º Ano)",
-    slug: "ensino-fundamental-2",
-    sobre: "Preparação para novos desafios. Nesta etapa, estimulamos a autonomia, o pensamento crítico e a responsabilidade. Os alunos aprofundam conhecimentos em todas as áreas e começam a desenhar seu Projeto de Vida, com suporte socioemocional e acadêmico de excelência.",
-    area: "Língua Portuguesa e Produção Textual • Matemática Avançada • Ciências da Natureza • História e Geografia • Inglês Intermediário • Educação Financeira",
-    modulos: `
-        Laboratórios de Ciências e Informática
-        ;Projetos de Pesquisa
-        ;Simulados preparatórios
-        ;Olimpíadas do Conhecimento
-        ;Orientação de Estudos
-        `,
-    cargahoraria: "Manhã",
-    tempo: "Anual",
-    categoria: "Ensino Fundamental",
-    img: "/img/fotos/31.png"
-  },
-  {
-    titulo: "Ensino Médio Regular",
-    slug: "ensino-medio-regular",
-    sobre: "O caminho para a Universidade. Nosso Ensino Médio oferece uma formação robusta, focada nos principais vestibulares e no ENEM. Com professores especialistas e material de alto nível, preparamos o aluno para alcançar seus sonhos acadêmicos.",
-    area: "Linguagens e Códigos • Ciências da Natureza • Ciências Humanas • Matemática • Redação Nota 1000",
-    modulos: `
-        Aulões de Véspera
-        ;Simulados ENEM
-        ;Orientação Vocacional
-        ;Monitorias de Apoio
-        ;Plataforma Digital de Estudos
-        `,
-    cargahoraria: "Manhã",
-    tempo: "3 Anos",
-    categoria: "Ensino Médio",
-    img: "/img/fotos/30.jpg"
-  },
-  {
-    titulo: "Novo Ensino Médio - Itinerários",
-    slug: "novo-ensino-medio-itinerarios",
-    sobre: "Protagonismo e escolha. No Novo Ensino Médio do ITEC, o aluno escolhe trilhas de aprofundamento (Itinerários Formativos) conectadas com seus interesses e carreira futura, focando em competências para o mundo moderno.",
-    area: "Tecnologia e Inovação • Saúde e Bem-estar • Empreendedorismo e Gestão • Humanidades e Sociedade",
-    modulos: `
-        Projetos Integradores
-        ;Eletivas Diversificadas
-        ;Certificações Intermediárias
-        ;Mentoria de Carreira
-        `,
-    cargahoraria: "Manhã / Tarde",
-    tempo: "3 Anos",
-    categoria: "Ensino Médio",
-    img: "/img/home/medio.png"
-  },
-  {
-    titulo: "Projeto de Vida e Socioemocional",
-    slug: "projeto-de-vida-e-socioemocional",
-    sobre: "Mais que conteúdo, formação humana. Desenvolvemos competências socioemocionais essenciais para o século XXI, como inteligência emocional, resiliência, empatia e liderança, preparando o aluno para a vida e para o convívio em sociedade.",
-    area: "Autoconhecimento • Planejamento de Carreira • Inteligência Emocional • Cidadania e Ética",
-    modulos: `
-        Workshops Vivenciais
-        ;Dinâmicas de Grupo
-        ;Atendimento Psicopedagógico
-        ;Palestras com Profissionais
-        ;Ações Sociais
-        `,
-    cargahoraria: "Integrado",
-    tempo: "Contínuo",
-    categoria: "Ensino Médio",
-    img: "/img/fotos/16.jpg"
-  },
-  {
-    titulo: "Robótica e Tecnologia Educacional",
-    slug: "robotica-e-tecnologia-educacional",
-    sobre: "Inovação na prática. Desde cedo, nossos alunos têm contato com programação, robótica e cultura maker. Nossos laboratórios equipados permitem transformar teoria em projetos reais, estimulando a criatividade e a resolução de problemas.",
-    area: "Lógica de Programação • Robótica LEGO • Impressão 3D • Cultura Maker • Pensamento Computacional",
-    modulos: `
-        Torneios de Robótica
-        ;Feira de Ciências e Tecnologia
-        ;Projetos Maker
-        ;Programação de Games
-        ;Automação Básica
-        `,
-    cargahoraria: "Integrado",
-    tempo: "Contínuo",
-    categoria: "Ensino Médio",
-    img: "/img/fotos/21.jpg"
-  }
 ];

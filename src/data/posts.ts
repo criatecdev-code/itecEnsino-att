@@ -1,13 +1,13 @@
 export interface Post {
-    titulo: string;
-    conteudo: string;
-    imagem: string;
+  titulo: string;
+  conteudo: string;
+  imagem: string;
 }
 
 export const posts: Post[] = [
-    {
-        titulo: "Matrículas Abertas no Itec: do Ensino Fundamental ao Técnico",
-        conteudo: `<!-- Post de blog: Itec amplia oferta e passa a oferecer Ensino Fundamental e Médio -->
+  {
+    titulo: "Matrículas Abertas no Itec: do Ensino Fundamental ao Técnico",
+    conteudo: `<!-- Post de blog: Itec amplia oferta e passa a oferecer Ensino Fundamental e Médio -->
             <article class="post itec-ampliacao">
             
             
@@ -24,7 +24,7 @@ export const posts: Post[] = [
                 <ul class="bullets">
                 <li><strong>Projeto de Vida Infantil:</strong> desenvolvimento de pilares como família, empreendedorismo, educação financeira e habilidades socioemocionais.</li>
                 <li><strong>Inglês desde o 1º ano:</strong> imersão prática no idioma para formar cidadãos preparados para um mundo globalizado.</li>
-                <li><strong>Metodologia Ativa e Gamificação:</strong> o conhecimento se transforma em uma experiência envolvente e divertida.</li>
+                <li><strong>Metodologia Ativa e Gamificação:</strong> o conhecimento se transforma em uma experience envolvente e divertida.</li>
                 </ul>
             </section>
             
@@ -94,11 +94,11 @@ export const posts: Post[] = [
                 <p class="meta">Itec • Volta Redonda</p>
             </footer>
             </article>`,
-        imagem: "/img/blog/thumb1.png"
-    },
-    {
-        titulo: "Itec realiza Seminário de Conscientização sobre Amamentação em Volta Redonda e atrai 600 pessoas",
-        conteudo: `<!-- Post de blog: II Seminário de Conscientização sobre Amamentação -->
+    imagem: "/img/blog/thumb1.png"
+  },
+  {
+    titulo: "Itec realiza Seminário de Conscientização sobre Amamentação em Volta Redonda e atrai 600 pessoas",
+    conteudo: `<!-- Post de blog: II Seminário de Conscientização sobre Amamentação -->
         <article class="post seminario-amamentacao">
       
     
@@ -155,11 +155,11 @@ export const posts: Post[] = [
         <p class="meta">Crédito da reportagem: Prefeitura de Volta Redonda</p>
       </footer>
     </article>`,
-        imagem: "/img/blog/thumb2.png"
-    },
-    {
-        titulo: "Setembro Amarelo: a importância do cuidado com a saúde mental na escola",
-        conteudo: `<article class="post setembro-amarelo">
+    imagem: "/img/blog/thumb2.png"
+  },
+  {
+    titulo: "Setembro Amarelo: a importância do cuidado com a saúde mental na escola",
+    conteudo: `<article class="post setembro-amarelo">
      
     
       <section class="intro">
@@ -196,6 +196,6 @@ export const posts: Post[] = [
         <p class="meta">Campanha Setembro Amarelo • Itec Volta Redonda</p>
       </footer>
     </article>`,
-        imagem: "/img/blog/thumb3.png"
-    }
+    imagem: "/img/blog/thumb3.png"
+  }
 ];

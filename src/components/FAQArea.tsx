@@ -7,15 +7,15 @@ const FAQArea: React.FC = () => {
     const faqs = [
         {
             question: "Quais são os documentos necessários para a matrícula?",
-            answer: "Para cursos técnicos, geralmente solicitamos RG, CPF, Comprovante de Residência, Histórico Escolar do Ensino Médio e uma foto 3x4. Para o ensino regular, documentos dos pais e histórico do aluno."
+            answer: "Para cursos técnicos, geralmente solicitamos RG, CPF, Comprovante de Residência, Histórico Escolar do Ensino Médio e uma foto 3x4."
         },
         {
-            question: "O ITEC oferece estágio garantido?",
-            answer: "Sim, para nossos cursos técnicos de saúde (Enfermagem, Radiologia e Análises Clínicas), possuímos convênios com os principais hospitais e clínicas da região, garantindo o estágio obrigatório para todos os alunos."
+            question: "Como funciona o estágio no ITEC?",
+            answer: "Para nossos cursos técnicos de saúde (Enfermagem, Radiologia e Análises Clínicas), possuímos convênios com os principais hospitais e clínicas da região, facilitando o encaminhamento para o estágio obrigatório."
         },
         {
-            question: "Os cursos são reconhecidos pelo MEC?",
-            answer: "Sim, todos os nossos cursos técnicos são autorizados pelo Conselho Estadual de Educação (CEE-RJ) e reconhecidos pelo Ministério da Educação (MEC), garantindo a validade nacional do seu diploma."
+            question: "Os cursos são reconhecidos oficialmente?",
+            answer: "Sim, todos os nossos cursos técnicos são autorizados pelo Conselho Estadual de Educação (CEE-RJ), garantindo a validade nacional do seu diploma e o registro nos órgãos de classe competentes."
         },
         {
             question: "Existem opções de bolsas ou descontos?",

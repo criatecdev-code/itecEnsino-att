@@ -72,17 +72,17 @@ const Header: React.FC = () => {
                             </button>
 
                             <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-white shadow-2xl rounded-2xl overflow-hidden transform transition-all duration-300 z-50 border border-gray-100 ${openDropdown === 'cursos' ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
+                                <Link to="/cursos/fundamental" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-secondary font-bold text-sm">Ensino Fundamental</span>
+                                    <span className="block text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Anos iniciais e finais</span>
+                                </Link>
+                                <Link to="/cursos/medio" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-secondary font-bold text-sm">Ensino Médio</span>
+                                    <span className="block text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Formação completa</span>
+                                </Link>
                                 <Link to="/cursos/tecnico" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Técnico</span>
                                     <span className="block text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Formação completa</span>
-                                </Link>
-                                <Link to="/cursos/fundamental" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                    <span className="block text-primary font-bold text-sm">Ensino Fundamental</span>
-                                    <span className="block text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">1º ao 9º Ano</span>
-                                </Link>
-                                <Link to="/cursos/medio" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                    <span className="block text-primary font-bold text-sm">Ensino Médio</span>
-                                    <span className="block text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Formação Geral</span>
                                 </Link>
                                 <Link to="/cursos/profissionalizante" className="block px-6 py-4 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Profissionalizante</span>

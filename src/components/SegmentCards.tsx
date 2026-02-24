@@ -6,7 +6,7 @@ const SegmentCards: React.FC = () => {
         {
             title: "Ensino Regular",
             subtitle: "Fundamental e Médio",
-            icon: "fa-school",
+            icon: "fa-graduation-cap",
             color: "text-secondary",
             link: "/cursos/fundamental"
         },
@@ -29,7 +29,7 @@ const SegmentCards: React.FC = () => {
     return (
         <div className="relative py-16 -mt-20 z-20">
             <div className="container-custom">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {segments.map((segment, index) => (
                         <Link
                             key={index}

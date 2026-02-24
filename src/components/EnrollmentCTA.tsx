@@ -5,7 +5,7 @@ const EnrollmentCTA: React.FC = () => {
         <section className="relative py-24 overflow-hidden">
             {/* Background with Overlay */}
             {/* Custom Background */}
-            <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-950 via-[#051c3b] to-[#0a2e5c]">
+            <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#020b1c] via-[#051c3b] to-[#0a2e5c]">
                 {/* Abstract Shapes for Texture */}
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/20 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2 opacity-60"></div>
                 <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-secondary/10 blur-[100px] rounded-full -translate-x-1/3 translate-y-1/3 opacity-40"></div>
@@ -75,21 +75,21 @@ const EnrollmentCTA: React.FC = () => {
                                 </div>
 
                                 <div className="space-y-4">
-                                    <div className="bg-gray-900/50 rounded-xl p-4 flex items-center gap-4 border border-white/5 hover:bg-gray-900/70 transition-colors cursor-default">
+                                    <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">01</span>
                                         <div>
                                             <h4 className="font-bold text-sm">Metodologia Prática</h4>
                                             <p className="text-xs text-gray-400">Aprenda fazendo em laboratórios reais</p>
                                         </div>
                                     </div>
-                                    <div className="bg-gray-900/50 rounded-xl p-4 flex items-center gap-4 border border-white/5 hover:bg-gray-900/70 transition-colors cursor-default">
+                                    <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">02</span>
                                         <div>
                                             <h4 className="font-bold text-sm">Alta Empregabilidade</h4>
                                             <p className="text-xs text-gray-400">Parcerias com grandes empresas</p>
                                         </div>
                                     </div>
-                                    <div className="bg-gray-900/50 rounded-xl p-4 flex items-center gap-4 border border-white/5 hover:bg-gray-900/70 transition-colors cursor-default">
+                                    <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">03</span>
                                         <div>
                                             <h4 className="font-bold text-sm">Professores Experts</h4>
