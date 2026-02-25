@@ -25,8 +25,10 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
     colorClass = 'text-primary',
     bgClass = 'bg-white'
 }) => {
+    const isWhiteBg = bgClass.includes('bg-white');
+
     return (
-        <section className={`pt-12 pb-24 lg:pt-16 lg:pb-32 ${bgClass} overflow-hidden relative group`}>
+        <section className={`py-20 lg:py-24 ${bgClass} overflow-hidden relative group ${isWhiteBg ? 'border-t border-gray-100' : ''}`}>
             {/* Background Decoration */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-[url('/img/pattern/map.png')] bg-no-repeat bg-right-top opacity-5 pointer-events-none"></div>
 

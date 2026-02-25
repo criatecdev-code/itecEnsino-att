@@ -8,7 +8,7 @@ const GamificationArea: React.FC = () => {
             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
 
             <div className="container-custom relative z-10">
-                <div className="flex flex-col lg:flex-row items-center gap-16">
+                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
                     {/* Text Content */}
                     <div className="w-full lg:w-1/2">

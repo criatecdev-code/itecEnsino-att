@@ -38,7 +38,7 @@ const Header: React.FC = () => {
     return (
         <>
             {/* Main Navigation - Floating Header */}
-            <header ref={headerRef} className="fixed w-full z-50 top-6 px-4 md:px-10 pointer-events-none">
+            <header ref={headerRef} className="fixed w-full z-50 top-3 md:top-4 lg:top-6 px-4 md:px-10 pointer-events-none">
                 <div className="container-custom max-w-7xl mx-auto flex justify-between items-center pointer-events-none">
 
                     {/* Logo - On the Left */}
@@ -139,10 +139,10 @@ const Header: React.FC = () => {
                 <div className={`lg:hidden mt-4 overflow-hidden transition-all duration-500 ease-in-out pointer-events-auto ${isMobileMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}>
                     <div className="bg-white/95 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/20 overflow-hidden mx-auto max-w-[calc(100vw-2rem)]">
                         <nav className="flex flex-col p-6 space-y-1">
-                            <Link to="/" onClick={toggleMobileMenu} className="px-5 py-3 rounded-xl text-gray-700 font-extrabold hover:bg-primary/5 hover:text-primary transition-all text-sm">Início</Link>
-                            <Link to="/sobrenos" onClick={toggleMobileMenu} className="px-5 py-3 rounded-xl text-gray-700 font-extrabold hover:bg-primary/5 hover:text-primary transition-all text-sm">Sobre nós</Link>
-                            <Link to="/cursos/tecnico" onClick={toggleMobileMenu} className="px-5 py-3 rounded-xl text-gray-700 font-extrabold hover:bg-primary/5 hover:text-primary transition-all text-sm">Cursos</Link>
-                            <Link to="/contato" onClick={toggleMobileMenu} className="px-5 py-3 rounded-xl text-gray-700 font-extrabold hover:bg-primary/5 hover:text-primary transition-all text-sm">Contato</Link>
+                            <Link to="/" onClick={toggleMobileMenu} className="px-5 py-3.5 rounded-2xl text-gray-700 font-extrabold hover:bg-primary/5 hover:text-primary transition-all text-sm">Início</Link>
+                            <Link to="/sobrenos" onClick={toggleMobileMenu} className="px-5 py-3.5 rounded-2xl text-gray-700 font-extrabold hover:bg-primary/5 hover:text-primary transition-all text-sm">Sobre nós</Link>
+                            <Link to="/cursos/tecnico" onClick={toggleMobileMenu} className="px-5 py-3.5 rounded-2xl text-gray-700 font-extrabold hover:bg-primary/5 hover:text-primary transition-all text-sm">Cursos</Link>
+                            <Link to="/contato" onClick={toggleMobileMenu} className="px-5 py-3.5 rounded-2xl text-gray-700 font-extrabold hover:bg-primary/5 hover:text-primary transition-all text-sm">Contato</Link>
 
                             <div className="pt-6 space-y-3 px-2">
                                 <a href="https://www.itecqualificacao.com.br/campus/" target="_blank" rel="noopener noreferrer" className="block text-center bg-gray-50 text-gray-700 py-3.5 rounded-2xl font-bold text-xs border border-gray-100 transition-all active:scale-95">

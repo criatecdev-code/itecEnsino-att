@@ -27,7 +27,7 @@ const SegmentCards: React.FC = () => {
     ];
 
     return (
-        <div className="relative pt-16 pb-8 -mt-20 z-20">
+        <div className="relative pt-16 pb-8 -mt-10 md:-mt-16 lg:-mt-20 z-20">
             <div className="container-custom">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {segments.map((segment, index) => (

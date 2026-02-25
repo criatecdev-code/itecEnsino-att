@@ -66,38 +66,46 @@ const Courses: React.FC = () => {
                 <div className="container-custom">
 
                     {category === 'fundamental' ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                            {/* Card ITEKIDS */}
-                            <CourseCard
-                                titulo="ITEKIDS"
-                                categoria="Ensino Fundamental I"
-                                img="/img/home/fundamental.png"
-                                sobre="Desenvolvimento integral da criança em um ambiente que estimula a curiosidade e o aprendizado lúdico."
-                                cargahoraria="Integral/Parcial"
-                                slug="#"
-                                colorClass="text-secondary"
-                                features={[
-                                    "Projeto de Vida Infantil",
-                                    "Inglês desde o 1º ano",
-                                    "Metodologia Ativa & Gamificação"
-                                ]}
-                            />
+                        <div className="max-w-5xl mx-auto space-y-10">
+                            <div className="text-center">
+                                <h2 className="text-3xl md:text-4xl font-black text-gray-900">
+                                    {pageTitle}
+                                </h2>
+                            </div>
 
-                            {/* Card Fundamental II */}
-                            <CourseCard
-                                titulo="Fundamental II"
-                                categoria="Ensino Fundamental II"
-                                img="/img/home/fundamental.png"
-                                sobre="Base acadêmica sólida com foco no desenvolvimento do protagonismo e pensamento crítico do aluno."
-                                cargahoraria="Matutino/Vespertino"
-                                slug="#"
-                                colorClass="text-secondary"
-                            />
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                {/* Card ITEKIDS */}
+                                <CourseCard
+                                    titulo="ITEKIDS"
+                                    categoria="Ensino Fundamental I"
+                                    img="/img/fotos/31.png"
+                                    sobre="Desenvolvimento integral da criança em um ambiente que estimula a curiosidade e o aprendizado lúdico."
+                                    cargahoraria="Integral/Parcial"
+                                    slug="fundamental-1-itekids"
+                                    colorClass="text-secondary"
+                                    features={[
+                                        "Projeto de Vida Infantil",
+                                        "Inglês desde o 1º ano",
+                                        "Metodologia Ativa & Gamificação"
+                                    ]}
+                                />
+
+                                {/* Card Fundamental II */}
+                                <CourseCard
+                                    titulo="Fundamental II"
+                                    categoria="Ensino Fundamental II"
+                                    img="/cardfundamental2.png"
+                                    sobre="Base acadêmica sólida com foco no desenvolvimento do protagonismo e pensamento crítico do aluno."
+                                    cargahoraria="Matutino/Vespertino"
+                                    slug="fundamental-2"
+                                    colorClass="text-secondary"
+                                />
+                            </div>
                         </div>
                     ) : (
                         <>
                             {/* Search and Filter Info */}
-                            <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+                            <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6 bg-white rounded-3xl shadow-sm border border-gray-100 px-6 py-5">
                                 <div>
                                     <p className="text-gray-500 font-medium">
                                         Mostrando <span className="text-primary font-bold">{filteredCourses.length}</span> {filteredCourses.length === 1 ? 'curso' : 'cursos'}

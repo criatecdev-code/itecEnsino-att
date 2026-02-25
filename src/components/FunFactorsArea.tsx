@@ -8,9 +8,9 @@ const FunFactorsArea: React.FC = () => {
     ];
 
     return (
-        <div className="relative py-16 z-20">
+        <div className="relative py-20 z-20">
             <div className="container-custom">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     {stats.map((stat, index) => (
                         <div
                             key={index}

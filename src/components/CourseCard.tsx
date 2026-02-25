@@ -29,7 +29,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
     return (
         <div className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 flex flex-col h-full">
             {/* Card Image */}
-            <div className="relative h-64 overflow-hidden shrink-0">
+            <div className="relative h-56 md:h-64 overflow-hidden shrink-0">
                 <div className="absolute inset-0 bg-gray-900/20 group-hover:bg-gray-900/10 transition-colors z-10"></div>
                 <img
                     src={img}

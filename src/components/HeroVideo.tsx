@@ -3,7 +3,7 @@ import videoTeste from '../assets/videoTeste.webm';
 
 const HeroVideo: React.FC = () => {
     return (
-        <div className="relative w-full h-[85vh] md:h-screen overflow-hidden bg-white flex items-center justify-center">
+        <div className="relative w-full min-h-[600px] md:h-[85vh] lg:h-screen overflow-hidden bg-white flex items-center justify-center">
             {/* Video Background */}
             <video
                 className="absolute w-full h-full object-cover min-w-full min-h-full"
@@ -14,19 +14,19 @@ const HeroVideo: React.FC = () => {
                 preload="auto"
                 style={{ objectFit: 'cover' }}
                 // @ts-ignore - fetchPriority is supported but might not be in the current types
-                fetchPriority="high"
+                fetchpriority="high"
             >
                 <source src={videoTeste} type="video/webm" />
                 Seu navegador não suporta o elemento de vídeo.
             </video>
 
             {/* Dark Overlay for superior legibility and depth */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/25 to-black/70"></div>
 
             {/* Content Container */}
             <div className="absolute inset-0 z-10 flex items-center justify-center">
-                <div className="container-custom text-center px-4 max-w-4xl pt-28 md:pt-52">
-                    <div className="space-y-6 md:space-y-8 animate-fade-in-up">
+                <div className="container-custom text-center px-4 max-w-4xl pt-28 md:pt-40 lg:pt-52">
+                    <div className="space-y-6 md:space-y-7 lg:space-y-8 animate-fade-in-up">
                         {/* High-Impact Headline */}
                         <h1 className="text-3xl md:text-6xl lg:text-7xl font-black text-white leading-tight filter drop-shadow-2xl">
                             Transformando <span className="text-secondary">educação</span> em futuro
