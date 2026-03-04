@@ -8,7 +8,7 @@ const EducationLevels: React.FC = () => {
             <EducationLevelSection
                 subtitle="Do 1º ano ao ensino médio"
                 title="Ensino regular"
-                description="Uma jornada completa de aprendizado que prepara o aluno para os desafios do presente e do futuro. No ITEC, o conhecimento ganha vida através de metodologias ativas e tecnologia."
+                description="O diferencial do ensino regular está na educação financeira e na gamificação, que aumentam o engajamento, despertam vontade de aprender e preparam os alunos para um futuro de oportunidades."
                 image="/img/home/fundamental.png"
                 link="/cursos/fundamental"
                 linkText="Conhecer proposta"
@@ -21,7 +21,7 @@ const EducationLevels: React.FC = () => {
             <EducationLevelSection
                 subtitle="Qualificação profissional"
                 title="Cursos técnicos"
-                description="A entrada mais rápida para o mercado de trabalho. Nossos cursos técnicos combinam teoria e muita prática para você sair pronto para os desafios da profissão."
+                description="O curso técnico utiliza metodologia 100% ativa, com aulas práticas e experiências reais em sala que simulam a área de atuação, desenvolvendo competências profissionais e preparando você para um futuro profissional verdadeiro."
                 image="/img/home/enfermagem.png"
                 link="/cursos/tecnico"
                 linkText="Ver todos os cursos"

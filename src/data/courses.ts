@@ -580,6 +580,60 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
     img: "/img/fotos/27.jpg"
   },
   {
+    titulo: "Técnico em radiologia",
+    slug: "tecnico-em-radiologia",
+    sobre: "Descubra o poder da tecnologia aplicada à saúde! \n\tO Curso Técnico em Radiologia do ITEC forma profissionais prontos para operar equipamentos de alta precisão e contribuir diretamente para o diagnóstico médico. \n\tCom aulas práticas em laboratórios equipados e professores experientes, você aprende desde os fundamentos da radiologia até o uso de tecnologias avançadas de imagem, como tomografia e ressonância magnética. \n\tEm 24 meses, você estará preparado(a) para atuar em clínicas, hospitais e centros de diagnóstico em todo o país.",
+    area: "O profissional técnico em radiologia é essencial em qualquer instituição de saúde moderna. \n\tCom a formação do ITEC, você estará pronto(a) para atuar em hospitais, clínicas, laboratórios e centros de diagnóstico por imagem, \n\tem um dos setores que mais cresce no país. Além das excelentes oportunidades e valorização profissional, \n\ta radiologia oferece um campo de atuação tecnológica e humana, ideal para quem busca estabilidade e propósito.",
+    modulos: `
+        1º SEMESTRE
+        ;MÓDULO 1
+        ;Ética e Desenvolvimento Humano
+        ;Empreendedorismo
+        ;Português Instrumental e Produção Técnica
+        ;Saúde do Trabalhador
+        ;MÓDULO 2
+        ;Anatomia e Fisiologia Humana
+        ;Biossegurança e Controle de Infecção
+        ;Políticas Públicas de Saúde e SUS
+    
+        ;2º SEMESTRE
+        ;MÓDULO 3
+        ;Anatomia e Patologias Radiológicas
+        ;Técnicas de Posicionamento Radiológico
+        ;MÓDULO 4
+        ;Práticas de Posicionamento Radiológico
+        ;Equipamentos Radiológicos
+        ;Radioproteção e Dosimetria
+    
+        ;3º SEMESTRE
+        ;MÓDULO 5
+        ;Técnicas do Diagnóstico por Imagem
+        ;Exames Contrastados
+        ;Tomografia e Ressonância Magnética
+        ;MÓDULO 6
+        ;Mamografia e Densitometria Óssea
+        ;Gestão na Radiologia
+        ;Práticas do Diagnóstico por Imagem
+        ;Integra Estágio + Estágio Supervisionado I
+    
+        ;4º SEMESTRE
+        ;MÓDULO 7
+        ;Medicina Nuclear, Hemodinâmica e Radioterapia
+        ;Radiologia Odontológica
+        ;Radiologia Veterinária
+        ;Estágio Supervisionado II
+        ;MÓDULO 8
+        ;Radiologia Digital e Qualidade de Imagem
+        ;Radiologia Industrial
+        ;Estágio Supervisionado III
+        `,
+    cargahoraria: "1200h",
+    tempo: "24 meses",
+    categoria: "Cursos técnicos",
+    obs: "Matriz Curricular 2026 (pode sofrer alterações até fev/2026)",
+    img: "/img/fotos/29.jpg"
+  },
+  {
     titulo: "Técnico em análises clínicas",
     slug: "tecnico-em-analises-clinicas",
     sobre: "Transforme curiosidade científica em uma carreira promissora! \n\tO Curso Técnico em Análises Clínicas do ITEC prepara você para atuar com excelência nos bastidores da saúde, realizando exames laboratoriais que auxiliam no diagnóstico e na prevenção de doenças. \n\tCom uma formação moderna e prática, você aprenderá técnicas de coleta, análises bioquímicas, microbiológicas e hematológicas, utilizando equipamentos de última geração e metodologia orientada para o mercado. \n\tEm apenas 18 meses, você estará pronto(a) para atuar em laboratórios, hospitais e clínicas em todo o país.",
@@ -633,59 +687,5 @@ Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profiss
         `,
     obs: "Matriz Curricular 2026 (pode sofrer alterações até fev/2026). Não disponível para unidade de Resende.",
     img: "/img/fotos/28.jpg"
-  },
-  {
-    titulo: "Técnico em radiologia",
-    slug: "tecnico-em-radiologia",
-    sobre: "Descubra o poder da tecnologia aplicada à saúde! \n\tO Curso Técnico em Radiologia do ITEC forma profissionais prontos para operar equipamentos de alta precisão e contribuir diretamente para o diagnóstico médico. \n\tCom aulas práticas em laboratórios equipados e professores experientes, você aprende desde os fundamentos da radiologia até o uso de tecnologias avançadas de imagem, como tomografia e ressonância magnética. \n\tEm 24 meses, você estará preparado(a) para atuar em clínicas, hospitais e centros de diagnóstico em todo o país.",
-    area: "O profissional técnico em radiologia é essencial em qualquer instituição de saúde moderna. \n\tCom a formação do ITEC, você estará pronto(a) para atuar em hospitais, clínicas, laboratórios e centros de diagnóstico por imagem, \n\tem um dos setores que mais cresce no país. Além das excelentes oportunidades e valorização profissional, \n\ta radiologia oferece um campo de atuação tecnológica e humana, ideal para quem busca estabilidade e propósito.",
-    modulos: `
-        1º SEMESTRE
-        ;MÓDULO 1
-        ;Ética e Desenvolvimento Humano
-        ;Empreendedorismo
-        ;Português Instrumental e Produção Técnica
-        ;Saúde do Trabalhador
-        ;MÓDULO 2
-        ;Anatomia e Fisiologia Humana
-        ;Biossegurança e Controle de Infecção
-        ;Políticas Públicas de Saúde e SUS
-    
-        ;2º SEMESTRE
-        ;MÓDULO 3
-        ;Anatomia e Patologias Radiológicas
-        ;Técnicas de Posicionamento Radiológico
-        ;MÓDULO 4
-        ;Práticas de Posicionamento Radiológico
-        ;Equipamentos Radiológicos
-        ;Radioproteção e Dosimetria
-    
-        ;3º SEMESTRE
-        ;MÓDULO 5
-        ;Técnicas do Diagnóstico por Imagem
-        ;Exames Contrastados
-        ;Tomografia e Ressonância Magnética
-        ;MÓDULO 6
-        ;Mamografia e Densitometria Óssea
-        ;Gestão na Radiologia
-        ;Práticas do Diagnóstico por Imagem
-        ;Integra Estágio + Estágio Supervisionado I
-    
-        ;4º SEMESTRE
-        ;MÓDULO 7
-        ;Medicina Nuclear, Hemodinâmica e Radioterapia
-        ;Radiologia Odontológica
-        ;Radiologia Veterinária
-        ;Estágio Supervisionado II
-        ;MÓDULO 8
-        ;Radiologia Digital e Qualidade de Imagem
-        ;Radiologia Industrial
-        ;Estágio Supervisionado III
-        `,
-    cargahoraria: "1200h",
-    tempo: "24 meses",
-    categoria: "Cursos técnicos",
-    obs: "Matriz Curricular 2026 (pode sofrer alterações até fev/2026)",
-    img: "/img/fotos/29.jpg"
   },
 ];

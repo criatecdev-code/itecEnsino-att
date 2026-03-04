@@ -27,7 +27,7 @@ const FundamentalDetail: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-7xl font-black mb-8 leading-tight text-white animate-fade-in-up delay-100">
-                        ITE<span className="text-secondary">KIDS</span>
+                        Fundamental <span className="text-secondary">I</span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed animate-fade-in-up delay-200">
