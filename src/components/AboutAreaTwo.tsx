@@ -24,7 +24,7 @@ const AboutAreaTwo: React.FC = () => {
                         <h3 className="text-5xl md:text-6xl font-black leading-tight text-white">
                             Dê o próximo passo <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-green-400">
-                                Rumo ao sucesso!
+                                rumo ao sucesso!
                             </span>
                         </h3>
 

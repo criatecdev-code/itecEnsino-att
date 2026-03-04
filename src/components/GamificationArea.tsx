@@ -21,7 +21,7 @@ const GamificationArea: React.FC = () => {
 
                         <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6 animate-fade-in-up delay-100">
                             Aprender nunca foi tão <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-green-400">Divertido e desafiador</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-green-400">divertido e desafiador</span>
                         </h2>
 
                         <p className="text-gray-400 text-lg mb-8 leading-relaxed animate-fade-in-up delay-200">
@@ -73,7 +73,6 @@ const GamificationArea: React.FC = () => {
                                         <div className="flex justify-between items-end mb-2">
                                             <div>
                                                 <span className="text-gray-400 text-xs tracking-wider">Próximo nível</span>
-                                                <div className="text-white font-bold">Mestre da robótica</div>
                                             </div>
                                             <span className="text-secondary font-bold">85%</span>
                                         </div>

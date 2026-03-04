@@ -29,7 +29,7 @@ const EnrollmentCTA: React.FC = () => {
                         </h2>
 
                         <p className="text-gray-300 text-lg md:text-xl mb-8 leading-relaxed max-w-xl animate-fade-in-up delay-200">
-                            Não perca a oportunidade de estudar na instituição que é referência em ensino técnico e profissionalizante. Condições especiais para matrículas antecipadas.
+                            Não perca a oportunidade de estudar na instituição que é referência em ensino regular, técnico e profissionalizante. Condições especiais para matrículas antecipadas.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
@@ -41,20 +41,6 @@ const EnrollmentCTA: React.FC = () => {
                             </a>
                         </div>
 
-                        <div className="mt-12 flex items-center gap-8 text-sm font-medium text-gray-400 animate-fade-in-up delay-400">
-                            <div className="flex items-center gap-2">
-                                <i className="fas fa-check-circle text-secondary text-lg"></i>
-                                <span>Material incluso</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <i className="fas fa-check-circle text-secondary text-lg"></i>
-                                <span>Bolsas de até 50%</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <i className="fas fa-check-circle text-secondary text-lg"></i>
-                                <span>Certificado reconhecido</span>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Visual/Card Column */}
@@ -67,8 +53,8 @@ const EnrollmentCTA: React.FC = () => {
                                         <i className="fas fa-user-graduate text-2xl text-white"></i>
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold mb-2">Por que escolher o ITEC?</h3>
-                                        <p className="text-gray-300 text-sm leading-relaxed">
+                                        <h3 className="text-xl font-black mb-2 text-white">Por que escolher o ITEC?</h3>
+                                        <p className="text-white/90 text-sm leading-relaxed">
                                             Mais de 15 anos transformando vidas através da educação de qualidade.
                                         </p>
                                     </div>
@@ -78,22 +64,22 @@ const EnrollmentCTA: React.FC = () => {
                                     <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">01</span>
                                         <div>
-                                            <h4 className="font-bold text-sm">Metodologia prática</h4>
-                                            <p className="text-xs text-gray-400">Aprenda fazendo em laboratórios reais</p>
+                                            <h4 className="font-bold text-sm text-white">Gamificação</h4>
+                                            <p className="text-xs text-white/80">Aprenda de forma dinâmica com desafios e recompensas</p>
                                         </div>
                                     </div>
                                     <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">02</span>
                                         <div>
-                                            <h4 className="font-bold text-sm">Alta empregabilidade</h4>
-                                            <p className="text-xs text-gray-400">Parcerias com grandes empresas</p>
+                                            <h4 className="font-bold text-sm text-white">Metodologia ativa</h4>
+                                            <p className="text-xs text-white/80">O aluno como protagonista da aprendizagem</p>
                                         </div>
                                     </div>
                                     <div className="bg-blue-950/40 rounded-xl p-4 flex items-center gap-4 border border-white/10 hover:bg-blue-900/40 transition-colors cursor-default">
                                         <span className="text-2xl font-black text-secondary">03</span>
                                         <div>
-                                            <h4 className="font-bold text-sm">Professores experts</h4>
-                                            <p className="text-xs text-gray-400">Profissionais atuantes no mercado</p>
+                                            <h4 className="font-bold text-sm text-white">Qualificação para o futuro</h4>
+                                            <p className="text-xs text-white/80">Conhecimento alinhado com o mercado</p>
                                         </div>
                                     </div>
                                 </div>

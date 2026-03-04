@@ -48,12 +48,12 @@ const AboutArea: React.FC = () => {
                         </h3>
                         <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                             <p>
-                                Além de te preparar para o mercado com o <strong className="text-gray-900">melhor custo benefício</strong>,
-                                trabalhamos a <span className="text-secondary font-bold">educação empreendedora</span>, possibilitando mais protagonismo e visão de futuro.
+                                Com mais de <strong className="text-gray-900">15 anos de história</strong> transformando vidas através da educação,
+                                o ITEC nasceu em Volta Redonda e se tornou o <span className="text-secondary font-bold">maior polo de ensino técnico</span> do Sul Fluminense.
                             </p>
                             <p>
-                                No ensino técnico, somos comprometidos com a prática, preparando você para o
-                                mercado de trabalho com confiança e excelência.
+                                Nossa trajetória é marcada pela inovação e pelo compromisso contínuo com a excelência. Unindo teoria à prática intensiva,
+                                preparamos nossos alunos para os desafios reais do mercado de trabalho.
                             </p>
                         </div>
 
