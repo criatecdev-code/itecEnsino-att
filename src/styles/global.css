@@ -9,7 +9,8 @@
   /* More vivid pink/magenta */
   --color-dark: #111827;
   --color-light: #f3f4f6;
-  --font-sans: 'Space Grotesk', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
   --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
   --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-float: float 3s ease-in-out infinite;
@@ -50,7 +51,7 @@
   h4,
   h5,
   h6 {
-    @apply font-bold text-gray-900 tracking-tight;
+    @apply font-heading font-bold text-gray-900 tracking-tight;
   }
 }
 
@@ -60,23 +61,23 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-blue-900/20 transition-all duration-300 hover:bg-blue-800 hover:shadow-xl hover:-translate-y-1 active:translate-y-0 inline-flex items-center justify-center gap-2;
+    @apply bg-secondary text-white font-black py-4 px-10 rounded-2xl shadow-lg shadow-black/5 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0 active:scale-95 inline-flex items-center justify-center gap-2;
   }
 
   .btn-secondary {
-    @apply bg-secondary text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-green-900/20 transition-all duration-300 hover:bg-green-700 hover:shadow-xl hover:-translate-y-1 active:translate-y-0 inline-flex items-center justify-center gap-2;
+    @apply bg-primary text-white font-black py-4 px-10 rounded-2xl shadow-lg shadow-black/5 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0 active:scale-95 inline-flex items-center justify-center gap-2;
   }
 
   .section-padding {
-    @apply py-24;
+    @apply py-20 md:py-32;
   }
 
   .card-hover {
-    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl;
+    @apply transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/5;
   }
 
   .glass-panel {
-    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+    @apply bg-white/90 backdrop-blur-sm border border-white/20 shadow-xl shadow-black/5;
   }
 }
 

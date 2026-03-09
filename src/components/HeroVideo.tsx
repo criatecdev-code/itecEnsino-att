@@ -21,52 +21,55 @@ const HeroVideo: React.FC = () => {
             </video>
 
             {/* Dark Overlay for superior legibility and depth */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/25 to-black/70"></div>
+            <div className="absolute inset-0 bg-black/40"></div>
 
             {/* Content Container */}
             <div className="absolute inset-0 z-10 flex items-center justify-center">
-                <div className="container-custom text-center px-4 max-w-4xl pt-28 md:pt-40 lg:pt-52">
-                    <div className="space-y-6 md:space-y-7 lg:space-y-8 animate-fade-in-up">
+                <div className="container-custom text-center px-4 max-w-4xl pt-20 border-t-0">
+                    <div className="space-y-6 md:space-y-8 animate-fade-in-up">
                         {/* High-Impact Headline */}
-                        <h1 className="text-3xl md:text-6xl lg:text-7xl font-black text-white leading-tight filter drop-shadow-2xl">
-                            Transformando <span className="text-secondary">educação</span> em futuro
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mx-auto max-w-4xl">
+                            SEU FUTURO <br className="hidden md:block" /><span className="text-secondary">COMEÇA</span> AQUI
                         </h1>
 
                         {/* Persuasive Subtitle */}
-                        <p className="text-lg md:text-2xl text-white/90 font-medium max-w-4xl mx-auto leading-relaxed filter drop-shadow-lg">
-                            Do ensino fundamental ao técnico: formação de excelência focada no mercado de trabalho e no seu futuro.
+                        <p className="text-lg md:text-xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
+                            Do ensino fundamental ao técnico: formação de excelência focada no seu crescimento profissional.
                         </p>
 
                         {/* Conversion Buttons (CTAs) */}
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 pt-6">
                             <Link
                                 to="/matricula"
-                                className="group relative w-full sm:w-auto overflow-hidden bg-secondary px-10 py-5 rounded-2xl text-white font-black text-lg shadow-2xl shadow-secondary/30 hover:shadow-secondary/50 hover:-translate-y-1 transition-all active:scale-95"
+                                className="group bg-secondary px-12 py-5 rounded-2xl text-white font-black text-lg shadow-xl shadow-black/10 hover:-translate-y-1 transition-all active:scale-95 flex items-center gap-3"
                             >
-                                <span className="relative z-10 flex items-center justify-center gap-2">
-                                    Quero me matricular <i className="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
-                                </span>
-                                <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                                Quero me matricular <i className="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                            </Link>
+                            <Link
+                                to="/cursos"
+                                className="px-12 py-5 rounded-2xl font-black border-2 border-white/30 text-white hover:bg-white hover:text-primary transition-all text-lg backdrop-blur-sm"
+                            >
+                                Conhecer cursos
                             </Link>
                         </div>
 
-                        {/* Trust Indicator / Social Proof (Simplified) */}
-                        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 opacity-80 sm:opacity-70">
-                            <div className="flex items-center gap-2 text-white">
-                                <i className="fas fa-check-circle text-secondary"></i>
-                                <span className="text-xs md:text-sm font-bold tracking-wider">Cursos reconhecidos</span>
+                        {/* Trust Indicator - Simplified and cleaner */}
+                        <div className="pt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-80">
+                            <div className="flex items-center gap-3 text-white">
+                                <i className="fas fa-check text-secondary text-sm"></i>
+                                <span className="text-sm font-bold tracking-tight uppercase">Cursos reconhecidos</span>
                             </div>
-                            <div className="flex items-center gap-2 text-white sm:border-l sm:border-white/20 sm:pl-8">
-                                <i className="fas fa-star text-yellow-400"></i>
-                                <span className="text-xs md:text-sm font-bold tracking-wider">Líder em educação</span>
+                            <div className="flex items-center gap-3 text-white">
+                                <i className="fas fa-check text-secondary text-sm"></i>
+                                <span className="text-sm font-bold tracking-tight uppercase">Tradição e Qualidade</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Visual Polish: Bottom Gradient Fade for Section Transition */}
-            <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+            {/* Visual Polish: Bottom Gradient Fade for Section Transition - Subtle */}
+            <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-gray-50 to-transparent pointer-events-none"></div>
         </div>
     );
 };

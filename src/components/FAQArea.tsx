@@ -60,7 +60,7 @@ const FAQArea: React.FC = () => {
                             return (
                                 <div
                                     key={index}
-                                    className={`border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? 'bg-gray-50 shadow-lg' : 'bg-white shadow-sm hover:shadow-md'}`}
+                                    className={`border border-gray-50 rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? 'bg-gray-50 shadow-xl shadow-black/5' : 'bg-white shadow-md hover:shadow-xl hover:shadow-black/5'}`}
                                 >
                                     <button
                                         onClick={() => setOpenIndex(isOpen ? null : index)}

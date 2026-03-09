@@ -1,0 +1,270 @@
+project: ITEC Ensino - Website UI Refinement
+type: frontend-design-rules
+
+stack:
+  framework: React 18
+  router: React Router
+  styling: TailwindCSS 4
+  icons: Lucide / FontAwesome
+  sliders: React Slick
+
+objective:
+  Improve the institutional website design of ITEC Ensino while preserving the brand identity.
+  The redesign must refine hierarchy, typography, spacing and UI patterns to create a
+  more credible, professional and educational institutional website.
+
+  The interface should feel:
+
+  - institutional
+  - modern
+  - trustworthy
+  - well structured
+  - visually balanced
+  - less template-like
+  - less AI-generated
+
+brand_constraints:
+
+  colors:
+    primary_blue: "#1e40af"
+    secondary_green: "#65a30d"
+    tertiary_magenta: "#be185d"
+    dark: "#111827"
+    light: "#f3f4f6"
+
+  color_usage_rules:
+    - Blue is the primary institutional color
+    - Green is reserved for CTAs and conversion elements
+    - Magenta is used sparingly as accent
+    - Avoid mixing the three colors in the same component
+    - Prefer neutral backgrounds with accent highlights
+
+typography:
+
+  heading_font: "Plus Jakarta Sans"
+  body_font: "Inter"
+
+  font_usage_rules:
+    - Headings MUST use Plus Jakarta Sans
+    - Body text and UI elements MUST use Inter
+    - Avoid mixing additional font families
+    - Maintain strong hierarchy between heading levels
+
+  heading_weights:
+    h1: 800
+    h2: 700
+    h3: 600
+    h4: 600
+
+  body_weights:
+    paragraph: 400
+    ui_labels: 500
+
+  typography_rules:
+    - Titles must be visually strong but clean
+    - Avoid excessive bold usage
+    - Maintain readable line-height
+    - Limit paragraph width for readability
+    - Avoid long centered paragraphs
+
+layout_principles:
+
+  overall_layout:
+    - Maintain SPA architecture
+    - Maintain header → content → footer structure
+    - Preserve React Router navigation
+    - Do not remove existing routes
+
+  spacing_rules:
+    - Increase vertical spacing between sections
+    - Avoid dense layouts
+    - Prioritize breathing room
+    - Maintain consistent container widths
+
+  containers:
+    - Use centered max-width containers
+    - Avoid full-width text blocks
+    - Maintain consistent margins
+
+visual_refinement:
+
+  reduce_visual_noise:
+    - Reduce excessive glassmorphism
+    - Limit backdrop blur usage
+    - Reduce decorative floating elements
+    - Reduce colored shadows
+
+  gradients:
+    - Allow gradients only in hero and major CTA sections
+    - Avoid gradients in regular content blocks
+
+  shadows:
+    - Prefer subtle neutral shadows
+    - Avoid strong colored shadows
+
+  borders:
+    - Prefer rounded-xl or rounded-2xl
+    - Avoid extreme border radius
+
+components_guidelines:
+
+  header:
+
+    goals:
+      - Cleaner navigation
+      - More institutional appearance
+      - Clear CTA hierarchy
+
+    rules:
+      - Keep header fixed
+      - Maintain light glass effect
+      - Simplify dropdown menus
+      - Avoid excessive icon usage
+
+  hero_section:
+
+    goals:
+      - Improve clarity
+      - Highlight educational credibility
+      - Focus on headline and CTA
+
+    rules:
+      - Strong headline hierarchy
+      - Clear supporting message
+      - One main CTA and one secondary CTA
+      - Avoid excessive decoration
+
+  cards:
+
+    standardization:
+      Only three card types are allowed:
+
+      - course_card
+      - institutional_card
+      - highlight_card
+
+    design_rules:
+      - Consistent padding
+      - Consistent title size
+      - Consistent spacing
+      - Subtle hover effects
+      - Minimal elevation
+
+  buttons:
+
+    hierarchy:
+
+      primary_button:
+        color: secondary_green
+
+      secondary_button:
+        color: primary_blue
+
+      ghost_button:
+        style: minimal or outline
+
+    rules:
+      - Maintain consistent padding
+      - Avoid exaggerated hover animations
+      - Prefer smooth transitions
+
+  footer:
+
+    structure:
+      - Maintain CTA area
+      - Maintain grid layout
+      - Improve readability and spacing
+
+    rules:
+      - Reduce decorative density
+      - Maintain institutional tone
+      - Improve hierarchy of links
+
+animations:
+
+  allowed_animations:
+    - subtle fade
+    - opacity transitions
+    - soft scale hover
+    - minimal translate hover
+
+  animation_rules:
+    - Avoid strong vertical movement
+    - Avoid bouncing animations
+    - Avoid excessive floating effects
+    - Keep transitions subtle
+
+  performance_rules:
+    - Animations must not impact performance
+    - Avoid heavy animation libraries unless needed
+
+content_readability:
+
+  text_layout:
+    - Limit text width
+    - Avoid large centered paragraphs
+    - Improve line height
+
+  hierarchy:
+    - Titles must stand out clearly
+    - Avoid too many highlighted elements
+
+icons:
+
+  rules:
+    - Icons support content but should not dominate layout
+    - Prefer Lucide icons
+    - Maintain consistent icon size
+
+accessibility:
+
+  requirements:
+    - Maintain strong color contrast
+    - Ensure readable font sizes
+    - Maintain accessible buttons
+    - Avoid overly subtle UI elements
+
+responsive_behavior:
+
+  mobile_navigation:
+    - Maintain hamburger navigation
+    - Improve spacing between menu items
+    - Avoid complex nested menus
+
+  mobile_layout:
+    - Maintain clear hierarchy
+    - Ensure comfortable spacing
+
+code_modification_rules:
+
+  allowed_changes:
+    - Tailwind classes
+    - typography hierarchy
+    - spacing and layout
+    - card styling
+    - component structure
+    - animation refinement
+
+  forbidden_changes:
+    - Do not change brand colors
+    - Do not remove existing routes
+    - Do not change SPA architecture
+    - Do not remove core sections
+    - Do not introduce new font families
+
+design_goal:
+
+  The final interface should resemble a modern and credible
+  educational institution website.
+
+  It must feel:
+
+  - professional
+  - trustworthy
+  - academic
+  - clean
+  - structured
+  - modern but not flashy
+
+  The result should maintain the ITEC identity while elevating the
+  visual quality, readability and institutional credibility.

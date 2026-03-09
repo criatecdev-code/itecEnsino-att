@@ -19,13 +19,13 @@ export const courses: Course[] = [
     sobre: "Atuação nos processos administrativos de empresas urbanas e rurais, executando atividades de apoio nas áreas de recursos humanos, finanças, produção, logística e vendas. Observando procedimentos operacionais e a legislação.",
     area: "Gestão de processos administrativos, controle de qualidade, informações, equipes e comunicações internas e externas. Exercer atividades de liderança, promovendo o desenvolvimento das equipes e facilitando o alcance dos objetivos. Prestar assessoria e consultoria estratégica, participando ativamente das decisões que impactam a rotina da empresa. Manter um atendimento de excelência para clientes e fornecedores. Além disso, será responsável pela organização e manutenção de arquivos e redação de documentos precisos e eficientes.",
     modulos: `
-        Criatividade No Trabalho
-        ;Dinamismo E Compromisso Com O Sucesso
-        ;Empreendedor De Sucesso
+        Criatividade no Trabalho
+        ;Dinamismo e Compromisso com o Sucesso
+        ;Empreendedor de Sucesso
         ;Excel - Essencial 365
         ;Excel - Intermediário 365
         ;Rotinas Administrativas
-        ;Gestão De Pessoas
+        ;Gestão de Pessoas
         `,
     cargahoraria: "48h",
     tempo: "6 meses",
@@ -69,11 +69,11 @@ export const courses: Course[] = [
     sobre: "Capacitação de profissionais para lidar com inadimplência, desenvolvendo habilidades de comunicação, negociação e gerenciamento de conflitos. O objetivo é formar especialistas éticos, conscientes da legislação e capazes de buscar soluções para a recuperação de dívidas de forma responsável.",
     area: "Atuar na área de departamentos financeiros, setores de crédito e cobrança, ou empresas especializadas em recuperação de crédito.",
     modulos: `
-        Dez Maneiras De Se Vender Uma Idéia
-        ;Gestão De Conflitos
-        ;Atendimento Ao Cliente
-        ;Operador De Caixa
-        ;Crédito E Cobrança
+        Dez Maneiras de se Vender uma Idéia
+        ;Gestão de Conflitos
+        ;Atendimento ao Cliente
+        ;Operador de Caixa
+        ;Crédito e Cobrança
         ;Telemarketing
         `,
     cargahoraria: "52h",
@@ -87,10 +87,10 @@ export const courses: Course[] = [
     sobre: "Preparação dos alunos a adquirirem habilidades técnicas e práticas para projetar, desenvolver e implementar aplicativos para dispositivos móveis e/ou web.",
     area: "Atuar em indústrias de tecnologia, em startups, empresas de desenvolvimento de software ou como empreendedores na criação de seus próprios aplicativos.",
     modulos: `
-        Lógica De Programação
-        ;Criando Aplicativos Com Angular
-        ;Criando Aplicativos Com Ionic
-        ;Criando Aplicativos Com Cordova
+        Lógica de Programação
+        ;Criando Aplicativos com Angular
+        ;Criando Aplicativos com Ionic
+        ;Criando Aplicativos com Cordova
         `,
     cargahoraria: "52h",
     tempo: "6 meses e 2 semanas",
@@ -104,10 +104,10 @@ export const courses: Course[] = [
     area: "Atuar na criação e manutenção de softwares personalizados para empresas, instituições e organizações em geral. Sua área de atuação inclui o desenvolvimento de sistemas de gestão, aplicativos empresariais, plataformas web e soluções tecnológicas sob medida para otimizar processos e melhorar a eficiência das operações.",
     modulos: `
         Banco De Dados SQL
-        ;Programação C# Com Visual Studio - Essencial
-        ;Programação C# Com Visual Studio - Intermediário
-        ;Programação C# Com Visual Studio - Avançado I
-        ;Programação C# Com Visual Studio - Avançado II
+        ;Programação C# com Visual Studio - Essencial
+        ;Programação C# com Visual Studio - Intermediário
+        ;Programação C# com Visual Studio - Avançado I
+        ;Programação C# com Visual Studio - Avançado II
         `,
     cargahoraria: "76h",
     tempo: "9 meses e 2 semanas",
@@ -150,7 +150,7 @@ export const courses: Course[] = [
     img: "/img/fotos/8.jpg"
   },
   {
-    titulo: "Desenvolvimento de Games",
+    titulo: "Desenvolvimento de Games I",
     slug: "desenvolvimento-de-games",
     sobre: "Capacitação dos alunos a adquirirem habilidades técnicas e criativas para criação de jogos eletrônicos, passando conceitos básicos da ferramenta, como criação de cenários, movimentação, colisão, uso de sons, criação de eventos, comandos de input e muito mais.",
     area: "Atuação em diversas áreas da indústria de jogos eletrônicos, incluindo desenvolvimento de jogos para plataformas móveis e consoles, criação de jogos para realidade virtual e aumentada, produção de jogos educacionais e de treinamento, além de oportunidades em estúdios de desenvolvimento de games, empresas de tecnologia e até mesmo como empreendedor independente na criação de jogos autorais.",
@@ -175,7 +175,7 @@ export const courses: Course[] = [
         Pixel Art
         ;Tinkercad
         ;Python
-        ;Desenvolvimento De Games
+        ;Desenvolvimento de Games
         `,
     cargahoraria: "68h",
     tempo: "8 meses e 2 semanas",
@@ -188,8 +188,8 @@ export const courses: Course[] = [
     sobre: "Capacitação dos alunos para adquirirem habilidades técnicas e criativas para criar jogos tridimensionais imersivos, permitindo a criação de experiências interativas e visualmente impactantes para diferentes plataformas e dispositivos.",
     area: "Atuação em estúdios de desenvolvimento de jogos, criando mundos e personagens para jogos em diversas plataformas. Além disso, podem encontrar oportunidades em empresas de realidade virtual e aumentada, produzindo conteúdo imersivo.",
     modulos: `
-        Desenvolvimento De Games - 3d Módulo I
-        ;Desenvolvimento De Games - 3d Módulo II
+        Desenvolvimento de Games - 3d Módulo I
+        ;Desenvolvimento de Games - 3d Módulo II
         `,
     cargahoraria: "40h",
     tempo: "5 meses",
@@ -197,12 +197,12 @@ export const courses: Course[] = [
     img: "/img/fotos/11.jpg"
   },
   {
-    titulo: "Desenvolvimento de  Jogos Digitais",
+    titulo: "Desenvolvimento de Jogos Digitais",
     slug: "desenvolvimento-de-jogos-digitais",
     sobre: "Capacitação dos alunos para adquirirem habilidades técnicas e criativas para criação de jogos eletrônicos de forma completa e profissional. Ao final do curso, os participantes estarão aptos a conceber, projetar, programar e implementar jogos para diferentes plataformas, utilizando tecnologias e ferramentas relevantes para a indústria de desenvolvimento de games.",
     area: "Atuação em estúdios de desenvolvimento de games, criando jogos para consoles, PC e dispositivos móveis. Além disso, podem encontrar oportunidades em empresas de realidade virtual e aumentada, produzindo experiências imersivas. Outras áreas incluem gamificação, desenvolvimento de aplicativos interativos e simulações para treinamento.",
     modulos: `
-        Lógica De Programação
+        Lógica de Programação
         ;Kodu Game Lab
         ;Scratch
         ;Roblox
@@ -210,9 +210,9 @@ export const courses: Course[] = [
         ;Pixel Art
         ;Tinkercad
         ;Python
-        ;Desenvolvimento De Games
-        ;Desenvolvimento De Games - 3d Módulo I
-        ;Desenvolvimento De Games - 3d Módulo II
+        ;Desenvolvimento de Games
+        ;Desenvolvimento de Games - 3d Módulo I
+        ;Desenvolvimento de Games - 3d Módulo II
         `,
     cargahoraria: "172h",
     tempo: "21 meses e 2 semanas",
@@ -227,7 +227,7 @@ export const courses: Course[] = [
     modulos: `
         Departamento Pessoal
         ;Recursos Humanos
-        ;Gestão De Pessoas
+        ;Gestão de Pessoas
         `,
     cargahoraria: "60h",
     tempo: "7 meses e 2 semanas",
@@ -240,7 +240,7 @@ export const courses: Course[] = [
     sobre: "Capacitação dos alunos para adquirirem habilidades técnicas para projetar, criar e implementar sites e aplicações web de forma eficiente e profissional. O curso visa preparar profissionais para atuarem no desenvolvimento de soluções web que atendam às necessidades e demandas do mercado digital atual.",
     area: "Atuação em agências de criação, empresas de tecnologia e startups, desenvolvendo e mantendo sites e aplicações web, em setores de comércio eletrônico, mídia digital e empreendendo projetos próprios na área de desenvolvimento web.",
     modulos: `
-        Lógica De Programação
+        Lógica de Programação
         ;Desenvolvimento Web - Html
         ;Desenvolvimento Web - Css
         ;Desenvolvimento Web - Javascript
@@ -257,7 +257,7 @@ export const courses: Course[] = [
     sobre: "Capacitação dos alunos para adquirirem conhecimentos teóricos e práticos sobre o uso e aplicação de tecnologias da informação.",
     area: "Atuação em diversas áreas, como: suporte técnico em empresas de tecnologia, atendimento ao cliente em setores de informática, auxiliando na resolução de problemas e manutenção de equipamentos, e também em cargos administrativos e de escritório, utilizando softwares de escritório e sistemas de gestão.",
     modulos: `
-        Introdução A Informática
+        Introdução a Informática
         ;Windows 11 Essencial
         ;Windows 11 Avançado
         ;Word Essencial 365
@@ -281,15 +281,15 @@ export const courses: Course[] = [
     area: "Atuação em diversas áreas, como: gestão de equipes em empresas de diferentes setores, liderança em projetos e empreendimentos, cargos de supervisão e coordenação em organizações, além de oportunidades em consultorias e treinamentos em desenvolvimento de liderança.",
     modulos: `
         Desenvolvimento Profissional
-        ;Dinamismo E Compromisso Com O Sucesso
-        ;Empreendedor De Sucesso
-        ;Criatividade No Trabalho
-        ;Dez Maneiras De Se Vender Uma Idéia
-        ;Gestão De Conflitos
-        ;A'tendimento Ao Cliente
-        ;Trabalho Em Equipe
+        ;Dinamismo e Compromisso com o Sucesso
+        ;Empreendedor de Sucesso
+        ;Criatividade no Trabalho
+        ;Dez Maneiras de Se Vender uma Idéia
+        ;Gestão de Conflitos
+        ;A'tendimento ao Cliente
+        ;Trabalho em Equipe
         ;Liderança
-        ;Gestão De Pessoas
+        ;Gestão de Pessoas
         `,
     cargahoraria: "42h",
     tempo: "5 meses e 1 semana",
@@ -297,12 +297,12 @@ export const courses: Course[] = [
     img: "/img/fotos/16.jpg"
   },
   {
-    titulo: "Gestão e marketing digital",
+    titulo: "Gestão em marketing digital",
     slug: "gestao-e-marketing-digital",
     sobre: "Capacitação dos alunos para adquirirem habilidades estratégicas e técnicas para planejar, implementar e gerir campanhas de marketing digital de forma eficiente.",
     area: "Atuação em diversas áreas, como: gerência de marketing digital em empresas, agências de publicidade e marketing, consultorias para otimizar estratégias digitais de negócios, e empreendedorismo para impulsionar o crescimento de marcas e projetos online.",
     modulos: `
-        Agente De Vendas
+        Agente de Vendas
         ;Google Adwords
         ;Marketing Digital I
         ;Marketing Digital II
@@ -331,15 +331,15 @@ export const courses: Course[] = [
     titulo: "Social Media 360",
     slug: "social-media-360",
     sobre: "Capacitação dos participantes a adquirirem conhecimentos e habilidades para gerir de forma estratégica as mídias sociais de empresas, marcas e projetos. Visando a qualificação dos profissionais para atuarem no crescente mercado de mídias sociais, tornando-se especialistas em impulsionar o alcance e o engajamento das marcas nas plataformas digitais.",
-    area: "Atuação em diversas áreas como: agências de marketing digital, gerenciamento de redes sociais para empresas e marcas, criação de conteúdo para influenciadores digitais, estratégias de mídias sociais para e-commerce, além de oportunidades em setores de comunicação e publicidade.",
+    area: "Atuação em diversas áreas como: agências de marketing digital, gerenciamento de redes sociais para empresas e marcas, criação de conteúdo para influenciadores digitais, estratégias de mídias sociais para e-commerce, além de oportunidades em sectores de comunicação e publicidade.",
     modulos: `
         Desenvolvimento Profissional
-        ;Dinamismo E Compromisso Com O Sucesso
-        ;Empreendedor De Sucesso
-        ;Criatividade No Trabalho
-        ;Dez Maneiras De Se Vender Uma Idéia
+        ;Dinamismo e Compromisso com o Sucesso
+        ;Empreendedor de Sucesso
+        ;Criatividade no Trabalho
+        ;Dez Maneiras de se Vender uma Idéia
         ;Adobe Photoshop - Módulo I
-        ;Internet, Redes Sociais E Aplicativos
+        ;Internet, Redes Sociais e Aplicativos
         ;Apresentações Google
         ;Google Adwords
         ;Marketing Digital I
@@ -350,12 +350,12 @@ export const courses: Course[] = [
     img: "/img/fotos/19.jpg"
   },
   {
-    titulo: "Google Business",
+    titulo: "Google for Business",
     slug: "google-business",
     sobre: "Capacitação dos participantes a dominarem as ferramentas e recursos oferecidos pela Google para otimizar a produtividade e a colaboração no ambiente corporativo.",
     area: "Atuação em diversas áreas, como: setores administrativos e de secretariado, gerenciamento de projetos e equipes, consultorias em produtividade e processos de negócios, e empreendedorismo para otimizar a gestão de empresas.",
     modulos: `
-        Google: Ferramentas De Produtividade
+        Google: Ferramentas de Produtividade
         ;Documentos Google
         ;Planilhas Google
         ;Apresentações Google
@@ -373,7 +373,7 @@ export const courses: Course[] = [
     modulos: `
         Microsoft Power Bi - Modulo I 
         ;Microsoft Power Bi - Modulo II
-        ;Microsoft Power Bi - Modulo III 
+        ;Microsoft Power Bi - Modulo III
         `,
     cargahoraria: "48h",
     tempo: "6 meses",
@@ -390,10 +390,10 @@ export const courses: Course[] = [
         manter redes corporativas - Garantir o bom funcionamento de sistemas e servidores
         Implementar sistemas e redes - Gerenciar e manter a infraestrutura tecnológica de uma organização Planejar, implementar, suportar e otimizar sistemas e redes de computadores`,
     modulos: `
-        Redes - Cabeamento E Infraestrutura 
-        ;Redes - Lógicas E Estruturação 
+        Redes - Cabeamento e Infraestrutura
+        ;Redes - Lógicas e Estruturação 
         ;Redes - Tecnologia Wireless
-        ;Montagem E Manutenção De Computadores
+        ;Montagem e Manutenção de Computadores
         `,
     cargahoraria: "49h",
     tempo: "6 meses e 1 semana",
@@ -406,12 +406,11 @@ export const courses: Course[] = [
     sobre: "Finanças Essencial é voltado para estudantes e profissionais que desejam aprender os conceitos fundamentais de finanças, desde a gestão de orçamento pessoal até a análise financeira de empresas.",
     area: "Planejamento financeiro - Controle financeiro - Monitoramento de recursos financeiros - Análise de custos e riscos - Gestão de fluxo de caixa - Alocação de recursos - Investimentos - Profissões na área financeira - Analista financeiro - Analista de risco - Analista de fundos de investimento - Analista de crédito - Analista de mercado de capitais - Economista financeiro - Consultor financeiro - Trader",
     modulos: `
-        Operador De Caixa
-        ;Credito E Cobranca 
-        ;Matemática Financeira Hp 12c
+        Guia Inteligencia Artificial
+        ;Inteligencia Artificial 
         `,
-    cargahoraria: "34h",
-    tempo: "4 meses e 1 semana",
+    cargahoraria: "16h",
+    tempo: "2 meses",
     categoria: "Cursos profissionalizantes",
     img: "/img/fotos/22.jpg"
   },
@@ -420,7 +419,7 @@ export const courses: Course[] = [
     slug: "sketchup",
     sobre: "Dê vida às suas ideias com SketchUp: aprenda a criar projetos 3D incríveis de forma prática e profissional!",
     area: `Arquitetura - Design de Interiores - Engenharia Civil - Paisagismo - Urbanismo
-Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profissionais`,
+        Cenografia e Eventos - Design de Produto e Mobiliário - Apresentações Profissionais`,
     modulos: `
         `,
     cargahoraria: "22h",

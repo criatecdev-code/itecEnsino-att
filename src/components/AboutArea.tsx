@@ -10,26 +10,8 @@ const AboutArea: React.FC = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                     {/* Image Column */}
                     <div className="w-full lg:w-1/2 relative group">
-                        <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-gray-200 transform transition-transform duration-700 hover:scale-[1.02]">
+                        <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl shadow-black/5 transform transition-transform duration-700 hover:scale-[1.01]">
                             <img className="w-full h-auto object-cover" src="/img/home/sobrenos.png" alt="Alunos ITEC" loading="lazy" />
-                            {/* Overlay gradient */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        </div>
-
-                        {/* Decorative floating element */}
-                        <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-secondary/10 rounded-full blur-3xl -z-0"></div>
-                        <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-0"></div>
-
-                        {/* Floating Badge */}
-                        <div className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-xl z-20 max-w-xs hidden md:block animate-fade-in-up border border-white/50">
-                            <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 bg-green-100/50 rounded-full flex items-center justify-center text-green-600 text-2xl shadow-sm">
-                                    <i className="fas fa-check-circle"></i>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-gray-900 text-lg leading-tight">Certificado válido</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -41,15 +23,12 @@ const AboutArea: React.FC = () => {
                         </span>
                         <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] mb-8 tracking-tight">
                             A sua melhor escolha <br />
-                            é o <span className="text-primary relative inline-block">
-                                ITEC
-                                <span className="absolute bottom-1 left-0 w-full h-3 bg-secondary/20 -z-10 rounded-full"></span>
-                            </span>
+                            é o <span className="text-primary">ITEC</span>
                         </h3>
                         <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                             <p>
                                 Com mais de <strong className="text-gray-900">15 anos de história</strong> transformando vidas através da educação,
-                                o ITEC nasceu em Volta Redonda e se tornou o <span className="text-secondary font-bold">maior polo de ensino técnico</span> do Sul Fluminense.
+                                o ITEC nasceu em Volta Redonda e se tornou o <span className="text-secondary font-bold">maior polo de ensino regular, técnico e profissionalizante</span> do Sul Fluminense.
                             </p>
                             <p>
                                 Nossa trajetória é marcada pela inovação e pelo compromisso contínuo com a excelência. Unindo teoria à prática intensiva,

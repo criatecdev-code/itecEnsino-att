@@ -6,11 +6,7 @@ const Footer: React.FC = () => {
         <footer className="bg-gray-900 text-gray-300 font-sans">
             <div className="bg-white border-t border-gray-100 py-16 relative overflow-hidden">
                 <div className="container-custom relative z-10">
-                    <div className="bg-primary rounded-[2.5rem] p-10 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
-
-                        {/* Decorative Background Elements */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+                    <div className="bg-primary rounded-2xl p-10 md:p-14 shadow-lg shadow-black/5 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
 
                         <div className="text-center lg:text-left z-10 max-w-xl">
                             <h2 className="text-3xl md:text-5xl font-black text-white mb-4 leading-tight">Comece sua jornada <span className="text-secondary">hoje mesmo!</span></h2>
@@ -19,17 +15,15 @@ const Footer: React.FC = () => {
                             </p>
                         </div>
                         <div className="z-10 flex flex-col sm:flex-row gap-5">
-                            <Link to="/matricula" className="btn-secondary bg-secondary text-white px-10 py-5 rounded-2xl font-black shadow-xl shadow-secondary/30 hover:shadow-secondary/50 hover:-translate-y-1 transition-all inline-block text-center text-lg">
+                            <Link to="/matricula" className="btn-primary !bg-secondary !text-white px-10 py-4 !rounded-xl">
                                 <i className="fas fa-user-plus mr-2"></i> Inscrever-se agora
                             </Link>
-                            <Link to="/contato" className="px-10 py-5 rounded-2xl font-black border-2 border-white/30 text-white hover:bg-white hover:text-primary transition-all text-center inline-block text-lg backdrop-blur-sm">
+                            <Link to="/contato" className="px-10 py-4 rounded-xl font-black border-2 border-white/30 text-white hover:bg-white hover:text-primary transition-all text-center inline-block text-base backdrop-blur-sm">
                                 <i className="fas fa-comment-dots mr-2"></i> Tirar dúvidas
                             </Link>
                         </div>
                     </div>
                 </div>
-
-                <div className="absolute top-0 left-0 w-full h-1/2 bg-gray-50 -z-0"></div>
             </div>
 
             {/* Main Footer Content */}

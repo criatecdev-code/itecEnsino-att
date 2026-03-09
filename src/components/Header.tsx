@@ -43,7 +43,7 @@ const Header: React.FC = () => {
 
                     {/* Logo - On the Left */}
                     <div className="flex-shrink-0 pointer-events-auto">
-                        <Link to="/" className="block bg-white/95 backdrop-blur-md p-2.5 px-4 rounded-2xl shadow-xl border border-white/20 hover:bg-white transition-all transform hover:scale-105">
+                        <Link to="/" className="block bg-white p-2.5 px-4 rounded-2xl shadow-lg shadow-black/5 border border-gray-100 hover:bg-gray-50 transition-all transform hover:scale-105">
                             <img
                                 className="h-7 md:h-8 transition-all duration-300"
                                 src={`${import.meta.env.BASE_URL}img/logo/logo.png`}
@@ -53,8 +53,8 @@ const Header: React.FC = () => {
                     </div>
 
                     {/* Desktop Navigation - Centered Pill */}
-                    <nav className="hidden lg:flex items-center space-x-1 bg-white/95 backdrop-blur-md px-1.5 py-1.5 rounded-full shadow-xl border border-white/20 pointer-events-auto">
-                        <Link to="/" className={`px-5 py-2 rounded-full text-sm font-extrabold transition-all duration-300 ${location.pathname === '/' ? 'bg-primary/10 text-primary' : 'text-gray-700 hover:text-primary'}`}>
+                    <nav className="hidden lg:flex items-center space-x-1 bg-white px-2 py-1.5 rounded-full shadow-lg shadow-black/5 border border-gray-100 pointer-events-auto">
+                        <Link to="/" className={`px-5 py-2 rounded-full text-sm font-extrabold transition-all duration-300 ${location.pathname === '/' ? 'bg-primary/5 text-primary' : 'text-gray-700 hover:text-primary'}`}>
                             Home
                         </Link>
 
@@ -71,22 +71,18 @@ const Header: React.FC = () => {
                                 Cursos <i className={`fas fa-chevron-down text-[10px] ml-0.5 transition-transform ${openDropdown === 'cursos' ? 'rotate-180' : ''}`}></i>
                             </button>
 
-                            <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-white shadow-2xl rounded-2xl overflow-hidden transform transition-all duration-300 z-50 border border-gray-100 ${openDropdown === 'cursos' ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
-                                <Link to="/cursos/fundamental" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                    <span className="block text-secondary font-bold text-sm">Ensino fundamental</span>
-                                    <span className="block text-[10px] text-gray-400 mt-0.5 tracking-wider">Anos iniciais e finais</span>
+                            <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-4 w-60 bg-white shadow-xl shadow-black/10 rounded-2xl overflow-hidden transform transition-all duration-300 z-50 border border-gray-100 ${openDropdown === 'cursos' ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
+                                <Link to="/cursos/fundamental" className="block px-6 py-3.5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-gray-900 font-bold text-sm">Ensino fundamental</span>
                                 </Link>
-                                <Link to="/cursos/medio" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                    <span className="block text-secondary font-bold text-sm">Ensino médio</span>
-                                    <span className="block text-[10px] text-gray-400 mt-0.5 tracking-wider">Formação completa</span>
+                                <Link to="/cursos/medio" className="block px-6 py-3.5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-gray-900 font-bold text-sm">Ensino médio</span>
                                 </Link>
-                                <Link to="/cursos/tecnico" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                                <Link to="/cursos/tecnico" className="block px-6 py-3.5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Técnico</span>
-                                    <span className="block text-[10px] text-gray-400 mt-0.5 tracking-wider">Formação completa</span>
                                 </Link>
-                                <Link to="/cursos/profissionalizante" className="block px-6 py-4 hover:bg-gray-50 transition-colors">
+                                <Link to="/cursos/profissionalizante" className="block px-6 py-3.5 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Profissionalizante</span>
-                                    <span className="block text-[10px] text-gray-400 mt-0.5 tracking-wider">Cursos rápidos</span>
                                 </Link>
                             </div>
                         </div>
@@ -103,26 +99,28 @@ const Header: React.FC = () => {
                         <div className="relative hidden sm:block">
                             <button
                                 onClick={() => toggleDropdown('aluno')}
-                                className={`bg-secondary px-6 py-2.5 rounded-full text-sm font-extrabold text-white shadow-xl shadow-secondary/20 hover:shadow-secondary/40 hover:-translate-y-0.5 transition-all flex items-center gap-2 ${openDropdown === 'aluno' ? 'brightness-110' : ''}`}
+                                className={`bg-white px-6 py-2.5 rounded-full text-sm font-extrabold text-primary border border-gray-100 shadow-lg shadow-black/5 hover:bg-gray-50 hover:-translate-y-0.5 transition-all flex items-center gap-2 ${openDropdown === 'aluno' ? 'bg-gray-50' : ''}`}
                             >
                                 Área do aluno <i className={`fas fa-chevron-down text-[10px] transition-transform ${openDropdown === 'aluno' ? 'rotate-180' : ''}`}></i>
                             </button>
 
-                            <div className={`absolute top-full right-0 mt-4 w-72 bg-white shadow-2xl rounded-2xl overflow-hidden transform transition-all duration-300 z-50 border border-gray-100 ${openDropdown === 'aluno' ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
-                                <a href="https://www.itecqualificacao.com.br/campus/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                    <span className="block text-primary font-bold text-sm">Cursos profissionalizantes</span>
-                                    <span className="block text-xs text-gray-500 mt-0.5">Acessar Portal do Aluno</span>
+                            <div className={`absolute top-full right-0 mt-4 w-64 bg-white shadow-xl shadow-black/10 rounded-2xl overflow-hidden transform transition-all duration-300 z-50 border border-gray-100 ${openDropdown === 'aluno' ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}>
+                                <a href="https://www.itecqualificacao.com.br/campus/" target="_blank" rel="noopener noreferrer" className="block px-6 py-3.5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-primary font-bold text-sm">Profissionalizante</span>
                                 </a>
-                                <a href="https://portal.selsensino.com.br/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                    <span className="block text-primary font-bold text-sm">Cursos técnicos</span>
-                                    <span className="block text-xs text-gray-500 mt-0.5">Acessar Portal do Aluno</span>
+                                <a href="https://portal.selsensino.com.br/" target="_blank" rel="noopener noreferrer" className="block px-6 py-3.5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+                                    <span className="block text-primary font-bold text-sm">Técnico</span>
                                 </a>
-                                <a href="https://meuestagio.app.br/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 hover:bg-gray-50 transition-colors">
+                                <a href="https://meuestagio.app.br/" target="_blank" rel="noopener noreferrer" className="block px-6 py-3.5 hover:bg-gray-50 transition-colors">
                                     <span className="block text-primary font-bold text-sm">Meu estágio</span>
-                                    <span className="block text-xs text-gray-500 mt-0.5">Portal de estágios</span>
                                 </a>
                             </div>
                         </div>
+
+                        {/* High-visibility CTA */}
+                        <Link to="/matricula" className="hidden sm:inline-flex bg-secondary text-white px-8 py-2.5 rounded-full text-sm font-black shadow-lg shadow-secondary/10 hover:shadow-secondary/20 hover:-translate-y-0.5 transition-all active:scale-95">
+                            Matricule-se
+                        </Link>
 
                         {/* Mobile Menu Button */}
                         <button

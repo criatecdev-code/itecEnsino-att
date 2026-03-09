@@ -27,57 +27,54 @@ const CourseCard: React.FC<CourseCardProps> = ({
     const linkProps = isExternal ? { href: slug } : { to: `/curso/${slug}` };
 
     return (
-        <div className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 flex flex-col h-full">
+        <div className="group bg-white rounded-2xl overflow-hidden shadow-md shadow-black/5 hover:shadow-xl hover:shadow-black/5 transition-all duration-500 hover:-translate-y-1 border border-gray-100 flex flex-col h-full">
             {/* Card Image */}
-            <div className="relative h-56 md:h-64 overflow-hidden shrink-0">
-                <div className="absolute inset-0 bg-gray-900/20 group-hover:bg-gray-900/10 transition-colors z-10"></div>
+            <div className="relative h-52 overflow-hidden shrink-0">
                 <img
                     src={img}
                     alt={titulo}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute top-4 left-4 z-20">
-                    <span className="bg-white/95 backdrop-blur-sm text-primary text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                    <span className="bg-white text-primary text-[10px] font-black px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-sm border border-gray-100">
                         {categoria}
                     </span>
                 </div>
             </div>
 
             {/* Card Body */}
-            <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors line-clamp-2 min-h-[4rem]">
+            <div className="p-7 flex flex-col flex-1">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors line-clamp-2 leading-snug">
                     {titulo}
                 </h3>
 
-                <div className={`w-12 h-1 ${colorClass === 'text-secondary' ? 'bg-secondary' : 'bg-primary'} rounded-full mb-6 group-hover:w-20 transition-all duration-500`}></div>
-
-                <p className="text-gray-500 text-sm leading-relaxed mb-6">
+                <p className="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
                     {sobre}
                 </p>
 
-                {/* Features List */}
+                {/* Features List - Cleaner */}
                 {features && features.length > 0 && (
-                    <div className="space-y-3 mb-8">
-                        {features.map((feature, index) => (
-                            <div key={index} className="flex items-start gap-2">
-                                <i className={`fas fa-check-circle mt-1 ${colorClass === 'text-secondary' ? 'text-secondary' : 'text-primary'} text-xs`}></i>
-                                <span className="text-gray-700 font-bold text-sm leading-tight">{feature}</span>
+                    <div className="space-y-2.5 mb-6">
+                        {features.slice(0, 3).map((feature, index) => (
+                            <div key={index} className="flex items-center gap-2.5">
+                                <i className={`fas fa-check text-[10px] ${colorClass === 'text-secondary' ? 'text-secondary' : 'text-primary'}`}></i>
+                                <span className="text-gray-600 font-medium text-xs">{feature}</span>
                             </div>
                         ))}
                     </div>
                 )}
 
-                <div className="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
+                <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
                     <div className="flex flex-col">
-                        <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">Carga Horária</span>
-                        <span className="text-gray-900 font-bold">{cargahoraria || '-'}</span>
+                        <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-0.5">Carga Horária</span>
+                        <span className="text-gray-900 font-black text-sm">{cargahoraria || '-'}</span>
                     </div>
                     {/* @ts-ignore */}
                     <LinkComponent
                         {...linkProps}
-                        className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300"
+                        className="flex items-center gap-2 text-primary font-black text-xs group-hover:gap-3 transition-all"
                     >
-                        <i className="fas fa-arrow-right"></i>
+                        Ver detalhes <i className="fas fa-arrow-right"></i>
                     </LinkComponent>
                 </div>
             </div>

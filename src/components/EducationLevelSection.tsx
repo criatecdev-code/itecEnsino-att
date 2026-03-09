@@ -37,16 +37,13 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
 
                     {/* Image Column */}
                     <div className="w-full lg:w-1/2 relative group">
-                        <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-gray-200 transform transition-transform duration-700 hover:scale-[1.02]">
+                        <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl shadow-black/5 transform transition-transform duration-700 hover:scale-[1.01]">
                             <img
                                 src={image}
                                 alt={title}
                                 className="w-full h-auto object-cover"
                             />
-                            <div className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500`}></div>
                         </div>
-                        {/* Decorative Background */}
-                        <div className={`absolute -bottom-8 ${isReversed ? '-right-8' : '-left-8'} w-full h-full border-[3px] ${colorClass === 'text-primary' ? 'border-primary/10' : 'border-secondary/10'} rounded-[3rem] -z-0 transform translate-y-2 translate-x-2`}></div>
                     </div>
 
                     {/* Content Column */}
@@ -76,7 +73,7 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
 
                         <a
                             href={link}
-                            className={`btn-primary ${colorClass === 'text-secondary' ? '!bg-secondary hover:!bg-green-800' : ''} px-10 py-4 !rounded-full !text-base shadow-xl hover:shadow-2xl hover:-translate-y-1`}
+                            className={`btn-primary ${colorClass === 'text-secondary' ? '!bg-secondary' : '!bg-primary'} px-10 py-4 !rounded-xl !text-base shadow-lg shadow-black/5 hover:shadow-xl hover:-translate-y-1`}
                         >
                             {linkText}
                         </a>

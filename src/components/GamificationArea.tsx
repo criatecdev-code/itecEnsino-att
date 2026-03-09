@@ -19,9 +19,9 @@ const GamificationArea: React.FC = () => {
                             </span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6 animate-fade-in-up delay-100">
+                        <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6 animate-fade-in-up delay-100 italic">
                             Aprender nunca foi tão <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-green-400">divertido e desafiador</span>
+                            <span className="text-secondary">divertido e desafiador</span>
                         </h2>
 
                         <p className="text-gray-400 text-lg mb-8 leading-relaxed animate-fade-in-up delay-200">
@@ -53,11 +53,11 @@ const GamificationArea: React.FC = () => {
                     <div className="w-full lg:w-1/2 animate-fade-in-up delay-400">
                         <div className="relative">
                             {/* Main Image Container */}
-                            <div className="relative rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl shadow-black/50">
+                            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-xl shadow-black/30">
                                 <img
                                     src="/img/home/img1.png"
                                     alt="Gamificação na Educação"
-                                    className="w-full h-auto object-cover opacity-80 hover:scale-105 transition-transform duration-700"
+                                    className="w-full h-auto object-cover opacity-80"
                                     loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
@@ -85,8 +85,8 @@ const GamificationArea: React.FC = () => {
                                 </div>
                             </div>
 
-                            {/* Decorative Floating Icon */}
-                            <div className="absolute -top-10 -left-10 w-24 h-24 bg-gradient-to-br from-secondary to-orange-600 rounded-2xl rotate-12 flex items-center justify-center text-4xl text-white shadow-lg shadow-orange-500/30 animate-bounce hover:rotate-0 transition-transform">
+                            {/* Decorative Floating Icon - Simplified */}
+                            <div className="absolute -top-6 -left-6 w-16 h-16 bg-secondary rounded-xl rotate-12 flex items-center justify-center text-2xl text-white shadow-lg shadow-black/20">
                                 <i className="fas fa-star"></i>
                             </div>
                         </div>
