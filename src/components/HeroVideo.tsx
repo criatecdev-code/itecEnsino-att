@@ -3,7 +3,7 @@ import videoTeste from '../assets/videoTeste.webm';
 
 const HeroVideo: React.FC = () => {
     return (
-        <div className="relative w-full min-h-[600px] md:h-[85vh] lg:h-screen overflow-hidden bg-white flex items-center justify-center">
+        <div className="relative w-full min-h-[600px] md:min-h-screen lg:h-screen overflow-hidden bg-white flex items-center justify-center">
             {/* Video Background */}
             <video
                 className="absolute w-full h-full object-cover min-w-full min-h-full"
@@ -25,11 +25,11 @@ const HeroVideo: React.FC = () => {
 
             {/* Content Container */}
             <div className="absolute inset-0 z-10 flex items-center justify-center">
-                <div className="container-custom text-center px-4 max-w-4xl pt-20 border-t-0">
+                <div className="container-custom text-center px-4 max-w-4xl pt-28 border-t-0">
                     <div className="space-y-6 md:space-y-8 animate-fade-in-up">
                         {/* High-Impact Headline */}
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mx-auto max-w-4xl">
-                            SEU FUTURO <br className="hidden md:block" /><span className="text-secondary">COMEÇA</span> AQUI
+                            Seu futuro <br className="hidden md:block" /><span className="text-secondary">começa</span> aqui
                         </h1>
 
                         {/* Persuasive Subtitle */}
@@ -53,17 +53,6 @@ const HeroVideo: React.FC = () => {
                             </Link>
                         </div>
 
-                        {/* Trust Indicator - Simplified and cleaner */}
-                        <div className="pt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-80">
-                            <div className="flex items-center gap-3 text-white">
-                                <i className="fas fa-check text-secondary text-sm"></i>
-                                <span className="text-sm font-bold tracking-tight uppercase">Cursos reconhecidos</span>
-                            </div>
-                            <div className="flex items-center gap-3 text-white">
-                                <i className="fas fa-check text-secondary text-sm"></i>
-                                <span className="text-sm font-bold tracking-tight uppercase">Tradição e Qualidade</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
