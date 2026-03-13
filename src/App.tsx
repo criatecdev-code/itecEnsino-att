@@ -15,6 +15,7 @@ const Enrollment = React.lazy(() => import('./pages/Enrollment'));
 const Blog = React.lazy(() => import('./pages/Blog'));
 const FundamentalDetail = React.lazy(() => import('./pages/FundamentalDetail'));
 const Fundamental2Detail = React.lazy(() => import('./pages/Fundamental2Detail'));
+const MedioDetail = React.lazy(() => import('./pages/MedioDetail'));
 const DevPage = React.lazy(() => import('./pages/DevPage'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
 const Terms = React.lazy(() => import('./pages/Terms'));
@@ -138,6 +139,7 @@ function App() {
                   <Route path="/cursos/:category" element={<Courses />} />
                   <Route path="/curso/fundamental-1-itekids" element={<FundamentalDetail />} />
                   <Route path="/curso/fundamental-2" element={<Fundamental2Detail />} />
+                  <Route path="/curso/ensino-medio" element={<MedioDetail />} />
                   <Route path="/curso/:slug" element={<CourseDetails />} />
                   <Route path="/contato" element={<Contact />} />
                   <Route path="/matricula" element={<Enrollment />} />

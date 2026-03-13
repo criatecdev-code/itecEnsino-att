@@ -28,13 +28,16 @@ const HeroVideo: React.FC = () => {
                 <div className="container-custom text-center px-4 max-w-4xl pt-28 border-t-0">
                     <div className="space-y-6 md:space-y-8 animate-fade-in-up">
                         {/* High-Impact Headline */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mx-auto max-w-4xl">
-                            Seu futuro <br className="hidden md:block" /><span className="text-secondary">começa</span> aqui
+                        <h1 className="font-black text-white leading-tight tracking-tight mx-auto max-w-4xl">
+                            <span className="text-5xl md:text-5xl lg:text-7xl block">Seu futuro</span>
+                            <span className="text-4xl md:text-5xl lg:text-6xl block opacity-95">
+                                <span className="text-secondary">começa</span> aqui!
+                            </span>
                         </h1>
 
                         {/* Persuasive Subtitle */}
-                        <p className="text-lg md:text-xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
-                            Ensino Fundamental, Técnico e Profissionalizante: formação de excelência focada no seu crescimento profissional.
+                        <p className="text-xl md:text-1xl text-white/90 font-medium max-w-[400px] mx-auto leading-relaxed">
+                            Ensino fundamental e médio, cursos técnicos e profissionalizantes.
                         </p>
 
                         {/* Conversion Buttons (CTAs) */}

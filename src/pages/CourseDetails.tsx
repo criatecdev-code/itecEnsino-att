@@ -11,11 +11,15 @@ const CourseDetails: React.FC = () => {
     const course = courses.find((c) => c.slug === slug);
 
     useEffect(() => {
+        if (slug === 'ensino-medio') {
+            navigate('/curso/ensino-medio', { replace: true });
+            return;
+        }
         if (!course) {
             // Optional: Redirect to courses list or show 404
             // navigate('/cursos/profissionalizante'); 
         }
-    }, [course, navigate]);
+    }, [course, slug, navigate]);
 
     if (!course) {
         return (

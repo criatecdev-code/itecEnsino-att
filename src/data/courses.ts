@@ -579,7 +579,8 @@ export const courses: Course[] = [
     obs: `Início Semanal: 02/02/2026 e Sábado: 07/02/2026.
     Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 26 parcelas de R$ 520,00.
     Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
-    Material Didático Digital incluso.`,
+    Material Didático Digital incluso.
+    Diferenciais ITEC: Infraestrutura premium com laboratórios equipados (simuladores, anatomia), monitoramento 24h, acompanhamento psicopedagógico (TEA) e App do aluno.`,
     img: "/img/fotos/27.jpg"
   },
   {
@@ -641,7 +642,8 @@ export const courses: Course[] = [
     Estágio: 400h.
     Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 26 parcelas de R$ 520,00.
     Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
-    Material Didático Digital incluso.`,
+    Material Didático Digital incluso.
+    Diferenciais ITEC: Laboratórios com equipamentos de alta precisão, ambiente monitorado 24h, equipe de professores especialistas e suporte psicopedagógico.`,
     img: "/img/fotos/29.jpg"
   },
   {
@@ -695,7 +697,8 @@ export const courses: Course[] = [
     obs: `Estágio: 150h.
     Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 20 parcelas de R$ 520,00.
     Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
-    Material Didático Digital incluso.`,
+    Material Didático Digital incluso.
+    Diferenciais ITEC: Formação moderna e prática, laboratórios de última geração, acompanhamento especializado e foco na inserção no mercado.`,
     img: "/img/fotos/28.jpg"
   },
 ];
