@@ -27,6 +27,13 @@ const HeroVideo: React.FC = () => {
             <div className="absolute inset-0 z-10 flex items-center justify-center">
                 <div className="container-custom text-center px-4 max-w-4xl pt-28 border-t-0">
                     <div className="space-y-6 md:space-y-8 animate-fade-in-up">
+                        {/* Tagline / Hashtag */}
+                        <div className="flex justify-center">
+                            <span className="inline-block px-4 py-1.5 bg-secondary/20 backdrop-blur-md rounded-full border border-secondary/30 text-secondary font-bold text-xs md:text-sm tracking-widest uppercase shadow-sm">
+                                Aprenda na prática e construa seu futuro
+                            </span>
+                        </div>
+
                         {/* High-Impact Headline */}
                         <h1 className="font-black text-white leading-tight tracking-tight mx-auto max-w-4xl">
                             <span className="text-5xl md:text-5xl lg:text-7xl block">Seu futuro</span>
