@@ -158,7 +158,7 @@ const Header: React.FC = () => {
                         <div className="bg-gray-50/50 py-6 flex justify-center space-x-8 text-gray-400 border-t border-gray-100">
                             <a href="https://www.facebook.com/itec.ensino" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="fab fa-facebook-f text-xl hover:text-primary"></i></a>
                             <a href="https://www.instagram.com/itec.ensino/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fab fa-instagram text-xl hover:text-primary"></i></a>
-                            <a href="https://wa.me/5524974003287" target="_blank" aria-label="WhatsApp"><i className="fab fa-whatsapp text-xl hover:text-primary"></i></a>
+                            <a href="https://wa.me/552435120102" target="_blank" aria-label="WhatsApp"><i className="fab fa-whatsapp text-xl hover:text-primary"></i></a>
                         </div>
                     </div>
                 </div>

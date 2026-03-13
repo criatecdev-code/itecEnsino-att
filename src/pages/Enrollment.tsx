@@ -70,7 +70,7 @@ const Enrollment: React.FC = () => {
             }
         }
 
-        const whatsappUrl = `https://wa.me/5524974003287?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/552435120102?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
 
@@ -309,7 +309,7 @@ const Enrollment: React.FC = () => {
                                     </p>
                                     <p className="flex items-center gap-3">
                                         <i className="fab fa-whatsapp text-primary"></i>
-                                        <span>(24) 97400-3287</span>
+                                        <span>(24) 3512-0102</span>
                                     </p>
                                     <p className="flex items-center gap-3">
                                         <i className="fas fa-envelope text-primary"></i>

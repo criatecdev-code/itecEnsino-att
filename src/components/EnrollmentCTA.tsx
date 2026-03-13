@@ -35,7 +35,7 @@ const EnrollmentCTA: React.FC = () => {
                             <a href="/matricula" className="btn-primary !bg-secondary !text-white px-10 py-4 !rounded-xl">
                                 Garantir minha vaga
                             </a>
-                            <a href="https://wa.me/5524974003287" target="_blank" rel="noreferrer" className="px-10 py-4 rounded-xl border-2 border-white/20 hover:bg-white hover:text-primary font-bold text-lg transition-all text-center flex items-center justify-center gap-2">
+                            <a href="https://wa.me/552435120102" target="_blank" rel="noreferrer" className="px-10 py-4 rounded-xl border-2 border-white/20 hover:bg-white hover:text-primary font-bold text-lg transition-all text-center flex items-center justify-center gap-2">
                                 <i className="fab fa-whatsapp"></i> Falar com consultor
                             </a>
                         </div>

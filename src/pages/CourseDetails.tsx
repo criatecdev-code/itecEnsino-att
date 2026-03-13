@@ -205,7 +205,7 @@ const CourseDetails: React.FC = () => {
                                         Matricule-se Agora <i className="fas fa-arrow-right"></i>
                                     </Link>
                                     <a
-                                        href={`https://wa.me/5524974003287?text=Olá, gostaria de saber mais sobre o curso de ${course.titulo}`}
+                                        href={`https://wa.me/552435120102?text=Olá, gostaria de saber mais sobre o curso de ${course.titulo}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="mt-4 w-full bg-white border-2 border-green-500 text-green-600 font-bold py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-green-50 transition-colors"

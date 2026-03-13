@@ -61,13 +61,13 @@ const ContactArea: React.FC = () => {
                                 </div>
                             </a>
 
-                            <a href="https://wa.me/5524974003287" target='_blank' className="group flex items-center gap-4 p-6 rounded-3xl bg-white border border-gray-100 shadow-lg shadow-gray-100/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <a href="https://wa.me/552435120102" target='_blank' className="group flex items-center gap-4 p-6 rounded-3xl bg-white border border-gray-100 shadow-lg shadow-gray-100/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                                 <div className="w-14 h-14 rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
                                     <i className="fab fa-whatsapp text-2xl"></i>
                                 </div>
                                 <div>
                                     <p className="text-xs text-gray-400 font-bold tracking-wider">WhatsApp oficial</p>
-                                    <p className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">(24) 97400-3287</p>
+                                    <p className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">(24) 3512-0102</p>
                                 </div>
                             </a>
 

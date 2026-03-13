@@ -126,7 +126,7 @@ const FundamentalDetail: React.FC = () => {
                         </p>
                         <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8">
                             <a
-                                href="https://wa.me/5524974003287?text=Olá, gostaria de saber mais sobre o Ensino Fundamental I (ITEKIDS)"
+                                href="https://wa.me/552435120102?text=Olá, gostaria de saber mais sobre o Ensino Fundamental I (ITEKIDS)"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-4 bg-secondary hover:bg-white hover:text-primary text-white font-black py-6 px-12 rounded-full text-xl md:text-2xl shadow-2xl transition-all duration-500 hover:-translate-y-2 group"

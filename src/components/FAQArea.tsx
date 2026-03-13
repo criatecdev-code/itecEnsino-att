@@ -43,7 +43,7 @@ const FAQArea: React.FC = () => {
                             Ainda tem alguma dúvida? Separamos as perguntas mais frequentes para te ajudar. Se precisar de mais detalhes, fale conosco pelo WhatsApp!
                         </p>
                         <a
-                            href="https://wa.me/5524974003287"
+                            href="https://wa.me/552435120102"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-primary inline-flex items-center gap-2"

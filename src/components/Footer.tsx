@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <i className="fab fa-whatsapp text-primary text-lg"></i>
-                                    <a href="https://wa.me/5524974003287" target="_blank" className="hover:text-primary transition-colors">(24) 97400-3287</a>
+                                    <a href="https://wa.me/552435120102" target="_blank" className="hover:text-primary transition-colors">(24) 3512-0102</a>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <i className="fas fa-envelope text-primary"></i>

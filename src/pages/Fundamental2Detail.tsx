@@ -125,7 +125,7 @@ const Fundamental2Detail: React.FC = () => {
                         Venha conhecer nossa estrutura e nossa proposta pedagógica diferenciada para os anos finais do Ensino Fundamental.
                     </p>
                     <a
-                        href="https://wa.me/5524974003287?text=Olá, gostaria de saber mais sobre o Ensino Fundamental II"
+                        href="https://wa.me/552435120102?text=Olá, gostaria de saber mais sobre o Ensino Fundamental II"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-4 bg-primary hover:bg-secondary text-white font-black py-6 px-12 rounded-full text-xl md:text-2xl shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
