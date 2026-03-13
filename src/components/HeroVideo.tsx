@@ -34,7 +34,7 @@ const HeroVideo: React.FC = () => {
 
                         {/* Persuasive Subtitle */}
                         <p className="text-lg md:text-xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
-                            Do ensino fundamental ao técnico: formação de excelência focada no seu crescimento profissional.
+                            Ensino Fundamental, Técnico e Profissionalizante: formação de excelência focada no seu crescimento profissional.
                         </p>
 
                         {/* Conversion Buttons (CTAs) */}

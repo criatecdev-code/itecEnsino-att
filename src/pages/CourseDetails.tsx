@@ -155,8 +155,12 @@ const CourseDetails: React.FC = () => {
                                             <i className="far fa-clock"></i>
                                         </div>
                                         <div>
-                                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">Carga Horária</p>
-                                            <p className="text-gray-900 font-bold text-lg">{course.cargahoraria}</p>
+                                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">
+                                                {course.categoria.toLowerCase().includes('técnico') ? 'Certificação' : 'Carga Horária'}
+                                            </p>
+                                            <p className="text-gray-900 font-bold text-lg">
+                                                {course.categoria.toLowerCase().includes('técnico') ? 'Diploma Técnico' : course.cargahoraria}
+                                            </p>
                                         </div>
                                     </div>
 
@@ -179,6 +183,18 @@ const CourseDetails: React.FC = () => {
                                                 <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">Turnos</p>
                                                 <p className="text-gray-900 font-bold text-sm whitespace-pre-line">{course.turnos.replace(/;/g, '\n')}</p>
                                             </div>
+                                        </div>
+                                    )}
+                                    {course.obs && (
+                                        <div className="mt-8 p-5 bg-primary/5 border border-primary/10 rounded-2xl relative overflow-hidden group">
+                                            <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:scale-110 transition-transform">
+                                                <i className="fas fa-info-circle text-4xl text-primary"></i>
+                                            </div>
+                                            <p className="text-xs text-primary font-black uppercase tracking-widest mb-3 flex items-center gap-2">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                                                Informações Adicionais
+                                            </p>
+                                            <p className="text-gray-700 text-xs whitespace-pre-line leading-loose font-medium">{course.obs}</p>
                                         </div>
                                     )}
 

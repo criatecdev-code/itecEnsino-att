@@ -526,7 +526,7 @@ export const courses: Course[] = [
     modulos: `
         1º SEMESTRE
         ;MÓDULO 1
-        ;Ética e Desenvolvimento Humano
+        ;Ética e Desenvolvimento humano
         ;Empreendedorismo
         ;Português Instrumental e Produção Técnica
         ;Saúde do Trabalhador
@@ -541,7 +541,7 @@ export const courses: Course[] = [
         ;Enfermagem em Clínica Médica
         ;MÓDULO 4
         ;Enfermagem Coletiva
-        ;Fundamentos e Técnicas em Enfermagem
+        ;Fundamento e técnicas em Enfermagem
     
         ;3º SEMESTRE
         ;MÓDULO 5
@@ -551,31 +551,35 @@ export const courses: Course[] = [
         ;MÓDULO 6
         ;Saúde da Mulher
         ;Saúde da Criança e do Adolescente
-        ;Saúde do Idoso
-        ;Integra Estágio + Estágio Supervisionado I
+        ;Saúde do idoso
+        ;INTEGRA ESTÁGIO (sexta-feira)
+        ;ESTÁGIO SUPERVISIONADO I
     
         ;4º SEMESTRE
         ;MÓDULO 7
         ;Enfermagem em Urgência e Emergência
         ;Enfermagem Cirúrgica
-        ;Nutrição e Dietética
-        ;Estágio Supervisionado II
+        ;Nutrição e dietética
+        ;ESTÁGIO SUPERVISIONADO II
         ;MÓDULO 8
         ;Enfermagem em Terapia Intensiva
         ;Saúde Mental
         ;Administração em Enfermagem
-        ;Estágio Supervisionado III
+        ;ESTÁGIO SUPERVISIONADO III
         `,
     cargahoraria: "1200h",
     tempo: "24 meses",
     categoria: "Cursos técnicos",
     turnos: `
-        MANHÃ – Segunda e Quarta das 7:30h às 11:30h
-        ;TARDE – Segunda e Quarta das 13:20h às 17:20h
-        ;NOITE – Segunda e Quarta das 18:20h às 21:55h
-        ;INTEGRAL – Sábado das 7:30h às 11:30h e das 12:30h às 16:30h
+        MANHÃ – Segunda e Quarta das 7:30h às 11:30h (VOLTA REDONDA)
+        ;TARDE – Segunda e Quarta das 13:20h às 17:20h (VOLTA REDONDA)
+        ;NOITE – Segunda e Quarta das 18:20h às 21:55h (VOLTA REDONDA / ANGRA DOS REIS / RESENDE)
+        ;INTEGRAL – Sábado das 7:30h às 11:30h e das 12:30h às 16:30h (VOLTA REDONDA / ANGRA DOS REIS / RESENDE)
         `,
-    obs: "Matriz Curricular 2026 (pode sofrer alterações até fev/2026)",
+    obs: `Início Semanal: 02/02/2026 e Sábado: 07/02/2026.
+    Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 26 parcelas de R$ 520,00.
+    Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
+    Material Didático Digital incluso.`,
     img: "/img/fotos/27.jpg"
   },
   {
@@ -586,7 +590,7 @@ export const courses: Course[] = [
     modulos: `
         1º SEMESTRE
         ;MÓDULO 1
-        ;Ética e Desenvolvimento Humano
+        ;Ética e Desenvolvimento humano
         ;Empreendedorismo
         ;Português Instrumental e Produção Técnica
         ;Saúde do Trabalhador
@@ -613,23 +617,31 @@ export const courses: Course[] = [
         ;Mamografia e Densitometria Óssea
         ;Gestão na Radiologia
         ;Práticas do Diagnóstico por Imagem
-        ;Integra Estágio + Estágio Supervisionado I
+        ;INTEGRA ESTÁGIO (sexta-feira)
+        ;ESTÁGIO SUPERVISIONADO I
     
         ;4º SEMESTRE
         ;MÓDULO 7
         ;Medicina Nuclear, Hemodinâmica e Radioterapia
+        ;Radiologia Industrial
+        ;ESTÁGIO SUPERVISIONADO II
+        ;MÓDULO 8
+        ;Radiologia Digital e qualidade de imagem
         ;Radiologia Odontológica
         ;Radiologia Veterinária
-        ;Estágio Supervisionado II
-        ;MÓDULO 8
-        ;Radiologia Digital e Qualidade de Imagem
-        ;Radiologia Industrial
-        ;Estágio Supervisionado III
+        ;ESTÁGIO SUPERVISIONADO III
         `,
     cargahoraria: "1200h",
     tempo: "24 meses",
     categoria: "Cursos técnicos",
-    obs: "Matriz Curricular 2026 (pode sofrer alterações até fev/2026)",
+    turnos: `
+        NOITE – Segunda e Quarta das 18:20h às 21:55h (VOLTA REDONDA / ANGRA DOS REIS / RESENDE)
+        `,
+    obs: `Início: 02/02/2026 (Somente com Ensino Médio completo).
+    Estágio: 400h.
+    Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 26 parcelas de R$ 520,00.
+    Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
+    Material Didático Digital incluso.`,
     img: "/img/fotos/29.jpg"
   },
   {
@@ -640,51 +652,50 @@ export const courses: Course[] = [
     modulos: `
         1º SEMESTRE
         ;MÓDULO 1
-        ;Ética e Desenvolvimento Humano
+        ;Ética e Desenvolvimento humano
         ;Empreendedorismo
         ;Português Instrumental e Produção Técnica
         ;Saúde do Trabalhador
-        ;Primeiros Socorros
-        ;Química
         ;MÓDULO 2
         ;Anatomia e Fisiologia Humana
         ;Biossegurança e Controle de Infecção
         ;Políticas Públicas de Saúde e SUS
-        ;Biologia Molecular
-        ;Citologia e Histologia
     
         ;2º SEMESTRE
         ;MÓDULO 3
         ;Fundamentos de Laboratório
         ;Urinálise e Fluidos Corporais
         ;Hormonologia
-        ;Introdução à Bioquímica
+        ;Citologia e Histologia
         ;MÓDULO 4
         ;Bioquímica Clínica
         ;Fundamentos de Genética
-        ;Fundamentos de Biofísica
+        ;Biologia Molecular
         ;Técnicas de Coleta, Triagem e Esterilização
-        ;Integra Estágio
+        ;INTEGRA ESTÁGIO
     
         ;3º SEMESTRE
         ;MÓDULO 5
-        ;Parasitologia Clínica – 72h
-        ;Microbiologia e Micologia – 72h
-        ;Controle de Qualidade – 72h
-        ;Estágio Supervisionado I
+        ;Parasitologia Clínica
+        ;Microbiologia e Micologia
+        ;Controle de qualidade
+        ;ESTÁGIO SUPERVISIONADO I
         ;MÓDULO 6
-        ;Patologia Clínica – 72h
-        ;Hematologia Clínica – 72h
-        ;Imunologia Clínica – 72h
-        ;Estágio Supervisionado II
+        ;Patologia Clínica
+        ;Hematologia Clínica
+        ;Imunologia Clínica
+        ;ESTÁGIO SUPERVISIONADO II
         `,
     cargahoraria: "1200h",
     tempo: "18 meses",
     categoria: "Cursos técnicos",
     turnos: `
-        NOITE – Segunda, Quarta e Quinta das 18:20h às 21:55h
+        NOITE – Segunda, Quarta e Quinta das 18:20h às 21:55h (VOLTA REDONDA / ANGRA DOS REIS)
         `,
-    obs: "Matriz Curricular 2026 (pode sofrer alterações até fev/2026). Não disponível para unidade de Resende.",
+    obs: `Estágio: 150h.
+    Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 20 parcelas de R$ 520,00.
+    Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
+    Material Didático Digital incluso.`,
     img: "/img/fotos/28.jpg"
   },
 ];

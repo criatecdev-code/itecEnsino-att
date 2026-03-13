@@ -66,8 +66,12 @@ const CourseCard: React.FC<CourseCardProps> = ({
 
                 <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
                     <div className="flex flex-col">
-                        <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-0.5">Carga Horária</span>
-                        <span className="text-gray-900 font-black text-sm">{cargahoraria || '-'}</span>
+                        <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-0.5">
+                            {categoria.toLowerCase().includes('técnico') ? 'Certificação' : 'Carga Horária'}
+                        </span>
+                        <span className="text-gray-900 font-black text-sm">
+                            {categoria.toLowerCase().includes('técnico') ? 'Diploma Técnico' : (cargahoraria || '-')}
+                        </span>
                     </div>
                     {/* @ts-ignore */}
                     <LinkComponent

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { courses } from '../data/courses';
 
 const Enrollment: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -12,18 +13,63 @@ const Enrollment: React.FC = () => {
         period: ''
     });
 
+    // Filtered courses based on selected type
+    const filteredCourses = useMemo(() => {
+        if (!formData.courseType) return [];
+        const type = formData.courseType.toLowerCase();
+        
+        return courses.filter(course => {
+            const courseCat = course.categoria.toLowerCase();
+            if (type === 'técnico' || type === 'tecnico') return courseCat.includes('técnico') || courseCat.includes('tecnico');
+            if (type === 'profissionalizante') return courseCat.includes('profissionalizante');
+            if (type === 'fundamental') return courseCat.includes('fundamental');
+            if (type === 'médio' || type === 'medio') return courseCat.includes('médio') || courseCat.includes('medio');
+            return true;
+        });
+    }, [formData.courseType]);
+
+    // Current selected course data
+    const selectedCourseData = useMemo(() => {
+        if (!formData.interest) return null;
+        return courses.find(c => c.titulo === formData.interest);
+    }, [formData.interest]);
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
+        
+        setFormData(prev => {
+            const newState = { ...prev, [name]: value };
+            
+            // Reset interest if course type changes
+            if (name === 'courseType') {
+                newState.interest = '';
+            }
+            
+            return newState;
+        });
     };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Here you would handle the form submission, e.g., sending to an API or WhatsApp
-        const message = `Olá, gostaria de me matricular!\n\nNome: ${formData.name}\nTelefone: ${formData.phone}\nE-mail: ${formData.email}\nTipo de Curso: ${formData.courseType}\nInteresse: ${formData.interest}\nTurno: ${formData.period}`;
+        
+        let message = `Olá, gostaria de me matricular!\n\n`;
+        message += `*Nome:* ${formData.name}\n`;
+        message += `*Telefone:* ${formData.phone}\n`;
+        message += `*E-mail:* ${formData.email}\n`;
+        message += `*Nível:* ${formData.courseType}\n`;
+        message += `*Curso:* ${formData.interest}\n`;
+        message += `*Turno:* ${formData.period}`;
+        
+        if (selectedCourseData) {
+            message += `\n\n*Informações do Curso Selecionado:*\n`;
+            message += `- Duração: ${selectedCourseData.tempo}\n`;
+            if (selectedCourseData.categoria.toLowerCase().includes('técnico')) {
+                message += `- Certificação: Diploma Técnico\n`;
+            } else {
+                message += `- Carga Horária: ${selectedCourseData.cargahoraria}\n`;
+            }
+        }
+
         const whatsappUrl = `https://wa.me/5524974003287?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
@@ -97,21 +143,21 @@ const Enrollment: React.FC = () => {
                                         </div>
                                     </div>
 
-                                    <div className="space-y-2">
-                                        <label htmlFor="email" className="text-sm font-bold text-gray-700 uppercase tracking-wider">E-mail</label>
-                                        <input
-                                            type="email"
-                                            id="email"
-                                            name="email"
-                                            value={formData.email}
-                                            onChange={handleChange}
-                                            required
-                                            className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all font-medium text-gray-900 placeholder-gray-400"
-                                            placeholder="seu@email.com"
-                                        />
-                                    </div>
-
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div className="space-y-2">
+                                            <label htmlFor="email" className="text-sm font-bold text-gray-700 uppercase tracking-wider">E-mail</label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                required
+                                                className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all font-medium text-gray-900 placeholder-gray-400"
+                                                placeholder="seu@email.com"
+                                            />
+                                        </div>
+
                                         <div className="space-y-2">
                                             <label htmlFor="courseType" className="text-sm font-bold text-gray-700 uppercase tracking-wider">Nível de Ensino</label>
                                             <div className="relative">
@@ -125,9 +171,34 @@ const Enrollment: React.FC = () => {
                                                 >
                                                     <option value="">Selecione...</option>
                                                     <option value="Técnico">Curso Técnico</option>
+                                                    <option value="Profissionalizante">Curso Profissionalizante</option>
                                                     <option value="Fundamental">Ensino Fundamental</option>
                                                     <option value="Médio">Ensino Médio</option>
-                                                    <option value="Profissionalizante">Curso Profissionalizante</option>
+                                                </select>
+                                                <i className="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xs"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div className="space-y-2">
+                                            <label htmlFor="interest" className="text-sm font-bold text-gray-700 uppercase tracking-wider">Curso de Interesse</label>
+                                            <div className="relative">
+                                                <select
+                                                    id="interest"
+                                                    name="interest"
+                                                    value={formData.interest}
+                                                    onChange={handleChange}
+                                                    required
+                                                    disabled={!formData.courseType}
+                                                    className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all font-medium text-gray-900 appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                                                >
+                                                    <option value="">
+                                                        {!formData.courseType ? 'Selecione o nível acima...' : 'Selecione o curso...'}
+                                                    </option>
+                                                    {filteredCourses.map((course, idx) => (
+                                                        <option key={idx} value={course.titulo}>{course.titulo}</option>
+                                                    ))}
                                                 </select>
                                                 <i className="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xs"></i>
                                             </div>
@@ -148,25 +219,42 @@ const Enrollment: React.FC = () => {
                                                     <option value="Manhã">Manhã</option>
                                                     <option value="Tarde">Tarde</option>
                                                     <option value="Noite">Noite</option>
-                                                    <option value="Integral">Integral (se disponível)</option>
+                                                    <option value="Sábado / Integral">Sábado / Integral</option>
                                                 </select>
                                                 <i className="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xs"></i>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className="space-y-2">
-                                        <label htmlFor="interest" className="text-sm font-bold text-gray-700 uppercase tracking-wider">Curso de Interesse (Opcional)</label>
-                                        <input
-                                            type="text"
-                                            id="interest"
-                                            name="interest"
-                                            value={formData.interest}
-                                            onChange={handleChange}
-                                            className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all font-medium text-gray-900 placeholder-gray-400"
-                                            placeholder="Ex: Enfermagem, Robótica, Ensino Médio..."
-                                        />
-                                    </div>
+                                    {/* Course Preview Info */}
+                                    {selectedCourseData && (
+                                        <div className="p-6 bg-primary/5 rounded-2xl border border-primary/10 animate-fade-in">
+                                            <div className="flex items-start gap-4">
+                                                <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
+                                                    <img src={selectedCourseData.img} alt={selectedCourseData.titulo} className="w-8 h-8 object-cover rounded" />
+                                                </div>
+                                                <div className="space-y-3 flex-1">
+                                                    <div>
+                                                        <h4 className="font-bold text-gray-900 text-sm">{selectedCourseData.titulo}</h4>
+                                                        <p className="text-xs text-gray-500 line-clamp-2 mt-0.5">{selectedCourseData.sobre}</p>
+                                                    </div>
+                                                    
+                                                    <div className="grid grid-cols-2 gap-4 pt-2 border-t border-primary/10">
+                                                        <div className="flex items-center gap-2">
+                                                            <i className="far fa-calendar-alt text-primary text-xs"></i>
+                                                            <span className="text-[10px] text-gray-600 font-bold uppercase tracking-tight">{selectedCourseData.tempo}</span>
+                                                        </div>
+                                                        <div className="flex items-center gap-2">
+                                                            <i className="far fa-clock text-primary text-xs"></i>
+                                                            <span className="text-[10px] text-gray-600 font-bold uppercase tracking-tight">
+                                                                {selectedCourseData.categoria.toLowerCase().includes('técnico') ? 'Diploma Técnico' : selectedCourseData.cargahoraria}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
 
                                     <div className="pt-4">
                                         <button
