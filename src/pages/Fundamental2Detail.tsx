@@ -14,7 +14,7 @@ const Fundamental2Detail: React.FC = () => {
             <div className="relative pt-36 pb-32 lg:pt-52 lg:pb-48 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="/img/courses/fundamental2.png"
+                        src="/cardfundamental2.png"
                         alt="Ensino Fundamental II"
                         className="w-full h-full object-cover opacity-30 mix-blend-luminosity"
                     />
@@ -116,7 +116,7 @@ const Fundamental2Detail: React.FC = () => {
                             <div className="absolute -inset-10 bg-gradient-to-tr from-primary via-secondary to-primary rounded-[3rem] opacity-20 blur-3xl group-hover:opacity-30 transition-opacity duration-700"></div>
                             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
                                 <img
-                                    src="/img/courses/fundamental2.png"
+                                    src="/cardfundamental2.png"
                                     alt="Estudante Fundamental II"
                                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                                 />

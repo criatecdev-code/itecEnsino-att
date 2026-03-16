@@ -66,9 +66,6 @@ const HeroVideo: React.FC = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Visual Polish: Bottom Gradient Fade for Section Transition - Subtle */}
-            <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-gray-50 to-transparent pointer-events-none"></div>
         </div>
     );
 };

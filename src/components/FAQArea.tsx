@@ -14,10 +14,6 @@ const FAQArea: React.FC = () => {
             answer: "Para nossos cursos técnicos de saúde (Enfermagem, Radiologia e Análises Clínicas), possuímos convênios com os principais hospitais e clínicas da região, facilitando o encaminhamento para o estágio obrigatório."
         },
         {
-            question: "Os cursos são reconhecidos oficialmente?",
-            answer: "Sim, todos os nossos cursos técnicos são autorizados pelo Conselho Estadual de Educação (CEE-RJ), garantindo a validade nacional do seu diploma e o registro nos órgãos de classe competentes."
-        },
-        {
             question: "Existem opções de bolsas ou descontos?",
             answer: "Trabalhamos com diversos convênios para empresas parceiras, além de descontos por pontualidade no pagamento e promoções especiais para ex-alunos de outras modalidades."
         },
