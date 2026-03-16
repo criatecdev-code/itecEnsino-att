@@ -12,7 +12,7 @@ const Blog: React.FC = () => {
             </Helmet>
 
             {/* Header / Breadcrumb */}
-            <div className="relative py-20 bg-gray-900 overflow-hidden">
+            <div className="relative pt-28 pb-20 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/60 to-secondary/60 mix-blend-overlay"></div>
                 <div className="container-custom relative z-10 text-center text-white">

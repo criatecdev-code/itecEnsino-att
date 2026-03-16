@@ -62,7 +62,7 @@ const CourseDetails: React.FC = () => {
             </Helmet>
 
             {/* Hero / Header */}
-            <div className="relative py-20 bg-gray-900 overflow-hidden">
+            <div className="relative pt-28 pb-20 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
                 {/* Background Image Overlay if available, else gradient */}
                 <div

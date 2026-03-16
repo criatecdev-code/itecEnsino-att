@@ -37,7 +37,7 @@ const Courses: React.FC = () => {
     const pageTitle = useMemo(() => {
         if (category === 'tecnico') return 'Cursos Técnicos';
         if (category === 'profissionalizante') return 'Cursos Profissionalizantes';
-        if (category === 'fundamental') return 'Ensino Fundamental';
+        if (category === 'fundamental') return 'Ensino Regular';
         if (category === 'medio') return 'Ensino Médio';
         return 'Todos os Cursos';
     }, [category]);
@@ -49,7 +49,7 @@ const Courses: React.FC = () => {
                 <meta name="description" content={`Confira os cursos de ${pageTitle} oferecidos pelo ITEC Ensino. Qualidade, infraestrutura e professores qualificados.`} />
             </Helmet>
             {/* Header / Breadcrumb - Consistent with other pages */}
-            <div className="relative py-20 bg-gray-900 overflow-hidden">
+            <div className="relative pt-28 pb-20 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/60 to-secondary/60 mix-blend-overlay"></div>
                 <div className="container-custom relative z-10 text-center text-white">
@@ -66,21 +66,22 @@ const Courses: React.FC = () => {
                 <div className="container-custom">
 
                     {category === 'fundamental' ? (
-                        <div className="max-w-5xl mx-auto space-y-10">
+                        <div className="max-w-6xl mx-auto space-y-10">
                             <div className="text-center">
                                 <h2 className="text-3xl md:text-4xl font-black text-gray-900">
-                                    {pageTitle}
+                                    Ensino Regular
                                 </h2>
+                                <p className="text-gray-500 mt-2">Fundamental e Médio</p>
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 {/* Card ITEKIDS */}
                                 <CourseCard
                                     titulo="ITEKIDS"
                                     categoria="Ensino Fundamental I"
                                     img="/img/fotos/31.png"
-                                    sobre="Desenvolvimento integral da criança em um ambiente que estimula a curiosidade e o aprendizado lúdico."
-                                    cargahoraria="Integral/Parcial"
+                                    sobre="No ITEKIDS, seu filho desenvolve autonomia, criatividade e pensamento crítico em um ambiente acolhedor e estimulante, com atividades lúdicas que preparam para o futuro."
+                                    cargahoraria="13h às 17:30 (1º ao 6º)"
                                     slug="fundamental-1-itekids"
                                     colorClass="text-secondary"
                                     features={[
@@ -95,10 +96,32 @@ const Courses: React.FC = () => {
                                     titulo="Fundamental II"
                                     categoria="Ensino Fundamental II"
                                     img="/cardfundamental2.png"
-                                    sobre="Base acadêmica sólida com foco no desenvolvimento do protagonismo e pensamento crítico do aluno."
-                                    cargahoraria="Matutino/Vespertino"
+                                    sobre="Robótica avançada, educação financeira, gamificação e metodologia ativa com projetos interdisciplinares. Laboratórios, sala Maker e Língua Inglesa com imersão."
+                                    cargahoraria="7h às 12:20 (7º ao 9º)"
                                     slug="fundamental-2"
                                     colorClass="text-secondary"
+                                    features={[
+                                        "Robótica Avançada",
+                                        "Educação Financeira",
+                                        "Gamificação e Metodologia Ativa",
+                                        "Desenvolvimento Socioemocional"
+                                    ]}
+                                />
+
+                                {/* Card Ensino Médio */}
+                                <CourseCard
+                                    titulo="Ensino Médio"
+                                    categoria="Ensino Médio"
+                                    img="/img/home/medio.png"
+                                    sobre="Preparação completa para o ENEM e vestibulares, aliada à formação profissional e ao desenvolvimento de habilidades para o mercado de trabalho e universidades."
+                                    cargahoraria="Matutino"
+                                    slug="ensino-medio"
+                                    colorClass="text-primary"
+                                    features={[
+                                        "Simulados ENEM desde o 1º ano",
+                                        "Cursos técnicos integrados",
+                                        "Material SAE Digital"
+                                    ]}
                                 />
                             </div>
                         </div>

@@ -55,12 +55,12 @@ const HeroVideo: React.FC = () => {
                             >
                                 Quero me matricular <i className="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
                             </Link>
-                            <Link
-                                to="/cursos"
-                                className="px-12 py-5 rounded-2xl font-black border-2 border-white/30 text-white hover:bg-white hover:text-primary transition-all text-lg backdrop-blur-sm"
+                            <a
+                                href="#modalidades"
+                                className="px-12 py-5 rounded-2xl font-black border-2 border-white/30 text-white hover:bg-white hover:text-primary transition-all text-lg backdrop-blur-sm cursor-pointer"
                             >
-                                Conhecer cursos
-                            </Link>
+                                Conheça nossas modalidades
+                            </a>
                         </div>
 
                     </div>

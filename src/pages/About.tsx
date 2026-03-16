@@ -10,7 +10,7 @@ const About: React.FC = () => {
                 <meta name="description" content="Conheça a história do ITEC Ensino, nossa missão de transformar vidas através da educação e o compromisso com a formação profissional de excelência." />
             </Helmet>
             {/* New Hero Section */}
-            <div className="relative py-32 lg:py-48 bg-gray-900 overflow-hidden">
+            <div className="relative pt-36 pb-32 lg:pt-52 lg:pb-48 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-20 animate-pulse"></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-primary/90 to-secondary/80 mix-blend-multiply"></div>
 

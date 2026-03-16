@@ -11,7 +11,7 @@ const Fundamental2Detail: React.FC = () => {
             </Helmet>
 
             {/* Premium Hero Section with User Image */}
-            <div className="relative py-32 lg:py-48 bg-gray-900 overflow-hidden">
+            <div className="relative pt-36 pb-32 lg:pt-52 lg:pb-48 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0">
                     <img
                         src="/img/courses/fundamental2.png"
@@ -56,45 +56,57 @@ const Fundamental2Detail: React.FC = () => {
             {/* Main Content - Pillars Section */}
             <section className="py-24 md:py-32 relative overflow-hidden">
                 <div className="container-custom relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
+                    <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in-up">
+                        <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-4 block">6º ao 9º Ano</span>
+                        <h2 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight mb-8">
+                            Nossos <span className="text-primary">Pilares</span>
+                        </h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                        {[
+                            { icon: 'fa-robot', title: 'Robótica Avançada', desc: 'Desenvolvimento de lógica, criatividade e resolução de problemas complexos com tecnologia de ponta (obrigatório, presente na matriz curricular)', color: 'text-primary' },
+                            { icon: 'fa-coins', title: 'Educação Financeira', desc: 'Formação para a autonomia financeira e mindset empreendedor desde cedo', color: 'text-secondary' },
+                            { icon: 'fa-gamepad', title: 'Gamificação', desc: 'Alunos motivados a evoluir por meio de desafios que transformam o aprendizado em uma jornada empolgante', color: 'text-purple-600' },
+                            { icon: 'fa-lightbulb', title: 'Metodologia Ativa', desc: 'Aprendizagem prática com projetos interdisciplinares que conectam o conteúdo à realidade', color: 'text-primary' },
+                            { icon: 'fa-heart', title: 'Desenvolvimento Socioemocional', desc: 'Programa estruturado para desenvolver empatia, resiliência e trabalho em equipe', color: 'text-secondary' }
+                        ].map((item, i) => (
+                            <div key={i} className="bg-white p-8 rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 hover:shadow-2xl transition-all group">
+                                <div className={`w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center ${item.color} text-3xl mb-6 group-hover:scale-110 transition-transform`}>
+                                    <i className={`fas ${item.icon}`}></i>
+                                </div>
+                                <h3 className="text-xl font-black text-gray-900 mb-4">{item.title}</h3>
+                                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                         <div className="space-y-8 animate-fade-in-up">
                             <div>
-                                <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-4 block flex items-center gap-2">
-                                    <span className="w-12 h-[2px] bg-secondary"></span>
-                                    Foco Acadêmico
-                                </span>
-                                <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
-                                    Desenvolvimento do <br />
-                                    <span className="text-primary relative inline-block">
-                                        Protagonismo
-                                        <svg className="absolute w-full h-3 -bottom-1 left-0 text-secondary opacity-30" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                            <path d="M0 5 Q 50 10 100 5 L 100 10 L 0 10 Z" fill="currentColor" />
-                                        </svg>
-                                    </span>
+                                <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Proposta Pedagógica</span>
+                                <h2 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight">
+                                    Metodologia e <span className="text-primary">Infraestrutura</span>
                                 </h2>
                             </div>
-
-                            <div className="space-y-6 text-gray-600 text-lg leading-relaxed text-left md:text-justify border-l-2 md:border-l-4 border-gray-100 pl-4 md:pl-8 font-medium">
-                                <p>
-                                    No Ensino Fundamental II, ampliamos os horizontes dos nossos alunos, incentivando a curiosidade intelectual e a autonomia nos estudos.
-                                </p>
-                                <p>
-                                    Nossa metodologia foca na transição para uma rotina de estudos mais complexa, garantindo que o estudante desenvolva habilidades fundamentais de raciocínio lógico, interpretação e escrita.
-                                </p>
-                            </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+                            <p className="text-gray-600 text-lg leading-relaxed">
+                                Nossa metodologia de ensino para o Ensino Fundamental foi desenvolvida para formar seres pensantes, conscientes e transformadores dos espaços que ocupam, com senso crítico e autonomia. Proporcionamos também um ambiente escolar que favoreça a problematização e o envolvimento ativo do aluno com experiências da vida real.
+                            </p>
+                            <p className="text-gray-600 text-lg leading-relaxed">
+                                Para o Ensino Fundamental II são ofertados ambientes interativos, laboratórios para atividades práticas, sala Maker, Língua Inglesa com metodologia comunicativa e prática de imersão.
+                            </p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {[
-                                    'Corpo docente qualificado',
-                                    'Laboratórios de ponta',
-                                    'Foco no ENEM e Concursos',
-                                    'Acompanhamento individualizado',
-                                    'Projetos Interdisciplinares',
-                                    'Ambiente seguro e moderno'
+                                    'Ambientes interativos',
+                                    'Laboratórios práticos',
+                                    'Sala Maker',
+                                    'Língua Inglesa com imersão',
+                                    'Acompanhamento psicopedagógico',
+                                    'Material Conquista Solução Educacional'
                                 ].map((item, i) => (
-                                <div key={i} className="flex items-center gap-3 bg-white p-3 md:p-4 rounded-xl shadow-sm border border-gray-50 group hover:border-primary/20 transition-all">
-                                        <i className="fas fa-check-circle text-primary group-hover:scale-110 transition-transform"></i>
-                                        <span className="text-gray-700 font-bold text-sm tracking-tight">{item}</span>
+                                    <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-gray-50">
+                                        <i className="fas fa-check-circle text-primary"></i>
+                                        <span className="text-gray-700 font-bold text-sm">{item}</span>
                                     </div>
                                 ))}
                             </div>
@@ -109,6 +121,72 @@ const Fundamental2Detail: React.FC = () => {
                                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Diferenciais e Conquista */}
+            <section className="py-24 bg-gray-50 relative overflow-hidden">
+                <div className="container-custom relative z-10">
+                    <div className="max-w-4xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-8">Diferenciais do Ensino Fundamental</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {[
+                                'Metodologia individualizada e personalizada conforme o perfil do aluno',
+                                'Matrizes curriculares atualizadas e dinâmicas',
+                                'Equipe pedagógica e professores qualificados',
+                                'Acompanhamento psicopedagógico com especialistas em TEA',
+                                'Excelente infraestrutura em localização privilegiada',
+                                'Salas amplas, climatizadas, com TV e WI-FI',
+                                'Ambiente monitorado 24 horas',
+                                'Laboratórios com equipamentos simuladores e peças anatômicas',
+                                'Portal/Aplicativo do aluno inovador',
+                                'Seguro estudantil desde o início',
+                                'Projeto de Vida e Projetos Interdisciplinares',
+                                'Educação Profissionalizante – Robótica e Informática',
+                                'Cultura Digital (Maker)'
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-100">
+                                    <i className="fas fa-check-circle text-secondary mt-1 flex-shrink-0"></i>
+                                    <span className="text-gray-700 font-medium text-sm">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-lg">
+                        <h3 className="text-2xl font-black text-gray-900 mb-6">Conquista Solução Educacional</h3>
+                        <p className="text-gray-600 leading-relaxed mb-4">
+                            O Sistema Conquista tem como objetivo formar crianças e jovens preparados para os desafios do futuro. O sistema utiliza uma proposta interacionista, na qual o estudante é protagonista de seu processo de aprendizagem, estimulado a refletir e questionar.
+                        </p>
+                        <p className="text-gray-600 leading-relaxed">
+                            <strong>CONx PLATAFORMA</strong> com acesso a livros digitais diversificados, potencializando o aprendizado e engajamento do aluno.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Horários e Material */}
+            <section className="py-24 bg-white relative overflow-hidden">
+                <div className="container-custom relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                        <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
+                            <h3 className="text-2xl font-black text-gray-900 mb-6 flex items-center gap-3">
+                                <i className="fas fa-clock text-secondary"></i>
+                                Horários
+                            </h3>
+                            <p className="text-gray-600 font-medium mb-2">1º ao 6º ano:</p>
+                            <p className="text-gray-900 font-bold mb-6">13h às 17:30</p>
+                            <p className="text-gray-600 font-medium mb-2">7º ao 9º ano:</p>
+                            <p className="text-gray-900 font-bold">7h às 12:20</p>
+                        </div>
+                        <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
+                            <i className="fas fa-shopping-cart text-secondary text-3xl mb-6"></i>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Lista de Material</h3>
+                            <p className="text-gray-600 text-sm mb-6 leading-relaxed">Adquira o material através da nossa loja oficial parceira.</p>
+                            <a href="https://lojanaescola.com.br/itec" target="_blank" rel="noopener noreferrer" className="inline-block text-secondary font-black text-sm uppercase tracking-widest border-b-2 border-secondary pb-1 hover:text-primary hover:border-primary transition-all">
+                                Ver loja <i className="fas fa-arrow-right ml-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

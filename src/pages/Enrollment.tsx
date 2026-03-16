@@ -81,7 +81,7 @@ const Enrollment: React.FC = () => {
                 <meta name="description" content="Realize sua matrícula online no ITEC Ensino de forma rápida e segura. Garanta sua vaga nos melhores cursos técnicos e profissionalizantes da região." />
             </Helmet>
             {/* Header / Breadcrumb - Consistent with other pages */}
-            <div className="relative py-20 bg-gray-900 overflow-hidden">
+            <div className="relative pt-28 pb-20 bg-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern/map.png')] opacity-10"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-green-900/60 to-primary/60 mix-blend-overlay"></div>
                 <div className="container-custom relative z-10 text-center text-white">
