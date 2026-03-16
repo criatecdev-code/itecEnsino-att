@@ -3,7 +3,7 @@ import videoTeste from '../assets/videoTeste.webm';
 
 const HeroVideo: React.FC = () => {
     return (
-        <div className="relative w-full min-h-[600px] md:min-h-screen lg:h-screen overflow-hidden bg-white flex items-center justify-center">
+        <div className="relative w-full min-h-[600px] md:min-h-screen lg:h-screen overflow-hidden bg-white flex items-center justify-center mb-10">
             {/* Video Background */}
             <video
                 className="absolute w-full h-full object-cover min-w-full min-h-full"
