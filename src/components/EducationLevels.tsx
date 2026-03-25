@@ -8,7 +8,7 @@ const EducationLevels: React.FC = () => {
             <EducationLevelSection
                 subtitle="Do 1º ano ao ensino médio"
                 title="Ensino regular"
-                description="O diferencial do ensino regular está na educação financeira e na gamificação, que aumentam o engajamento, despertam vontade de aprender e preparam os alunos para um futuro de oportunidades."
+                description="O diferencial do ensino regular está na integração da educação financeira e da gamificação, que ampliam o engajamento, estimulam o interesse pelo aprendizado e preparam os alunos para um futuro repleto de oportunidades"
                 image="/img/home/fundamental.png"
                 link="/cursos/fundamental"
                 linkText="Conhecer proposta"
@@ -21,7 +21,7 @@ const EducationLevels: React.FC = () => {
             <EducationLevelSection
                 subtitle="Qualificação profissional"
                 title="Cursos técnicos"
-                description="O curso técnico utiliza metodologia 100% ativa, com aulas práticas e experiências reais em sala que simulam a área de atuação, desenvolvendo competências profissionais e preparando você para um futuro profissional verdadeiro."
+                description="O curso técnico é estruturado com base em uma metodologia 100% ativa, combinando aulas práticas e experiências reais que simulam o ambiente profissional, promovendo o desenvolvimento de competências essenciais e preparando você para atuar com segurança no mercado de trabalho."
                 image="/img/home/enfermagem.png"
                 link="/cursos/tecnico"
                 linkText="Ver todos os cursos"
@@ -34,7 +34,7 @@ const EducationLevels: React.FC = () => {
             <EducationLevelSection
                 subtitle="Cursos rápidos e dinâmicos"
                 title="Profissionalizantes"
-                description="Qualificação rápida e focada para você se destacar. Cursos nas áreas de tecnologia, gestão, saúde e beleza com certificação imediata."
+                description="Qualificação rápida e focada em resultados, desenvolvida para destacar você no mercado. Cursos nas áreas de tecnologia, gestão, saúde e beleza, com certificação imediata."
                 image="/img/home/administrativo.png"
                 link="/cursos/profissionalizante"
                 linkText="Ver cursos rápidos"

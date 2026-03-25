@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { courses } from '../data/courses';
+import { parseModulosProgramaticos } from '../utils/parseModulosProgramaticos';
 
 const CourseDetails: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
@@ -30,7 +31,7 @@ const CourseDetails: React.FC = () => {
         );
     }
 
-    const modulesList = course.modulos.split(';').map(m => m.trim()).filter(m => m.length > 0);
+    const modulosParsed = parseModulosProgramaticos(course.modulos);
 
     const getCategoryUrl = (category: string) => {
         const cat = category.toLowerCase();
@@ -124,8 +125,8 @@ const CourseDetails: React.FC = () => {
                                 </p>
                             </div>
 
-                            {/* Modulos (Display as list if lengthy, or grid) */}
-                            {modulesList.length > 0 && (
+                            {/* Conteúdo programático: lista simples ou semestres/módulos (técnicos) */}
+                            {modulosParsed.kind === 'flat' && modulosParsed.items.length > 0 && (
                                 <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
                                     <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                                         <span className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center text-purple-600">
@@ -133,11 +134,59 @@ const CourseDetails: React.FC = () => {
                                         </span>
                                         Conteúdo Programático
                                     </h2>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        {modulesList.map((modulo, idx) => (
-                                            <div key={idx} className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors">
-                                                <i className="fas fa-check-circle text-green-500 mt-1"></i>
-                                                <span className="text-gray-700 font-medium">{modulo}</span>
+                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1 list-none p-0 m-0">
+                                        {modulosParsed.items.map((modulo, idx) => (
+                                            <li
+                                                key={idx}
+                                                className="flex items-start gap-3 py-2.5 px-1 rounded-xl hover:bg-gray-50 transition-colors"
+                                            >
+                                                <i className="fas fa-check-circle text-green-500 mt-0.5 shrink-0" aria-hidden />
+                                                <span className="text-gray-700 font-medium leading-snug">{modulo}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                            {modulosParsed.kind === 'structured' && modulosParsed.semesters.length > 0 && (
+                                <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                                    <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                                        <span className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center text-purple-600">
+                                            <i className="fas fa-layer-group"></i>
+                                        </span>
+                                        Conteúdo Programático
+                                    </h2>
+                                    <div className="space-y-6">
+                                        {modulosParsed.semesters.map((sem, si) => (
+                                            <div
+                                                key={`${sem.title}-${si}`}
+                                                className="rounded-2xl border border-gray-200 overflow-hidden bg-gray-50/40"
+                                            >
+                                                <div className="bg-gradient-to-r from-purple-600 to-purple-700 px-4 py-3.5 text-white font-bold text-sm md:text-base tracking-wide">
+                                                    {sem.title}
+                                                </div>
+                                                <div className="p-5 md:p-6 space-y-8 bg-white">
+                                                    {sem.modules.map((mod, mi) => (
+                                                        <div key={`${mod.title}-${mi}`}>
+                                                            <h3 className="text-xs font-bold text-purple-700 uppercase tracking-wider mb-3 pb-2 border-b border-purple-100">
+                                                                {mod.title}
+                                                            </h3>
+                                                            <ul className="space-y-2.5 list-none p-0 m-0">
+                                                                {mod.items.map((item, ii) => (
+                                                                    <li
+                                                                        key={ii}
+                                                                        className="flex gap-3 text-gray-700 text-[15px] leading-relaxed"
+                                                                    >
+                                                                        <span
+                                                                            className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-purple-400"
+                                                                            aria-hidden
+                                                                        />
+                                                                        <span>{item}</span>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    ))}
+                                                </div>
                                             </div>
                                         ))}
                                     </div>
