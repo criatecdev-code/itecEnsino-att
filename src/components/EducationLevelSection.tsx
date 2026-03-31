@@ -52,7 +52,7 @@ const EducationLevelSection: React.FC<EducationLevelSectionProps> = ({
                             <span className={`w-12 h-[2px] ${colorClass === 'text-primary' ? 'bg-primary' : 'bg-secondary'}`}></span>
                             {subtitle}
                         </span>
-                        <h2 className="text-3xl md:text-4xl lg:text-6xl font-black text-gray-900 mb-8 leading-[1] tracking-tight">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-8 leading-[1] tracking-tight whitespace-nowrap">
                             {title}
                         </h2>
                         <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8 max-w-xl font-medium opacity-90">

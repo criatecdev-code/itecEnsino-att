@@ -7,7 +7,7 @@ const EducationLevels: React.FC = () => {
             {/* Ensino Regular - First */}
             <EducationLevelSection
                 subtitle="Do 1º ano ao ensino médio"
-                title="Ensino regular"
+                title="Ensino fundamental e médio"
                 description="O diferencial do ensino regular está na integração da educação financeira e da gamificação, que ampliam o engajamento, estimulam o interesse pelo aprendizado e preparam os alunos para um futuro repleto de oportunidades"
                 image="/img/home/fundamental.png"
                 link="/cursos/fundamental"

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import videoTeste from '../assets/videoTeste.webm';
+import hashtag from '../assets/huhui.svg';
 
 const HeroVideo: React.FC = () => {
     return (
@@ -29,14 +30,17 @@ const HeroVideo: React.FC = () => {
                     <div className="space-y-6 md:space-y-8 animate-fade-in-up">
                         {/* Tagline / Hashtag */}
                         <div className="flex justify-center">
-                            <span className="inline-block px-4 py-1.5 bg-secondary/20 backdrop-blur-md rounded-full border border-secondary/30 text-secondary font-bold text-xs md:text-sm tracking-widest uppercase shadow-sm">
-                                Aprenda na prática e construa seu futuro
+                            <span className="inline-block px-4 py-1.5 bg-secondary/20 backdrop-blur-md rounded-full border border-secondary/30 text-white font-bold text-xs md:text-sm tracking-widest uppercase shadow-sm">
+                                Ensino que prepara, formação que transforma.
                             </span>
                         </div>
 
                         {/* High-Impact Headline */}
                         <h1 className="font-black text-white leading-tight tracking-tight mx-auto max-w-4xl">
-                            <span className="text-5xl md:text-5xl lg:text-7xl block">Seu futuro</span>
+                            <span className="text-5xl md:text-5xl lg:text-7xl flex items-center justify-center gap-4">
+                                <img src={hashtag} alt="" className="h-[0.85em] w-auto" aria-hidden="true" />
+                                Seu futuro
+                            </span>
                             <span className="text-4xl md:text-5xl lg:text-6xl block opacity-95">
                                 <span className="text-secondary">começa</span> aqui!
                             </span>

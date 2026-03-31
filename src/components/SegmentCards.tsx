@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom';
 const SegmentCards: React.FC = () => {
     const segments = [
         {
-            title: "Ensino Regular",
+            title: "Ensino regular",
             subtitle: "Fundamental e médio",
             icon: "fa-graduation-cap",
             color: "text-secondary",
             link: "/cursos/fundamental"
         },
         {
-            title: "Cursos Técnicos",
+            title: "Cursos técnicos",
             subtitle: "Formação profissional",
             icon: "fa-microscope",
             color: "text-primary",
             link: "/cursos/tecnico"
         },
         {
-            title: "Cursos Profissionalizantes",
+            title: "Cursos profissionalizantes",
             subtitle: "Qualificação rápida",
             icon: "fa-briefcase",
             color: "text-amber-500",
