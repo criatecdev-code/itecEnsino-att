@@ -571,10 +571,10 @@ export const courses: Course[] = [
     tempo: "24 meses",
     categoria: "Cursos técnicos",
     turnos: `
-        MANHÃ – Segunda e Quarta das 7:30h às 11:30h (VOLTA REDONDA)
-        ;TARDE – Segunda e Quarta das 13:20h às 17:20h (VOLTA REDONDA)
-        ;NOITE – Segunda e Quarta das 18:20h às 21:55h (VOLTA REDONDA / ANGRA DOS REIS / RESENDE)
-        ;INTEGRAL – Sábado das 7:30h às 11:30h e das 12:30h às 16:30h (VOLTA REDONDA / ANGRA DOS REIS / RESENDE)
+        Manhã
+        ;Tarde
+        ;Noite
+        ;Integral
         `,
     obs: `Início Semanal: 02/02/2026 e Sábado: 07/02/2026.
     Diferenciais ITEC: Infraestrutura premium com laboratórios equipados (simuladores, anatomia), monitoramento 24h, acompanhamento psicopedagógico (TEA) e App do aluno.`,
@@ -633,7 +633,7 @@ export const courses: Course[] = [
     tempo: "24 meses",
     categoria: "Cursos técnicos",
     turnos: `
-        NOITE – Segunda e Quarta das 18:20h às 21:55h (VOLTA REDONDA / ANGRA DOS REIS / RESENDE)
+        Noite
         `,
     obs: `Início: 02/02/2026 (Somente com Ensino Médio completo).
     Estágio: 400h.
@@ -686,7 +686,7 @@ export const courses: Course[] = [
     tempo: "18 meses",
     categoria: "Cursos técnicos",
     turnos: `
-        NOITE – Segunda, Quarta e Quinta das 18:20h às 21:55h (VOLTA REDONDA / ANGRA DOS REIS)
+        Noite
         `,
     obs: `Estágio: 150h.
     Diferenciais ITEC: Formação moderna e prática, laboratórios de última geração, acompanhamento especializado e foco na inserção no mercado.`,

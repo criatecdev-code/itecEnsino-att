@@ -6,7 +6,6 @@ interface CourseCardProps {
     categoria: string;
     img: string;
     sobre: string;
-    cargahoraria?: string;
     slug: string;
     features?: string[];
     colorClass?: string;
@@ -17,7 +16,6 @@ const CourseCard: React.FC<CourseCardProps> = ({
     categoria,
     img,
     sobre,
-    cargahoraria,
     slug,
     features,
     colorClass = 'text-primary'
@@ -65,16 +63,6 @@ const CourseCard: React.FC<CourseCardProps> = ({
                 )}
 
                 <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
-                    {cargahoraria && (
-                        <div className="flex flex-col">
-                            <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-0.5">
-                                Carga Horária
-                            </span>
-                            <span className="text-gray-900 font-black text-sm">
-                                {cargahoraria}
-                            </span>
-                        </div>
-                    )}
                     {/* @ts-ignore */}
                     <LinkComponent
                         {...linkProps}
