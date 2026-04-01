@@ -161,7 +161,6 @@ const Courses: React.FC = () => {
                                             categoria={course.categoria}
                                             img={course.img}
                                             sobre={course.sobre || 'Saiba mais sobre este curso.'}
-                                            cargahoraria={course.cargahoraria}
                                             slug={course.slug}
                                         />
                                     ))}
