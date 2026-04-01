@@ -6,7 +6,6 @@ import WhatsAppButton from './components/WhatsAppButton';
 
 // Lazy load pages for performance
 const Home = React.lazy(() => import('./pages/Home'));
-const Maintenance = React.lazy(() => import('./pages/Maintenance'));
 const CourseDetails = React.lazy(() => import('./pages/CourseDetails'));
 const About = React.lazy(() => import('./pages/About'));
 const Courses = React.lazy(() => import('./pages/Courses'));
@@ -110,7 +109,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setInitialLoading(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -129,9 +128,6 @@ function App() {
             <main className="flex-grow">
               <Suspense fallback={<LoadingFallback />}>
                 <Routes>
-                  {/* Maintenance Route - kept for manual access if needed, or fallback */}
-                  <Route path="/maintenance" element={<Maintenance />} />
-
                   {/* Standard Routes */}
                   <Route path="/" element={<Home />} />
                   <Route path="/sobrenos" element={<About />} />
