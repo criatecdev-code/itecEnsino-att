@@ -21,7 +21,7 @@ const EducationLevels: React.FC = () => {
             <EducationLevelSection
                 subtitle="Qualificação profissional"
                 title="Cursos técnicos"
-                description="O curso técnico é estruturado com base em uma metodologia 100% ativa, combinando aulas práticas e experiências reais que simulam o ambiente profissional, promovendo o desenvolvimento de competências essenciais e preparando você para atuar com segurança no mercado de trabalho."
+                description="Os cursos técnicos são estruturados com base em uma metodologia 100% ativa, combinando aulas práticas e experiências reais que simulam o ambiente profissional, promovendo o desenvolvimento de competências essenciais e preparando você para atuar com segurança no mercado de trabalho."
                 image="/img/home/enfermagem.png"
                 link="/cursos/tecnico"
                 linkText="Ver todos os cursos"

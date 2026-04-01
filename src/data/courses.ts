@@ -16,7 +16,7 @@ export const courses: Course[] = [
   {
     titulo: "Assistente administrativo",
     slug: "assistente-administrativo",
-    sobre: "Atuação nos processos administrativos de empresas urbanas e rurais, executando atividades de apoio nas áreas de recursos humanos, finanças, produção, logística e vendas. Observando procedimentos operacionais e a legislação.",
+    sobre: "Atue em processos administrativos, RH, finanças e logística com excelência.",
     area: "Gestão de processos administrativos, controle de qualidade, informações, equipes e comunicações internas e externas. Exercer atividades de liderança, promovendo o desenvolvimento das equipes e facilitando o alcance dos objetivos. Prestar assessoria e consultoria estratégica, participando ativamente das decisões que impactam a rotina da empresa. Manter um atendimento de excelência para clientes e fornecedores. Além disso, será responsável pela organização e manutenção de arquivos e redação de documentos precisos e eficientes.",
     modulos: `
         Criatividade no Trabalho
@@ -35,7 +35,7 @@ export const courses: Course[] = [
   {
     titulo: "Assistente de contabilidade",
     slug: "assistente-de-contabilidade",
-    sobre: "Preparar o aluno para organizar documentos e efetuar sua classificação contábil, gerar lançamentos contábeis, auxiliar na apuração dos impostos, conciliar contas e preenchimento de guias de recolhimento e de solicitações junto a órgãos do governo, emitir notas de venda e de transferência, entre outras; realizar o arquivo de documentos.",
+    sobre: "Organize documentos, realize lançamentos contábeis e apoie na apuração de impostos.",
     area: "Organizar documentos e efetuar sua classificação contábil, gerar lançamentos contábeis, auxiliar na apuração de impostos, conciliar contas e preenchimento de guias de recolhimento e solicitações junto a órgãos do governo, emitir notas de venda e de transferência, entre outras. Trabalhar em pequenas ou médias empresas ou escritórios de contabilidade, sempre sob supervisão de um contador.",
     modulos: `
         Excel - Essencial 365
@@ -51,7 +51,7 @@ export const courses: Course[] = [
   {
     titulo: "Atendente de farmácia",
     slug: "atendente-de-farmacia",
-    sobre: "Preparar o aluno para atuar em hospitais ou em farmácias, no comércio, no controle e dispersão de medicamentos e correlatos. Interpreta receitas médicas, esclarece pacientes no que se refere ao uso correto dos medicamentos. Trabalha sob supervisão do profissional farmacêutico.",
+    sobre: "Atue no controle de medicamentos e atendimento em farmácias ou hospitais.",
     area: "Atuar na área farmacêutica, na comercialização, dispersão de medicamentos e correlatos, bem como na gestão de estoque farmacêutico.",
     modulos: `
         Operador De Caixa
@@ -66,7 +66,7 @@ export const courses: Course[] = [
   {
     titulo: "Assistente de Cobrança",
     slug: "assistente-de-cobranca",
-    sobre: "Capacitação de profissionais para lidar com inadimplência, desenvolvendo habilidades de comunicação, negociação e gerenciamento de conflitos. O objetivo é formar especialistas éticos, conscientes da legislação e capazes de buscar soluções para a recuperação de dívidas de forma responsável.",
+    sobre: "Aprenda técnicas de negociação e gestão para recuperação de crédito e cobrança.",
     area: "Atuar na área de departamentos financeiros, setores de crédito e cobrança, ou empresas especializadas em recuperação de crédito.",
     modulos: `
         Dez Maneiras de se Vender uma Idéia
@@ -84,7 +84,7 @@ export const courses: Course[] = [
   {
     titulo: "Desenvolvimento de Apps",
     slug: "desenvolvimento-de-apps",
-    sobre: "Preparação dos alunos a adquirirem habilidades técnicas e práticas para projetar, desenvolver e implementar aplicativos para dispositivos móveis e/ou web.",
+    sobre: "Desenvolva habilidades para projetar e criar aplicativos móveis e web.",
     area: "Atuar em indústrias de tecnologia, em startups, empresas de desenvolvimento de software ou como empreendedores na criação de seus próprios aplicativos.",
     modulos: `
         Lógica de Programação
@@ -100,7 +100,7 @@ export const courses: Course[] = [
   {
     titulo: "Desenvolvimento de Sistemas",
     slug: "desenvolvimento-de-sistemas",
-    sobre: "Preparação dos alunos para adquirirem habilidades técnicas e práticas para projetar, criar, implementar e manter sistemas de software eficientes e confiáveis. Além disso, ter o conhecimento das linguagens de programação, metodologias ágeis, banco de dados e outras ferramentas essenciais para a área de desenvolvimento de sistemas.",
+    sobre: "Crie e mantenha sistemas de software eficientes com as melhores tecnologias.",
     area: "Atuar na criação e manutenção de softwares personalizados para empresas, instituições e organizações em geral. Sua área de atuação inclui o desenvolvimento de sistemas de gestão, aplicativos empresariais, plataformas web e soluções tecnológicas sob medida para otimizar processos e melhorar a eficiência das operações.",
     modulos: `
         Banco De Dados SQL
@@ -117,7 +117,7 @@ export const courses: Course[] = [
   {
     titulo: "Design para mídias sociais",
     slug: "design-para-midias-sociais",
-    sobre: "Capacitação dos alunos para desenvolverem habilidades criativas e técnicas para criação de conteúdo visual atrativo e impactante, específico para as diferentes plataformas de mídias sociais. Visamos preparar profissionais para criar posts, imagens, vídeos e elementos gráficos que sejam relevantes, envolventes e que impulsionam o engajamento e o alcance nas redes sociais, atendendo às necessidades de marcas, empresas e influenciadores digitais.",
+    sobre: "Crie conteúdo visual atrativo e impactante para as principais redes sociais.",
     area: "Atuar em agências de marketing, empresas, com influenciadores, empreendedores e no setor público, criando conteúdo visual criativo para impulsionar a presença nas redes sociais e fortalecer a identidade de marcas e projetos. Sua atuação abrange a produção de imagens, vídeos e elementos visuais para diversas plataformas e públicos-alvo.",
     modulos: `
         Adobe Premiere
@@ -134,7 +134,7 @@ export const courses: Course[] = [
   {
     titulo: "Design gráfico",
     slug: "design-grafico",
-    sobre: "Preparação do aluno para edição de textos, imagens e figuras, gerar layouts e arte final para livros, revistas, folders e jornais para o mercado gráfico em geral, utilizando programas de computação, de acordo com as normas e procedimentos técnicos de qualidade e segurança.",
+    sobre: "Edite textos e imagens para criar layouts profissionais no mercado gráfico.",
     area: "Operar softwares de computação gráfica, permitindo a edição, criação e preparação para impressão de arquivos vetoriais. Atua em vários ramos de atividade, tais como: artes gráficas, indústria têxtil, fabricação madeireira, empresas de telecomunicações, entre outras.",
     modulos: `
         Adobe Photoshop - Módulo I
@@ -152,7 +152,7 @@ export const courses: Course[] = [
   {
     titulo: "Desenvolvimento de Games I",
     slug: "desenvolvimento-de-games",
-    sobre: "Capacitação dos alunos a adquirirem habilidades técnicas e criativas para criação de jogos eletrônicos, passando conceitos básicos da ferramenta, como criação de cenários, movimentação, colisão, uso de sons, criação de eventos, comandos de input e muito mais.",
+    sobre: "Aprenda os conceitos básicos para criar seus próprios jogos e cenários digitais.",
     area: "Atuação em diversas áreas da indústria de jogos eletrônicos, incluindo desenvolvimento de jogos para plataformas móveis e consoles, criação de jogos para realidade virtual e aumentada, produção de jogos educacionais e de treinamento, além de oportunidades em estúdios de desenvolvimento de games, empresas de tecnologia e até mesmo como empreendedor independente na criação de jogos autorais.",
     modulos: `
         Lógica De Programação
@@ -169,7 +169,7 @@ export const courses: Course[] = [
   {
     titulo: "Desenvolvimento de Games II",
     slug: "desenvolvimento-de-games-ii",
-    sobre: "Capacitação dos alunos a adquirirem habilidades técnicas e criativas para criação de jogos eletrônicos, passando conceitos básicos da ferramenta, como criação de cenários, movimentação, colisão, uso de sons, criação de eventos, comandos de input e muito mais.",
+    sobre: "Aprenda os conceitos básicos para criar seus próprios jogos e cenários digitais.",
     area: "Atuação em diversas áreas da indústria de jogos eletrônicos, incluindo desenvolvimento de jogos para plataformas móveis e consoles, criação de jogos para realidade virtual e aumentada, produção de jogos educacionais e de treinamento, além de oportunidades em estúdios de desenvolvimento de games, empresas de tecnologia e até mesmo como empreendedor independente na criação de jogos autorais.",
     modulos: `
         Pixel Art
@@ -185,7 +185,7 @@ export const courses: Course[] = [
   {
     titulo: "Desenvolvimento de Games 3D",
     slug: "desenvolvimento-de-games-3d",
-    sobre: "Capacitação dos alunos para adquirirem habilidades técnicas e criativas para criar jogos tridimensionais imersivos, permitindo a criação de experiências interativas e visualmente impactantes para diferentes plataformas e dispositivos.",
+    sobre: "Crie experiências tridimensionais imersivas para diferentes plataformas.",
     area: "Atuação em estúdios de desenvolvimento de jogos, criando mundos e personagens para jogos em diversas plataformas. Além disso, podem encontrar oportunidades em empresas de realidade virtual e aumentada, produzindo conteúdo imersivo.",
     modulos: `
         Desenvolvimento de Games - 3d Módulo I
@@ -199,7 +199,7 @@ export const courses: Course[] = [
   {
     titulo: "Desenvolvimento de Jogos Digitais",
     slug: "desenvolvimento-de-jogos-digitais",
-    sobre: "Capacitação dos alunos para adquirirem habilidades técnicas e criativas para criação de jogos eletrônicos de forma completa e profissional. Ao final do curso, os participantes estarão aptos a conceber, projetar, programar e implementar jogos para diferentes plataformas, utilizando tecnologias e ferramentas relevantes para a indústria de desenvolvimento de games.",
+    sobre: "Formação completa para conceber, programar e implementar jogos profissionais.",
     area: "Atuação em estúdios de desenvolvimento de games, criando jogos para consoles, PC e dispositivos móveis. Além disso, podem encontrar oportunidades em empresas de realidade virtual e aumentada, produzindo experiências imersivas. Outras áreas incluem gamificação, desenvolvimento de aplicativos interativos e simulações para treinamento.",
     modulos: `
         Lógica de Programação
@@ -222,7 +222,7 @@ export const courses: Course[] = [
   {
     titulo: "Gestão de RH",
     slug: "gestao-de-rh",
-    sobre: "Capacitação dos alunos para adquirirem conhecimentos teóricos e práticos para atuar de forma estratégica na gestão de pessoas dentro das organizações.",
+    sobre: "Capacitação estratégica em gestão de pessoas e processos de Recursos Humanos.",
     area: "Atuação em diversas áreas, como: setores de Recursos Humanos de empresas, consultorias em RH para auxiliar em processos de recrutamento e seleção, desenvolvimento de treinamentos e políticas de retenção de talentos, e também em cargos de liderança e gestão de equipes dentro das organizações.",
     modulos: `
         Departamento Pessoal
@@ -237,7 +237,7 @@ export const courses: Course[] = [
   {
     titulo: "Desenvolvimento web",
     slug: "desenvolvimento-web",
-    sobre: "Capacitação dos alunos para adquirirem habilidades técnicas para projetar, criar e implementar sites e aplicações web de forma eficiente e profissional. O curso visa preparar profissionais para atuarem no desenvolvimento de soluções web que atendam às necessidades e demandas do mercado digital atual.",
+    sobre: "Projete e implemente sites e aplicações web de forma eficiente e profissional.",
     area: "Atuação em agências de criação, empresas de tecnologia e startups, desenvolvendo e mantendo sites e aplicações web, em setores de comércio eletrônico, mídia digital e empreendendo projetos próprios na área de desenvolvimento web.",
     modulos: `
         Lógica de Programação
@@ -254,7 +254,7 @@ export const courses: Course[] = [
   {
     titulo: "Informática completa",
     slug: "informatica-completa",
-    sobre: "Capacitação dos alunos para adquirirem conhecimentos teóricos e práticos sobre o uso e aplicação de tecnologias da informação.",
+    sobre: "Domine as principais ferramentas de informática e softwares essenciais do mercado.",
     area: "Atuação em diversas áreas, como: suporte técnico em empresas de tecnologia, atendimento ao cliente em setores de informática, auxiliando na resolução de problemas e manutenção de equipamentos, e também em cargos administrativos e de escritório, utilizando softwares de escritório e sistemas de gestão.",
     modulos: `
         Introdução a Informática
@@ -277,7 +277,7 @@ export const courses: Course[] = [
   {
     titulo: "Liderança 4.0",
     slug: "lideranca-4-0",
-    sobre: "Capacitação dos participantes para desenvolverem habilidades e competências essenciais para exercerem papéis de liderança de forma eficaz e inspiradora. Visando preparar os alunos para assumirem posições de liderança em suas carreiras, maximizando o potencial de suas equipes e contribuindo para o sucesso das organizações.",
+    sobre: "Desenvolva habilidades de liderança eficaz para maximizar o potencial de equipes.",
     area: "Atuação em diversas áreas, como: gestão de equipes em empresas de diferentes setores, liderança em projetos e empreendimentos, cargos de supervisão e coordenação em organizações, além de oportunidades em consultorias e treinamentos em desenvolvimento de liderança.",
     modulos: `
         Desenvolvimento Profissional
@@ -299,7 +299,7 @@ export const courses: Course[] = [
   {
     titulo: "Gestão em marketing digital",
     slug: "gestao-e-marketing-digital",
-    sobre: "Capacitação dos alunos para adquirirem habilidades estratégicas e técnicas para planejar, implementar e gerir campanhas de marketing digital de forma eficiente.",
+    sobre: "Planeje e implemente estratégias de marketing digital para impulsionar negócios.",
     area: "Atuação em diversas áreas, como: gerência de marketing digital em empresas, agências de publicidade e marketing, consultorias para otimizar estratégias digitais de negócios, e empreendedorismo para impulsionar o crescimento de marcas e projetos online.",
     modulos: `
         Agente de Vendas
@@ -315,7 +315,7 @@ export const courses: Course[] = [
   {
     titulo: "Excel profissional",
     slug: "excel-profissional",
-    sobre: "Capacitação dos alunos para adquirirem habilidades avançadas e especializadas no uso do Microsoft Excel para fins profissionais. Visando preparar profissionais para lidarem com desafios complexos em suas áreas de atuação, usando o Excel como uma poderosa ferramenta de análise e tomada de decisões.",
+    sobre: "Domine o Microsoft Excel com técnicas avançadas para análise e tomada de decisões.",
     area: "A expertise em Excel é valorizada em diferentes setores profissionais, como em setores administrativos e financeiros de empresas, departamentos de recursos humanos para análise de dados e relatórios, em consultorias para auxiliar clientes com análises complexas de dados, e também em áreas de pesquisa e desenvolvimento para coletar e analisar informações relevantes.",
     modulos: `
         Excel - Essencial 365
@@ -330,7 +330,7 @@ export const courses: Course[] = [
   {
     titulo: "Social Media 360",
     slug: "social-media-360",
-    sobre: "Capacitação dos participantes a adquirirem conhecimentos e habilidades para gerir de forma estratégica as mídias sociais de empresas, marcas e projetos. Visando a qualificação dos profissionais para atuarem no crescente mercado de mídias sociais, tornando-se especialistas em impulsionar o alcance e o engajamento das marcas nas plataformas digitais.",
+    sobre: "Torne-se especialista em gerir mídias sociais e impulsionar o engajamento de marcas.",
     area: "Atuação em diversas áreas como: agências de marketing digital, gerenciamento de redes sociais para empresas e marcas, criação de conteúdo para influenciadores digitais, estratégias de mídias sociais para e-commerce, além de oportunidades em sectores de comunicação e publicidade.",
     modulos: `
         Desenvolvimento Profissional
@@ -352,7 +352,7 @@ export const courses: Course[] = [
   {
     titulo: "Google for Business",
     slug: "google-business",
-    sobre: "Capacitação dos participantes a dominarem as ferramentas e recursos oferecidos pela Google para otimizar a produtividade e a colaboração no ambiente corporativo.",
+    sobre: "Domine as ferramentas Google para otimizar a produtividade no ambiente corporativo.",
     area: "Atuação em diversas áreas, como: setores administrativos e de secretariado, gerenciamento de projetos e equipes, consultorias em produtividade e processos de negócios, e empreendedorismo para otimizar a gestão de empresas.",
     modulos: `
         Google: Ferramentas de Produtividade
@@ -368,7 +368,7 @@ export const courses: Course[] = [
   {
     titulo: "Power BI",
     slug: "power-bi",
-    sobre: "Vivemos em um mundo em que muitas coisas que fazemos geram dados e, interpretar essas informações é algo essencial para ajudar a tomar as melhores decisões. O Power BI é uma ferramenta que possibilita essa análise de dados. Ao longo dos módulos o aluno aprenderá os conceitos necessários dessa ferramenta, desde conhecimentos simples até os mais avançados.",
+    sobre: "Aprenda a interpretar dados e tomar decisões estratégicas com o Microsoft Power BI.",
     area: "Finanças e contabilidade - Marketing e vendas - Recursos humanos - Operações e logística Saúde e ciências da vida - Educação e pesquisa",
     modulos: `
         Microsoft Power Bi - Modulo I 
@@ -383,7 +383,7 @@ export const courses: Course[] = [
   {
     titulo: "Redes e infraestrutura",
     slug: "redes-e-infraestrutura",
-    sobre: "Voltado para profissionais que desejam aprimorar seus conhecimentos e habilidades em projetos de infraestrutura de redes, bem como a implantação, configuração e administração de redes de computadores.",
+    sobre: "Projete, configure e administre redes de computadores com foco em infraestrutura.",
     area: `Administração de redes - Análise de redes - Análise de segurança de redes
         Consultoria de tecnologia de redes - Engenharia de redes - Gerência de projetos de rede - Gerência de suporte de rede - Especialista em infraestrutura de TI
         Os profissionais que atuam nessas áreas são responsáveis por: Instalar, configurar e
@@ -403,7 +403,7 @@ export const courses: Course[] = [
   {
     titulo: "Finanças essencial",
     slug: "financas-essencial",
-    sobre: "Finanças Essencial é voltado para estudantes e profissionais que desejam aprender os conceitos fundamentais de finanças, desde a gestão de orçamento pessoal até a análise financeira de empresas.",
+    sobre: "Aprenda os conceitos fundamentais de finanças, da gestão pessoal à empresarial.",
     area: "Planejamento financeiro - Controle financeiro - Monitoramento de recursos financeiros - Análise de custos e riscos - Gestão de fluxo de caixa - Alocação de recursos - Investimentos - Profissões na área financeira - Analista financeiro - Analista de risco - Analista de fundos de investimento - Analista de crédito - Analista de mercado de capitais - Economista financeiro - Consultor financeiro - Trader",
     modulos: `
         Guia Inteligencia Artificial
@@ -430,7 +430,7 @@ export const courses: Course[] = [
   {
     titulo: "Atendimento pré-hospitalar",
     slug: "atendimento-pre-hospitalar",
-    sobre: "O objetivo da capacitação em APH: Atendimento Pré-Hospitalar é capacitar os profissionais da área da saúde que desejam atuar como “Socorristas no SAMU“, Bombeiros civis e militares, Condutores de veículos de emergência, Comissários de voo, Voluntários da Defesa Civil, Técnicos em Segurança do Trabalho, Bombeiros Voluntários, Brigadistas, Socorristas de Resgate Rodoviário.",
+    sobre: "Capacitação para atuar como socorrista no SAMU, bombeiros e áreas de saúde.",
     area: "A atuação no mercado de trabalho inclui os setores de saúde e prestação de serviço. São eles, hospitais, centros de saúde, órgãos do governo, SAMU, ambulâncias de transporte e outros.",
     modulos: `
         Anatomia e Fisiologia
@@ -462,7 +462,7 @@ export const courses: Course[] = [
   {
     titulo: "Auxiliar de laboratório em análises clínicas",
     slug: "auxiliar-de-laboratorio-em-analises-clinicas",
-    sobre: "O curso de Auxiliar de Laboratório em Análises Clínicas qualifica o aluno para desempenhar as atribuições das rotinas de trabalho em laboratórios de análises clínicas.",
+    sobre: "Qualificação para rotinas de trabalho em laboratórios de análises clínicas.",
     area: "A atuação no mercado de trabalho inclui auxiliar na organização do ambiente de trabalho, recepção de pacientes, orientações sobre exames e entrega dos resultado, auxiliar em coletas de amostras e no preparo de bancadas laboratoriais e desenvolver práticas e auxiliar o laboratório nas suas rotinas",
     modulos: `
         O Laboratório Clínico e as Análises Clínicas
@@ -489,7 +489,7 @@ export const courses: Course[] = [
   {
     titulo: "Ensino fundamental",
     slug: "ensino-fundamental",
-    sobre: "Uma base sólida para o futuro. No ITEC, o ensino fundamental une a excelência acadêmica com o desenvolvimento de competências socioemocionais e tecnológicas.",
+    sobre: "Excelência acadêmica unida ao desenvolvimento socioemocional e tecnológico.",
     area: "Fundamental I (1º ao 5º ano) e fundamental II (6º ao 9º ano).",
     modulos: `
         Metodologia Ativa
@@ -505,7 +505,7 @@ export const courses: Course[] = [
   {
     titulo: "Ensino médio",
     slug: "ensino-medio",
-    sobre: "Preparação completa para o ENEM e vestibulares, aliada à formação profissional e ao desenvolvimento de habilidades para a vida.",
+    sobre: "Preparação completa para o ENEM e vestibulares com formação profissionalizante.",
     area: "1ª, 2ª e 3ª séries do ensino médio.",
     modulos: `
         Foco no ENEM e Vestibulares
@@ -521,7 +521,7 @@ export const courses: Course[] = [
   {
     titulo: "Técnico em enfermagem",
     slug: "tecnico-em-enfermagem",
-    sobre: "Transforme sua vocação em profissão e faça a diferença na vida das pessoas! \n\t\tO Curso Técnico em Enfermagem do ITEC foi criado para quem deseja cuidar com técnica, empatia e propósito. \n\t\tNossa formação une teoria e prática em laboratórios modernos, com professores experientes e metodologia voltada \n\t\tpara o desenvolvimento de competências reais do mercado da saúde. \n\t\tEm apenas 24 meses, você estará preparado(a) para atuar com segurança em hospitais, clínicas e unidades de atenção básica.",
+    sobre: "Formação técnica em cuidado humanizado com práticas em laboratórios modernos.",
     area: "O mercado da saúde está em plena expansão, e o técnico em enfermagem é hoje um dos profissionais mais procurados no Brasil. \n\tCom a formação do ITEC, você conquista oportunidades em hospitais, clínicas, laboratórios, home care e programas de saúde pública. \n\tAlém da estabilidade e das boas remunerações, você terá a satisfação de exercer uma profissão que salva e transforma vidas todos os dias.",
     modulos: `
         1º SEMESTRE
@@ -552,7 +552,7 @@ export const courses: Course[] = [
         ;Saúde da Mulher
         ;Saúde da Criança e do Adolescente
         ;Saúde do idoso
-        ;INTEGRA ESTÁGIO (sexta-feira)
+        ;INTEGRA ESTÁGIO
         ;ESTÁGIO SUPERVISIONADO I
     
         ;4º SEMESTRE
@@ -577,16 +577,13 @@ export const courses: Course[] = [
         ;INTEGRAL – Sábado das 7:30h às 11:30h e das 12:30h às 16:30h (VOLTA REDONDA / ANGRA DOS REIS / RESENDE)
         `,
     obs: `Início Semanal: 02/02/2026 e Sábado: 07/02/2026.
-    Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 26 parcelas de R$ 520,00.
-    Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
-    Material Didático Digital incluso.
     Diferenciais ITEC: Infraestrutura premium com laboratórios equipados (simuladores, anatomia), monitoramento 24h, acompanhamento psicopedagógico (TEA) e App do aluno.`,
     img: "/img/fotos/27.jpg"
   },
   {
     titulo: "Técnico em radiologia",
     slug: "tecnico-em-radiologia",
-    sobre: "Descubra o poder da tecnologia aplicada à saúde! \n\tO Curso Técnico em Radiologia do ITEC forma profissionais prontos para operar equipamentos de alta precisão e contribuir diretamente para o diagnóstico médico. \n\tCom aulas práticas em laboratórios equipados e professores experientes, você aprende desde os fundamentos da radiologia até o uso de tecnologias avançadas de imagem, como tomografia e ressonância magnética. \n\tEm 24 meses, você estará preparado(a) para atuar em clínicas, hospitais e centros de diagnóstico em todo o país.",
+    sobre: "Domine tecnologias de diagnóstico por imagem e equipamentos de alta precisão.",
     area: "O profissional técnico em radiologia é essencial em qualquer instituição de saúde moderna. \n\tCom a formação do ITEC, você estará pronto(a) para atuar em hospitais, clínicas, laboratórios e centros de diagnóstico por imagem, \n\tem um dos setores que mais cresce no país. Além das excelentes oportunidades e valorização profissional, \n\ta radiologia oferece um campo de atuação tecnológica e humana, ideal para quem busca estabilidade e propósito.",
     modulos: `
         1º SEMESTRE
@@ -618,7 +615,7 @@ export const courses: Course[] = [
         ;Mamografia e Densitometria Óssea
         ;Gestão na Radiologia
         ;Práticas do Diagnóstico por Imagem
-        ;INTEGRA ESTÁGIO (sexta-feira)
+        ;INTEGRA ESTÁGIO
         ;ESTÁGIO SUPERVISIONADO I
     
         ;4º SEMESTRE
@@ -640,16 +637,13 @@ export const courses: Course[] = [
         `,
     obs: `Início: 02/02/2026 (Somente com Ensino Médio completo).
     Estágio: 400h.
-    Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 26 parcelas de R$ 520,00.
-    Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
-    Material Didático Digital incluso.
     Diferenciais ITEC: Laboratórios com equipamentos de alta precisão, ambiente monitorado 24h, equipe de professores especialistas e suporte psicopedagógico.`,
     img: "/img/fotos/29.jpg"
   },
   {
     titulo: "Técnico em análises clínicas",
     slug: "tecnico-em-analises-clinicas",
-    sobre: "Transforme curiosidade científica em uma carreira promissora! \n\tO Curso Técnico em Análises Clínicas do ITEC prepara você para atuar com excelência nos bastidores da saúde, realizando exames laboratoriais que auxiliam no diagnóstico e na prevenção de doenças. \n\tCom uma formação moderna e prática, você aprenderá técnicas de coleta, análises bioquímicas, microbiológicas e hematológicas, utilizando equipamentos de última geração e metodologia orientada para o mercado. \n\tEm apenas 18 meses, você estará pronto(a) para atuar em laboratórios, hospitais e clínicas em todo o país.",
+    sobre: "Prática em exames laboratoriais, bioquímica e microbiologia com foco no mercado.",
     area: "O mercado para o técnico em análises clínicas está em constante crescimento, impulsionado pela expansão dos serviços de saúde e pela importância do diagnóstico laboratorial. \n\tCom o diploma do ITEC, você poderá atuar em laboratórios, hospitais, clínicas, bancos de sangue e centros de pesquisa, sendo um elo fundamental entre a ciência e o cuidado com o paciente. \n\tUma carreira estável, tecnológica e com alta demanda espera por você.",
     modulos: `
         1º SEMESTRE
@@ -695,9 +689,6 @@ export const courses: Course[] = [
         NOITE – Segunda, Quarta e Quinta das 18:20h às 21:55h (VOLTA REDONDA / ANGRA DOS REIS)
         `,
     obs: `Estágio: 150h.
-    Valor: Matrícula R$ 520,00 (70% desc. até 13/12/2025 = R$ 156,00) + 20 parcelas de R$ 520,00.
-    Descontos: 30% Balcão (R$ 364,00) ou 40% Convênio (R$ 312,00) pagando até o dia 8.
-    Material Didático Digital incluso.
     Diferenciais ITEC: Formação moderna e prática, laboratórios de última geração, acompanhamento especializado e foco na inserção no mercado.`,
     img: "/img/fotos/28.jpg"
   },

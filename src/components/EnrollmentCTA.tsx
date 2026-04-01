@@ -28,7 +28,7 @@ const EnrollmentCTA: React.FC = () => {
                         </h2>
 
                         <p className="text-gray-300 text-lg md:text-xl mb-8 leading-relaxed max-w-xl animate-fade-in-up delay-200">
-                            Não perca a oportunidade de estudar na instituição que é referência em ensino regular, técnico e profissionalizante. Condições especiais para matrículas antecipadas.
+                            Não perca a oportunidade de estudar na instituição que é referência em ensino regular, técnico e profissionalizante. Garanta sua formação com quem entende de educação.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">

@@ -80,8 +80,7 @@ const Courses: React.FC = () => {
                                     titulo="ITEKIDS"
                                     categoria="Ensino Fundamental I"
                                     img="/img/fotos/31.png"
-                                    sobre="No ITEKIDS, seu filho desenvolve autonomia, criatividade e pensamento crítico em um ambiente acolhedor e estimulante, com atividades lúdicas que preparam para o futuro."
-                                    cargahoraria="13h às 17:30 (1º ao 6º)"
+                                    sobre="Ambiente acolhedor focado no desenvolvimento de autonomia, criatividade e pensamento crítico."
                                     slug="fundamental-1-itekids"
                                     colorClass="text-secondary"
                                     features={[
@@ -96,8 +95,7 @@ const Courses: React.FC = () => {
                                     titulo="Fundamental II"
                                     categoria="Ensino Fundamental II"
                                     img="/cardfundamental2.png"
-                                    sobre="Robótica avançada, educação financeira, gamificação e metodologia ativa com projetos interdisciplinares. Laboratórios, sala Maker e Língua Inglesa com imersão."
-                                    cargahoraria="7h às 12:20 (7º ao 9º)"
+                                    sobre="Robótica, educação financeira e metodologias ativas com sala Maker e imersão em inglês."
                                     slug="fundamental-2"
                                     colorClass="text-secondary"
                                     features={[
@@ -113,13 +111,11 @@ const Courses: React.FC = () => {
                                     titulo="Ensino Médio"
                                     categoria="Ensino Médio"
                                     img="/img/home/medio.png"
-                                    sobre="Preparação completa para o ENEM e vestibulares, aliada à formação profissional e ao desenvolvimento de habilidades para o mercado de trabalho e universidades."
-                                    cargahoraria="Matutino"
+                                    sobre="Foco no ENEM e vestibulares com formação profissionalizante para o mercado de trabalho."
                                     slug="ensino-medio"
                                     colorClass="text-primary"
                                     features={[
                                         "Simulados ENEM desde o 1º ano",
-                                        "Cursos técnicos integrados",
                                         "Material SAE Digital"
                                     ]}
                                 />
@@ -164,7 +160,7 @@ const Courses: React.FC = () => {
                                             titulo={course.titulo}
                                             categoria={course.categoria}
                                             img={course.img}
-                                            sobre={course.sobre ? course.sobre.substring(0, 100) + '...' : 'Saiba mais sobre este curso.'}
+                                            sobre={course.sobre || 'Saiba mais sobre este curso.'}
                                             cargahoraria={course.cargahoraria}
                                             slug={course.slug}
                                         />

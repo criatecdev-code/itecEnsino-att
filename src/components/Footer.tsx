@@ -119,12 +119,11 @@ const Footer: React.FC = () => {
                                     </a>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <i className="fas fa-phone-alt text-primary"></i>
-                                    <a href="tel:2435120102" className="hover:text-primary transition-colors">(24) 3512-0102</a>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <i className="fab fa-whatsapp text-primary text-lg"></i>
-                                    <a href="https://wa.me/552435120102" target="_blank" className="hover:text-primary transition-colors">(24) 3512-0102</a>
+                                    <div className="flex gap-2 text-primary">
+                                        <i className="fas fa-phone-alt"></i>
+                                        <i className="fab fa-whatsapp text-lg"></i>
+                                    </div>
+                                    <a href="https://wa.me/552435120102" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">(24) 3512-0102</a>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <i className="fas fa-envelope text-primary"></i>

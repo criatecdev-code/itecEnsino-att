@@ -6,8 +6,8 @@ const MedioDetail: React.FC = () => {
     return (
         <div className="bg-gray-50 flex flex-col min-h-screen">
             <Helmet>
-                <title>Ensino Médio | ITEC Ensino - Profissionalizante e Técnico</title>
-                <meta name="description" content="Ensino Médio no ITEC: preparação para ENEM e vestibulares, cursos técnicos integrados (Enfermagem, Análises Clínicas), material SAE Digital e foco na profissionalização e acesso às universidades." />
+                <title>Ensino Médio | ITEC Ensino - Formação Profissionalizante</title>
+                <meta name="description" content="Ensino Médio no ITEC: preparação para ENEM e vestibulares, cursos profissionalizantes, material SAE Digital e acesso às universidades com foco na carreira." />
             </Helmet>
 
             {/* Hero Section */}
@@ -20,7 +20,7 @@ const MedioDetail: React.FC = () => {
                 <div className="container-custom relative z-10 text-center text-white">
                     <div className="flex justify-center mb-8 animate-fade-in-up">
                         <span className="inline-block px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-secondary font-bold tracking-[0.2em] uppercase shadow-lg">
-                            Profissionalizante | Técnico
+                            Formação Profissionalizante
                         </span>
                     </div>
 
@@ -136,13 +136,13 @@ const MedioDetail: React.FC = () => {
                             },
                             {
                                 serie: "2ª Série",
-                                items: ["Início do curso técnico (opcional)", "Opções: Enfermagem ou Análises Clínicas", "Intensificação das preparações para o ENEM", "Projetos práticos profissionalizantes"],
+                                items: ["Aprofundamento no curso profissionalizante", "Intensificação das preparações para o ENEM", "Projetos práticos profissionalizantes", "Desenvolvimento de soft skills"],
                                 icon: "fas fa-tools",
                                 highlighted: true
                             },
                             {
                                 serie: "3ª Série",
-                                items: ["Continuidade do curso técnico", "Intensivo para ENEM e vestibulares no 2º semestre", "Mentorias para definição de carreira", "Estágios supervisionados (para o curso técnico)"],
+                                items: ["Conclusão do ciclo profissionalizante", "Intensivo para ENEM e vestibulares no 2º semestre", "Mentorias para definição de carreira", "Foco total em aprovação e mercado de trabalho"],
                                 icon: "fas fa-user-graduate"
                             }
                         ].map((card, i) => (

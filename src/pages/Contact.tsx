@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
         <>
             <Helmet>
                 <title>Fale Conosco | ITEC Ensino - Entre em Contato</title>
-                <meta name="description" content="Entre em contato com o ITEC Ensino. Tire suas dúvidas sobre matrículas, cursos e bolsas. Estamos prontos para atender você via WhatsApp, telefone ou e-mail." />
+                <meta name="description" content="Entre em contato com o ITEC Ensino. Tire suas dúvidas sobre matrículas e cursos. Estamos prontos para atender você via WhatsApp, telefone ou e-mail." />
             </Helmet>
 
             {/* Reuse existing ContactArea which already contains the form and map */}

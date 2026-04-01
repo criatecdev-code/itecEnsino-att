@@ -14,8 +14,8 @@ const FAQArea: React.FC = () => {
             answer: "Para nossos cursos técnicos de saúde (Enfermagem, Radiologia e Análises Clínicas), possuímos convênios com os principais hospitais e clínicas da região, facilitando o encaminhamento para o estágio obrigatório."
         },
         {
-            question: "Existem opções de bolsas ou descontos?",
-            answer: "Trabalhamos com diversos convênios para empresas parceiras, além de descontos por pontualidade no pagamento e promoções especiais para ex-alunos de outras modalidades."
+            question: "Como faço para ingressar em um curso?",
+            answer: "Basta preencher nosso formulário de matrícula online ou vir até uma de nossas unidades. Nossa equipe pedagógica fará uma avaliação de perfil para indicar a melhor jornada para você."
         },
         {
             question: "Como funciona a metodologia de gamificação?",

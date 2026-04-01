@@ -247,7 +247,7 @@ const Enrollment: React.FC = () => {
                                                         <div className="flex items-center gap-2">
                                                             <i className="far fa-clock text-primary text-xs"></i>
                                                             <span className="text-[10px] text-gray-600 font-bold uppercase tracking-tight">
-                                                                {selectedCourseData.categoria.toLowerCase().includes('técnico') ? 'Diploma Técnico' : selectedCourseData.cargahoraria}
+                                                                {selectedCourseData.cargahoraria}
                                                             </span>
                                                         </div>
                                                     </div>
@@ -261,7 +261,7 @@ const Enrollment: React.FC = () => {
                                             type="submit"
                                             className="w-full btn-secondary py-4 text-lg shadow-lg shadow-green-600/20 hover:shadow-green-600/40 transform hover:-translate-y-1 transition-all flex items-center justify-center gap-2"
                                         >
-                                            <i className="fab fa-whatsapp"></i> Iniciar Matrícula via WhatsApp
+                                            <i className="fab fa-whatsapp"></i> Quero mais informações
                                         </button>
                                         <p className="text-center text-xs text-gray-400 mt-4">
                                             Ao clicar, você será redirecionado para nosso atendimento oficial no WhatsApp.
@@ -304,11 +304,10 @@ const Enrollment: React.FC = () => {
                                 <h3 className="text-xl font-bold text-gray-900 mb-6">Dúvidas?</h3>
                                 <div className="space-y-4 text-gray-600">
                                     <p className="flex items-center gap-3">
-                                        <i className="fas fa-phone text-primary"></i>
-                                        <span>(24) 3512-0102</span>
-                                    </p>
-                                    <p className="flex items-center gap-3">
-                                        <i className="fab fa-whatsapp text-primary"></i>
+                                        <div className="flex gap-2 text-primary">
+                                            <i className="fas fa-phone"></i>
+                                            <i className="fab fa-whatsapp"></i>
+                                        </div>
                                         <span>(24) 3512-0102</span>
                                     </p>
                                     <p className="flex items-center gap-3">
