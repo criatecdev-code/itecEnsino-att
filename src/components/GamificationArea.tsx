@@ -63,13 +63,13 @@ const GamificationArea: React.FC = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
 
                                 {/* Floating UI Elements simulating game interface */}
-                                <div className="absolute top-6 right-6 bg-black/60 backdrop-blur-md rounded-full px-4 py-2 border border-white/20 flex items-center gap-3">
-                                    <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                                    <span className="text-white font-mono text-sm">Level 12</span>
+                                <div className="absolute top-4 right-4 md:top-6 md:right-6 bg-black/60 backdrop-blur-md rounded-full px-3 py-1 md:px-4 md:py-2 border border-white/20 flex items-center gap-2 md:gap-3">
+                                    <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-green-500 animate-pulse"></div>
+                                    <span className="text-white font-mono text-xs md:text-sm">Level 12</span>
                                 </div>
 
-                                <div className="absolute bottom-8 left-8 right-8">
-                                    <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4">
+                                <div className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-8">
+                                    <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-3 md:p-4">
                                         <div className="flex justify-between items-end mb-2">
                                             <div>
                                                 <span className="text-gray-400 text-xs tracking-wider">Próximo nível</span>
@@ -85,8 +85,8 @@ const GamificationArea: React.FC = () => {
                                 </div>
                             </div>
 
-                            {/* Decorative Floating Icon - Simplified */}
-                            <div className="absolute -top-6 -left-6 w-16 h-16 bg-secondary rounded-xl rotate-12 flex items-center justify-center text-2xl text-white shadow-lg shadow-black/20">
+                            {/* Decorative Floating Icon - Improved for mobile */}
+                            <div className="absolute -top-3 -left-3 md:-top-6 md:-left-6 w-10 h-10 md:w-16 md:h-16 bg-secondary rounded-xl rotate-12 flex items-center justify-center text-xl md:text-2xl text-white shadow-lg shadow-black/20">
                                 <i className="fas fa-star"></i>
                             </div>
                         </div>

@@ -1,12 +1,25 @@
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import videoTeste from '../assets/videoTeste.webm';
 import hashtag from '../assets/huhui.svg';
 
 const HeroVideo: React.FC = () => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        // Force video play on mount (helps with mobile autoplay restrictions)
+        if (videoRef.current) {
+            videoRef.current.play().catch(error => {
+                console.log("Video autoplay prevented by browser:", error);
+            });
+        }
+    }, []);
+
     return (
-        <div className="relative w-full min-h-[600px] md:min-h-screen lg:h-screen overflow-hidden bg-white flex items-center justify-center mb-10">
+        <div className="relative w-full min-h-screen lg:h-screen overflow-hidden bg-white flex items-center justify-center mb-10">
             {/* Video Background */}
             <video
+                ref={videoRef}
                 className="absolute w-full h-full object-cover min-w-full min-h-full"
                 autoPlay
                 loop
@@ -26,8 +39,8 @@ const HeroVideo: React.FC = () => {
 
             {/* Content Container */}
             <div className="absolute inset-0 z-10 flex items-center justify-center">
-                <div className="container-custom text-center px-4 max-w-4xl pt-28 border-t-0">
-                    <div className="space-y-6 md:space-y-8 animate-fade-in-up">
+                <div className="container-custom text-center px-4 max-w-4xl pt-32 border-t-0">
+                    <div className="space-y-10 md:space-y-12 animate-fade-in-up">
                         {/* Tagline / Hashtag */}
                         <div className="flex justify-center">
                             <span className="inline-block px-4 py-1.5 bg-secondary/20 backdrop-blur-md rounded-full border border-secondary/30 text-white font-bold text-xs md:text-sm tracking-widest uppercase shadow-sm">
