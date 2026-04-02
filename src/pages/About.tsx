@@ -80,7 +80,7 @@ const About: React.FC = () => {
                                     O <strong>ITEC Ensino Técnico</strong>, também conhecido como Instituto Tecnológico de Capacitação, nasceu com o propósito audacioso de suprir a demanda por qualificação profissional de excelência na região Sul Fluminense.
                                 </p>
                                 <p>
-                                    Fundado em Volta Redonda (RJ), o ITEC rapidamente se destacou pela metodologia inovadora que une teoria à prática intensiva. Hoje, com unidades em <strong>Resende, Barra Mansa e Angra dos Reis</strong>, somos referência absoluta em ensino técnico e profissionalizante.
+                                    Fundado em Volta Redonda (RJ), o ITEC rapidamente se destacou pela metodologia inovadora que une teoria à prática intensiva. Hoje, com unidades em <strong>Volta Redonda, Resende e Angra dos Reis</strong>, somos referência absoluta em ensino técnico e profissionalizante.
                                 </p>
                                 <p>
                                     Entregamos ao mercado profissionais éticos, competentes e preparados para os desafios reais da indústria e do setor de serviços, moldando o futuro através do conhecimento.

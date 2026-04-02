@@ -7,7 +7,7 @@ const FAQArea: React.FC = () => {
     const faqs = [
         {
             question: "Quais são os documentos necessários para a matrícula?",
-            answer: "Para cursos técnicos, geralmente solicitamos RG, CPF, Comprovante de Residência, Histórico Escolar do Ensino Médio e uma foto 3x4."
+            answer: "Para cursos técnicos, geralmente solicitamos RG, CPF, Comprovante de Escolaridade, Histórico Escolar do Ensino Médio e uma foto 3x4."
         },
         {
             question: "Como funciona o estágio no ITEC?",

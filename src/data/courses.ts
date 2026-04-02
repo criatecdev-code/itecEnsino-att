@@ -567,7 +567,7 @@ export const courses: Course[] = [
         ;Administração em Enfermagem
         ;ESTÁGIO SUPERVISIONADO III
         `,
-    cargahoraria: "1200h",
+    cargahoraria: "1800h",
     tempo: "24 meses",
     categoria: "Cursos técnicos",
     turnos: `
@@ -629,7 +629,7 @@ export const courses: Course[] = [
         ;Radiologia Veterinária
         ;ESTÁGIO SUPERVISIONADO III
         `,
-    cargahoraria: "1200h",
+    cargahoraria: "1600h",
     tempo: "24 meses",
     categoria: "Cursos técnicos",
     turnos: `
@@ -682,7 +682,7 @@ export const courses: Course[] = [
         ;Imunologia Clínica
         ;ESTÁGIO SUPERVISIONADO II
         `,
-    cargahoraria: "1200h",
+    cargahoraria: "1350h",
     tempo: "18 meses",
     categoria: "Cursos técnicos",
     turnos: `

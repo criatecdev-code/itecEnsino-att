@@ -179,7 +179,7 @@ const MedioDetail: React.FC = () => {
                                 O material didático do SAE Digital para o Ensino Médio está alinhado às diretrizes nacionais e foca na autonomia dos estudantes, utilizando a tecnologia para potencializar o impacto positivo no processo de ensino e aprendizagem.
                             </p>
                             <p className="text-gray-600 text-lg leading-relaxed">
-                                A proposta do SAE Digital para o Novo Ensino Médio baseia-se em algumas premissas: cumprimento da legislação, pois assegura a adequação à Base Nacional Comum Curricular (BNCC) e oferece aos estudantes as condições para que sejam protagonistas de suas jornadas, tendo opções de escolha e se desenvolvendo com o auxílio do Projeto de Vida; preparação dos estudantes para o ingresso nas universidades escolhidas, explorando conteúdos, competências e habilidades e proporcionando experiências de prática com os modelos de prova.
+                                A proposta do SAE Digital para o Novo Ensino Médio baseia-se em algumas premissas: cumprimento da legislação, pois assegura a adequação à Base Nacional Comum Curricular (BNCC) e oferece aos estudantes as condições para que sejam protagonistas de suas jornadas, tendo opções de escolha e se desenvolvendo com o auxílio do Projeto de Vida. Preparação dos estudantes para o ingresso nas universidades escolhidas, explorando conteúdos, competências e habilidades e proporcionando experiências de prática com os modelos de prova.
                             </p>
                             <p className="text-gray-600 text-lg font-bold">
                                 As tecnologias educacionais do SAE Digital são totalmente integradas ao material impresso!

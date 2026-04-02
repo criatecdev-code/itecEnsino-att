@@ -73,7 +73,7 @@ export const posts: Post[] = [
                 <ul class="bullets">
                 <li><strong>Período Estendido:</strong> até 19h, com alimentação completa.</li>
                 <li><strong>Hora da Tarefa:</strong> com suporte pedagógico.</li>
-                <li><strong>Atividades Extracurriculares:</strong> Robótica, Oficina Artística (dança/teatro), Oficina Maker – Mão na Massa, Musicalização e Judô.</li>
+                <li><strong>Atividades Extracurriculares:</strong> Robótica, Oficina Artística (dança/teatro), Oficina Maker – Mão na Massa, Musicalização e Taekwondo.</li>
                 </ul>
             </section>
             

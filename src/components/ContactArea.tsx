@@ -16,9 +16,18 @@ const ContactArea: React.FC = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        setStatus({ type: 'success', message: 'Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.' });
-        setFormData({ name: '', phone: '', email: '', message: '' });
+        
+        let message = `Olá, gostaria de tirar algumas dúvidas!\n\n`;
+        message += `*Nome:* ${formData.name}\n`;
+        message += `*Telefone:* ${formData.phone}\n`;
+        message += `*E-mail:* ${formData.email}\n`;
+        message += `*Mensagem:* ${formData.message}`;
 
+        const whatsappUrl = `https://wa.me/552435120102?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+
+        setStatus({ type: 'success', message: 'Abrindo o WhatsApp para enviar sua mensagem...' });
+        
         // Reset status after 5 seconds
         setTimeout(() => setStatus({ type: null, message: '' }), 5000);
     };
@@ -83,7 +92,7 @@ const ContactArea: React.FC = () => {
 
                             <div className="mb-8">
                                 <h3 className="text-2xl font-bold text-gray-900">Envie uma mensagem</h3>
-                                <p className="text-gray-500 mt-2">Preencha o formulário abaixo e responderemos o mais breve possível.</p>
+                                <p className="text-gray-500 mt-2">Preencha o formulário abaixo para iniciar uma conversa conosco no WhatsApp.</p>
                             </div>
 
                             {status.type && (
@@ -151,8 +160,8 @@ const ContactArea: React.FC = () => {
                                     className="w-full btn-secondary py-4 text-lg shadow-lg shadow-green-600/20 hover:shadow-green-600/40 transform hover:-translate-y-1 transition-all flex items-center justify-center gap-2"
                                     type="submit"
                                 >
-                                    <span>Enviar mensagem</span>
-                                    <i className="fas fa-paper-plane group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                                    <span>Enviar pelo WhatsApp</span>
+                                    <i className="fab fa-whatsapp group-hover:scale-110 transition-transform"></i>
                                 </button>
                             </form>
                         </div>

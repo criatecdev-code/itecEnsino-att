@@ -34,7 +34,7 @@ const EducationLevels: React.FC = () => {
             <EducationLevelSection
                 subtitle="Cursos rápidos e dinâmicos"
                 title="Profissionalizantes"
-                description="Qualificação rápida e focada em resultados, desenvolvida para destacar você no mercado. Cursos nas áreas de tecnologia, gestão, saúde e beleza, com certificação imediata."
+                description="Qualificação rápida e focada em resultados, desenvolvida para destacar você no mercado. Cursos nas áreas de tecnologia, gestão e saúde, com certificação imediata."
                 image="/img/home/administrativo.png"
                 link="/cursos/profissionalizante"
                 linkText="Ver cursos rápidos"

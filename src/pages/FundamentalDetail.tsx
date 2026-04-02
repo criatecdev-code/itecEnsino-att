@@ -194,7 +194,7 @@ const FundamentalDetail: React.FC = () => {
                             { icon: 'fa-book', title: 'Hora da Tarefa', desc: 'Acompanhamento pedagógico diário para as atividades escolares, garantindo aprendizagem de qualidade' },
                             { icon: 'fa-robot', title: 'Robótica', desc: 'Desenvolvimento de lógica e criatividade' },
                             { icon: 'fa-music', title: 'Musicalização', desc: 'Encenação, roda com desenvolvimento de ritmos, coordenação motora, memória' },
-                            { icon: 'fa-medal', title: 'Judô', desc: 'Desenvolvimento físico e disciplina' },
+                            { icon: 'fa-medal', title: 'Taekwondo', desc: 'Desenvolvimento físico e disciplina' },
                             { icon: 'fa-theater-masks', title: 'Oficina Artística', desc: 'Dança/Teatro – corpo e movimento, consciência corporal' },
                             { icon: 'fa-tools', title: 'Oficina Maker', desc: 'Mão na massa – criação e construção com as próprias mãos, projetos como bonecos e carrinhos com reciclagem' }
                         ].map((item, i) => (
